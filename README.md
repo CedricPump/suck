@@ -29,7 +29,7 @@ For this concept following components are required:
 - items for different UGL Models (ToDo)
 - scripts to change Weapons (ToDo)
 - mapping for supported mapping (ToDo)
-- mod icon (ToDo)
+- mod icon (WIP)
 - 2d model icon for item
 - (otional) 3d model for item on ground (ToDo)
 
