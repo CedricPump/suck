@@ -63,4 +63,8 @@ Several UGL Models schuld be available seperately:
 
 ## Usage (Preview)
 
+<p align="center"><img width="64" height="64" src="images/action.gif">
+
+<p align="left">
+
 ## Disclaimer / License
