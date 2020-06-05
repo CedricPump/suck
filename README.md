@@ -1,6 +1,6 @@
-<p align="center"><img width="64" height="64" src="images/icon_64p.png"><\p>
+<p align="center"><img width="64" height="64" src="images/icon_64p.png">
 
-<p align="left"><\p>
+<p align="left">
 
 # SUCK - Simple Underbarrel-Granade-Launcher Conversion Kit
 
