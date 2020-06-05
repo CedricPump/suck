@@ -1,4 +1,4 @@
-<p align="center"><img width="64" height="64" src="images/icon_64p.png">
+<p align="center"><img width="64" height="64" src="images/icon_64p_blk.png">
 
 <p align="left">
 
