@@ -1,5 +1,4 @@
-![SUCK](images/icon_64p.png "M203 icon")
-# SUCK - Simple Underbarrel-Granade-Launcher Conversion Kit
+# SUCK - Simple Underbarrel-Granade-Launcher Conversion Kit <img width="64" height="64" src="images/icon_64p.png">
 
 SUCK is an Arma 3 mod that allows Players to attach and detach their underbarrel granade launcher (UGL).
 It uses placeholder items for different UGL models and is compatible with ACE3 and RHS.
