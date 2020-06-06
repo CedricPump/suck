@@ -7,7 +7,15 @@ class CfgPatches
 		units[] = {};
 		weapons[] = 
 		{
-			"dcd_suck_M203"
+			"dcd_suck_M203",
+			"dcd_suck_M203S",
+			"dcd_suck_M320",
+			"dcd_suck_MAG36",
+			"dcd_suck_GP25",
+			"dcd_suck_EGLM",
+			"dcd_suck_QLG10A",
+			"dcd_suck_SL40",
+			"dcd_suck_UPG40"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = 
