@@ -9,8 +9,8 @@ It uses placeholder items for different UGL models and is compatible with ACE3 a
 
 ## Acronyms
 
-Simple Underbarrel-Granade-Launcher Conversion Kit
-Switch UGL Consersion Kit
+Simple Underbarrel-Grenade-Launcher Conversion Kit
+Switch UGL Conversion Kit
 Steffies UGL Conversion Kit
 SUGLUK - Switch Underbarrel Granade Launcher Upgrade Kit
 
@@ -19,8 +19,8 @@ SUGLUK - Switch Underbarrel Granade Launcher Upgrade Kit
 This Mod should support to attach and detach an UGL.
 Because UGL is no attachment like a scope or a Bipod the whole Weapon has to be switched.
 Therefore only a limited range of weapons can be suported which have a UGL counterpart.
-A mapping of UGL model, base weapon and UGL Weapon is saved an action to attach/detach is shown when current Weapon ist supported.
-The UGL itself is represented by an dummy item, that is created on detach and needs to be present for attaching.
+A mapping of UGL model, base weapon and UGL Weapon is saved an action to attach/detach is shown when current Weapon is supported.
+The UGL itself is represented by a dummy item, that is created on detach and needs to be present for attaching.
 
 ### Components
 
@@ -66,5 +66,13 @@ Several UGL Models schuld be available seperately:
 <p align="center"><img width="800" height="334" src="images/action.gif">
 
 <p align="left">
+
+## Development Usage
+
+Use Mikeros pboProject, Full Build, Output = `P:\dcd\dcd_suck_export`, Source = `P:\dcd\dcd_suck`
+
+- **Only** touch `\dcd_suck_export\Mod.cpp`, let the rest be generated
+- **Only** put actual build content into `\dcd_suck`
+- WIP & Raw content belongs to `\source`
 
 ## Disclaimer / License
