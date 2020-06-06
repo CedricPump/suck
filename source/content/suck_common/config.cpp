@@ -3,7 +3,7 @@ class CfgMods
 	class suck
 	{
 		dir="@SUCK";
-		name="Simple Underbarrel-Granade-Launcher Conversion Kit";
+		name="Simple UBGL Conversion Kit";
 		picture="";
 		hidePicture="true";
 		hideName="true";
