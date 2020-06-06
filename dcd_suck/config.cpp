@@ -232,6 +232,8 @@ class CfgVehicles
 		};
 	};
 };
+
+class WeaponSlotsInfo;
 class CfgWeapons
 {
 	class CBA_MiscItem;
@@ -332,13 +334,10 @@ class CfgWeapons
         };
 	};	
 	
+	
 	class arifle_MX_Base_F;
-	class WeaponSlotsInfo;
 	class UnderBarrelSlot;
 	class arifle_MX_GL_F: arifle_MX_Base_F {
-		scope=2;
-		displayName="Best Gun Ever";
-		
 		class WeaponSlotsInfo: WeaponSlotsInfo {
 
 			class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
