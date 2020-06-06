@@ -12,10 +12,12 @@ class CfgPatches
 			"dcd_suck_M320",
 			"dcd_suck_AG36",
 			"dcd_suck_GP25",
-			"dcd_suck_EGLM",
-			"dcd_suck_QLG10A",
-			"dcd_suck_SL40",
 			"dcd_suck_UPG40"
+			"dcd_suck_QLG10A",
+			"dcd_suck_EGLM",
+			"dcd_suck_SL40",
+			"SUCK_item_M203",
+			"test_bipod_01_F"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -330,4 +332,22 @@ class CfgWeapons
             mass = 40;
         };
 	};	
+	
+	class arifle_MX_Base_F;
+	class WeaponSlotsInfo;
+	class UnderBarrelSlot;
+	class arifle_MX_GL_F: arifle_MX_Base_F {
+		scope=2;
+		displayName="Best Gun Ever";
+		
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+
+			class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
+			{
+				iconPosition[] = {0.2, 0.7};
+				iconScale = 0.2;
+				compatibleItems[] = {"bipod_02_F_blk"};
+			};
+		};
+	};
 };
