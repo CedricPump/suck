@@ -52,6 +52,46 @@ class CfgVehicles
 				name="dcd_suck_M203";
 				count=10;
 			};
+			class _xx_SUCK_M203S
+			{
+				name="dcd_suck_M203S";
+				count=10;
+			};
+			class _xx_SUCK_M320
+			{
+				name="dcd_suck_M320";
+				count=10;
+			};
+			class _xx_SUCK_AG36
+			{
+				name="dcd_suck_AG36";
+				count=10;
+			};
+			class _xx_SUCK_GP25
+			{
+				name="dcd_suck_GP25";
+				count=10;
+			};
+			class _xx_SUCK_EGLM
+			{
+				name="dcd_suck_EGLM";
+				count=10;
+			};
+			class _xx_SUCK_QLG10A
+			{
+				name="dcd_suck_QLG10A";
+				count=10;
+			};
+			class _xx_SUCK_SL40
+			{
+				name="dcd_suck_SL40";
+				count=10;
+			};
+			class _xx_SUCK_UPG40
+			{
+				name="dcd_suck_UPG40";
+				count=10;
+			};
 		};
 	};
 };
