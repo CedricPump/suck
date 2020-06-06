@@ -16,9 +16,9 @@ class CfgPatches
 			"dcd_suck_QLG10A",
 			"dcd_suck_SL40",
 			"dcd_suck_UPG40",
-			"test_bipod_01_F",
 			"arifle_MX_GL_F",
-			"arifle_Mk20_GL_F",
+			"arifle_MX_F",
+			"arifle_SPAR_01_GL_blk_F",
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = 
