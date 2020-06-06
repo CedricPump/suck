@@ -1,3 +1,17 @@
+#define _add_test_gl_ \
+		dlc = "dcd_suck";\
+		class WeaponSlotsInfo: WeaponSlotsInfo {\
+			scope = 1;\
+			scopeArsenal = 0;\
+			class UnderBarrelSlot: UnderBarrelSlot {\
+				iconPosition[] = {0.2, 0.7};\
+				iconScale = 0.2;\
+				compatibleItems[] = {"bipod_02_F_blk", "dcd_suck_UPG40", "dcd_suck_QLG10A"};\
+			};\
+		};\
+
+
+
 class CfgPatches
 {
 	class dcd_suck
@@ -16,7 +30,9 @@ class CfgPatches
 			"dcd_suck_QLG10A",
 			"dcd_suck_SL40",
 			"dcd_suck_UPG40",
-			"test_bipod_01_F"
+			"test_bipod_01_F",
+			"arifle_MX_GL_F",
+			"arifle_Mk20_GL_F",
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -334,18 +350,25 @@ class CfgWeapons
         };
 	};	
 	
-	
-	class arifle_MX_Base_F;
 	class UnderBarrelSlot;
-	class arifle_MX_GL_F: arifle_MX_Base_F {
+	class GreatGunShit {
+		
 		class WeaponSlotsInfo: WeaponSlotsInfo {
 
 			class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
 			{
 				iconPosition[] = {0.2, 0.7};
 				iconScale = 0.2;
-				compatibleItems[] = {"bipod_02_F_blk"};
+				compatibleItems[] = {"bipod_02_F_blk", "dcd_suck_UPG40", "dcd_suck_QLG10A" };
 			};
 		};
+	};
+	
+	class arifle_MX_GL_F { 
+		_add_test_gl_;
+	};
+	
+	class arifle_Mk20_GL_F {
+		_add_test_gl_;
 	};
 };
