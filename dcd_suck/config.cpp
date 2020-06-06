@@ -1,13 +1,13 @@
 class CfgPatches
 {
-	class suck_common
+	class dcd_suck
 	{
 		author="CedricPump";
-		name="suck_common";
+		name="dcd_suck";
 		units[] = {};
 		weapons[] = 
 		{
-			"SUCK_item_M203"
+			"dcd_suck_M203"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -25,7 +25,7 @@ class CfgPatches
 class CfgVehicles
 {
 	class Item_Base_F;
-	class SUCK_item_M203: Item_Base_F
+	class dcd_suck_M203: Item_Base_F
 	{
 		author="CedricPump";
 		scope=2;
@@ -36,7 +36,7 @@ class CfgVehicles
 		{
 			class _xx_SUCK_M203
 			{
-				name="SUCK_item_M203";
+				name="dcd_suck_M203";
 				count=1;
 			};
 		};
@@ -49,7 +49,7 @@ class CfgVehicles
 		{
 			class _xx_SUCK_M203
 			{
-				name="SUCK_item_M203";
+				name="dcd_suck_M203";
 				count=10;
 			};
 		};
@@ -64,7 +64,7 @@ class CfgWeapons
 		author="CedricPump";
 		scope=0;
 	};
-	class SUCK_item_M203: SUCK_item_base
+	class dcd_suck_M203: SUCK_item_base
 	{
 		scope=2;
 		displayName="M203";
