@@ -35,7 +35,7 @@ class CfgPatches
 };
 
 class CfgFunctions {	
-	#include "functions\cfgFunctions.cpp"
+	#include "functions\CfgFunctions.cpp"
 };
 
 #include "CfgVehicles.cpp"
