@@ -7,7 +7,8 @@ class CfgPatches
 		units[] = {};
 		weapons[] = 
 		{
-			"SUCK_item_M203"
+			"SUCK_item_M203",
+			"test_bipod_01_F"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -41,6 +42,7 @@ class CfgVehicles
 			};
 		};
 	};
+	
 	class Box_NATO_Support_F;
 	class SUCK_Box_UGL: Box_NATO_Support_F
 	{
@@ -74,4 +76,22 @@ class CfgWeapons
             mass = 2;
         };
 	};	
+	
+	class arifle_MX_Base_F;
+	class WeaponSlotsInfo;
+	class UnderBarrelSlot;
+	class arifle_MX_GL_F: arifle_MX_Base_F {
+		scope=2;
+		displayName="Best Gun Ever";
+		
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+
+			class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
+			{
+				iconPosition[] = {0.2, 0.7};
+				iconScale = 0.2;
+				compatibleItems[] = {"bipod_02_F_blk"};
+			};
+		};
+	};
 };
