@@ -1,8 +1,8 @@
-<p align="center"><img width="64" height="64" src="images/icon_64p_blk.png">
+<p align="center"><img width="64" height="64" src="source/images/icon_64p_blk.png">
 
 <p align="left">
 
-# SUCK - Simple Underbarrel-Granade-Launcher Conversion Kit
+# SUCK - Simple UBGL Conversion Kit
 
 SUCK is an Arma 3 mod that allows Players to attach and detach their underbarrel granade launcher (UGL).
 It uses placeholder items for different UGL models and is compatible with ACE3 and RHS.
@@ -15,6 +15,10 @@ Steffies UGL Conversion Kit
 SUGLUK - Switch Underbarrel Granade Launcher Upgrade Kit
 
 ## Concept
+
+<p align="center"><img width="800" height="400" src="source/images/suck_picture_2048x1024.png">
+
+<p align="left">
 
 This Mod should support to attach and detach an UGL.
 Because UGL is no attachment like a scope or a Bipod the whole Weapon has to be switched.
@@ -63,7 +67,7 @@ Several UGL Models schuld be available seperately:
 
 ## Usage (Preview)
 
-<p align="center"><img width="800" height="334" src="images/action.gif">
+<p align="center"><img width="800" height="334" src="source/images/action.gif">
 
 <p align="left">
 
