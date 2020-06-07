@@ -16,6 +16,10 @@ SUGLUK - Switch Underbarrel Granade Launcher Upgrade Kit
 
 ## Concept
 
+<p align="center"><img width="800" height="400" src="source/images/suck_picture_2048x1024.png">
+
+<p align="left">
+
 This Mod should support to attach and detach an UGL.
 Because UGL is no attachment like a scope or a Bipod the whole Weapon has to be switched.
 Therefore only a limited range of weapons can be suported which have a UGL counterpart.
