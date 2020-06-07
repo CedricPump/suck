@@ -20,4 +20,6 @@ if(DCD_SUCK_DEBUG) then {diag_log ("DCD SUCK: addSupportedWeaponPair - " + str _
 
 DCD_SUCK_SUPPORTED_WEAPONS append [_baseWeapon,_ubglWeapon];
 
+// can use logic object as hashMap with setVariable?
+
 if(true) exitWith{0};

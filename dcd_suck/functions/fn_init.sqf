@@ -13,7 +13,7 @@ DCD_SUCK_ACE = if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {true
 
 _0 = [] call dcd_suck_fnc_initSupportedWeapons;
 
-if (hasInterface) then {call dcd_suck_fnc_localInit;};
+if (hasInterface) then {_0 = [] spawn dcd_suck_fnc_localInit;};
 
 diag_log "DCD SUCK: Init Global success";
 hint "DCD SUCK: Init Global success";
