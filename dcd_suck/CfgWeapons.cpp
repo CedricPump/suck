@@ -43,13 +43,16 @@ class CfgWeapons
 	class CBA_MiscItem_ItemInfo;
 	class dcd_suck_ebgl_base: CBA_MiscItem
 	{
-		author="CedricPump";
+		// if author only set here will show as Unknown Community Author,
+		// move to each inherited item instead.
+		// author="CedricPump";
 		scope=0;
 	};
 	class dcd_suck_M203: dcd_suck_ebgl_base
 	{
 		scope=2;
 		displayName="M203";
+		author="CedricPump";
 		picture="\dcd\dcd_suck\ui\dcd_suck_m203.paa";
 		descriptionShort="M203 grenade launcher";
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -130,6 +133,7 @@ class CfgWeapons
 	{
 		scope=2;
 		displayName="UPG-40";
+		author="CedricPump";
 		picture="\dcd\dcd_suck\ui\dcd_suck_upg40.paa";
 		descriptionShort="UPG-40 grenade launcher";
         class ItemInfo: CBA_MiscItem_ItemInfo {

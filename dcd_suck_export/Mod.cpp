@@ -1,5 +1,6 @@
+
 name = "Simple UBGL Conversion Kit";
-icon = "\dcd\dcd_suck\ui\dcd_suck_icon.paa";
+icon 	= "\dcd\dcd_suck\ui\dcd_suck_picture.paa";
 picture 	= "\dcd\dcd_suck\ui\dcd_suck_picture.paa";
 actionName = "GitHub";
 action = "https://github.com/CedricPump/suck";
