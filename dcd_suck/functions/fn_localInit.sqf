@@ -1,10 +1,5 @@
 
-[] spawn {
-	waitUntil {!isNull player};
-	while {true} do {	
-		scopeName "mainloop";
-		hint "init";
-		[player] spawn fshR_fnc_playerLoop;
-		Sleep 10;
-	};
+while {true} do {	
+	hint "init";
+	Sleep 1;
 };

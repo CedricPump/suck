@@ -22,7 +22,7 @@
 	}
 	
 class CfgFunctions {
-	class dcd_suck
+	class SimpleUBGLConversion
 	{
 		requiredAddons[] = {
 			"A3_Data_F",
@@ -33,23 +33,5 @@ class CfgFunctions {
 		fnc(localInit);
 		fnc(playerLoop);
 	};
-	/*
-	class dcd_functions {
-		tag = "dcd_suck";
-		class misc {
-			
-			requiredAddons[] = {
-				"A3_Data_F",
-				"cba_main"
-			};
-			
-			file = "dcd\dcd_suck\functions";
-			fnc_pre(init);
-			fnc(localInit);
-			fnc(playerLoop);
-			
-		};
-	};
-	*/
 };
 
