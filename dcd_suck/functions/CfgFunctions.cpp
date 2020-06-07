@@ -21,8 +21,10 @@
 		description = ""; \
 	}
 	
-class CfgFunctions {
-	class SimpleUBGLConversion
+
+class dcd_suck
+{
+	class suck
 	{
 		requiredAddons[] = {
 			"A3_Data_F",

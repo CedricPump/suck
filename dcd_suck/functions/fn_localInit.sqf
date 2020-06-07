@@ -8,8 +8,7 @@
 	INT - Exitcode (0 = OK)
 */
 waitUntil {!isNull player};
-if(DCD_SUCK_DEBUG) then {hint "SUCK Init Client";};
-diag_log "SUCK Init Client";
+if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: Init Client";};
 
 // add CBA Loadout Event-handler
 ["loadout", {
@@ -17,7 +16,7 @@ diag_log "SUCK Init Client";
 }, true] call CBA_fnc_addPlayerEventHandler;
 
 while {true} do {	
-	if(DCD_SUCK_DEBUG) then {hint "Test";};
+	if(DCD_SUCK_DEBUG) then {diag_log "Test";};
 	Sleep 1;
 };
 

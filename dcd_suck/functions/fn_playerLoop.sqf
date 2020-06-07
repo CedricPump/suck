@@ -17,7 +17,7 @@ _unit = player;
 _sleepTime = 1;
 
 while {true} do {
-	if(DCD_SUCK_DEBUG) then {debugLog "TEST";};
+	if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: TEST";};
 	uiSleep _sleepTIme;
 };
 

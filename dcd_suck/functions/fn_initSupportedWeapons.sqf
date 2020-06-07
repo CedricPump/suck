@@ -7,7 +7,7 @@
 	Returns:
 	INT - Exitcode (0 = OK)
 */
-if(DCD_SUCK_DEBUG) then {debugLog "DCD SUCK: initSupportedWeapons";};
+if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: initSupportedWeapons";};
 
 DCD_SUCK_SUPPORTED_WEAPONS = ["dummy"];
 publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";

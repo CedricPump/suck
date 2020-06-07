@@ -15,7 +15,7 @@
 params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];
 if(!((currentWeapon _unit) in DCD_SUCK_SUPPORTED_WEAPONS)) exitWith{0};
 
-if(DCD_SUCK_DEBUG) then {debugLog ((str _unit) + "\n\n"  + (str _newUnitLoadout) + "\n\n"  + (str _oldUnitLoadout));};
+if(DCD_SUCK_DEBUG) then {diag_log ("DCD SUCK: " + (str _unit) + "\n\n"  + (str _newUnitLoadout) + "\n\n"  + (str _oldUnitLoadout));};
 
 // TODO: do magic
 
