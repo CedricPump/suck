@@ -32,6 +32,9 @@ class CfgFunctions {
 		fnc_pre(init);
 		fnc(localInit);
 		fnc(playerLoop);
+		fnc(addSupportedWeaponPair);
+		fnc(initSupportedWeapons);
+		fnc(onLoadoutChanged);
 	};
 };
 

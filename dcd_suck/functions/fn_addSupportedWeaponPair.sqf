@@ -1,0 +1,23 @@
+/*
+	Author: Steffie
+
+	Description:
+	Adds supported weapon pair to SUCK weapon mapping.
+	note that this mapping does not influence the under barrel slot availability
+
+	Parameter(s):
+		0: STRING - EBGL Classname
+		1: STRING - weapon Classname
+		2: STRING - weapon with EBGL Classname
+
+	Returns:
+	INT - Exitcode (0 = OK)
+*/
+
+params["_ubgl","_baseWeapon","_ubglWeapon"];
+
+if(DCD_SUCK_DEBUG) then {debugLog ("DCD SUCK: addSupportedWeaponPair - " + str _baseWeapon);};
+
+DCD_SUCK_SUPPORTED_WEAPONS append [_baseWeapon,_ubglWeapon];
+
+if(true) exitWith{0};

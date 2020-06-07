@@ -20,14 +20,13 @@ class CfgPatches
 			"dcd_suck_UPG40",
 			"arifle_MX_GL_F",
 			"arifle_MX_F",
-						"arifle_SPAR_01_blk_F",
+			"arifle_SPAR_01_blk_F",
 			"arifle_SPAR_01_GL_blk_F",
 
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
-			"ACE_common",
 			"A3_Data_F_Exp"
 		};
 		filename = "dcd_suck.pbo";

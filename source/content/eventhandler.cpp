@@ -7,7 +7,7 @@ publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";
     params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];
 	if(!(currentWeapon _unit in DCD_SUCK_SUPPORTED_WEAPONS)) exitWith{};
 	
-    hint str "match";
+    hint ((str _unit) + "\n\n"  + (str _newUnitLoadout) + "\n\n"  + (str _oldUnitLoadout));
 	
 	// do magic
 }, true] call CBA_fnc_addPlayerEventHandler;

@@ -1,4 +1,14 @@
-if (isDedicated || Suck_playerLoop) exitWith {}; 
+/*
+	Author: Xankriegor
+
+	Description:
+	not sure yet
+
+	Returns:
+	INT - Exitcode (0 = OK)
+*/
+
+if (isDedicated || Suck_playerLoop) exitWith {0}; 
 
 if (!canSuspend) exitWith {_this spawn dcd_suck_fnc_playerLoop};
 dcd_suck_playerLoop = true;
@@ -7,9 +17,8 @@ _unit = player;
 _sleepTime = 1;
 
 while {true} do {
-	hint "TEST";
+	if(DCD_SUCK_DEBUG) then {debugLog "TEST";};
 	uiSleep _sleepTIme;
-	
 };
 
-fshR_playerLoop = false;
+if(true) exitWith{0};
