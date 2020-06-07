@@ -18,11 +18,18 @@ class CfgPatches
 			"dcd_suck_QLG10A",
 			"dcd_suck_SL40",
 			"dcd_suck_UPG40",
-			"arifle_MX_GL_F",
-			"arifle_MX_F",
-						"arifle_SPAR_01_blk_F",
-			"arifle_SPAR_01_GL_blk_F",
+			"dcd_suck_SIX12",
 
+			"arifle_AK12_F", "arifle_AK12_arid_F", "arifle_AK12_lush_F",
+			"arifle_AK12_GL_F", "arifle_AK12_GL_arid_F", "arifle_AK12_GL_lush_F",
+			"arifle_Mk20C_F", "arifle_Mk20_GL_F", "arifle_TRG21_F", "arifle_TRG21_GL_F",
+			"arifle_SPAR_01_base_F", "arifle_Katiba_F", "arifle_Katiba_GL_F", "arifle_MSBS65_F",
+			"arifle_MSBS65_black_F", "arifle_MSBS65_camo_F", "arifle_MSBS65_sand_F",
+			"arifle_MSBS65_GL_F", "arifle_MSBS65_GL_black_F", "arifle_MSBS65_GL_camo_F",
+			"arifle_MSBS65_GL_sand_F", "arifle_MSBS65_UBS_F", "arifle_MSBS65_UBS_black_F",
+			"arifle_MSBS65_UBS_camo_F", "arifle_MSBS65_UBS_sand_F", "arifle_MX_F",
+			"arifle_MX_GL_F", "arifle_CTAR_blk_F", "arifle_CTAR_ghex_F", "arifle_CTAR_hex_F",
+			"arifle_CTAR_GL_base_F",
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
