@@ -4,7 +4,7 @@ class CfgPatches
 {
 	class dcd_suck
 	{
-		author="CedricPump";
+		author="DCD";
 		name="dcd_suck";
 		units[] = {};
 		weapons[] =
@@ -34,7 +34,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
-			"ACE_common",
 			"A3_Data_F_Exp"
 		};
 		filename = "dcd_suck.pbo";

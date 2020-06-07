@@ -108,10 +108,10 @@ class dcd_suck_UPG40: dcd_suck_ubgl_base
 };
 class dcd_suck_SIX12: dcd_suck_ubgl_base {
   scope=2;
-  displayName="Six12";
+  displayName="SIX12";
   author="DCD";
   // Todo: REPLACE ME
-  picture="\dcd\dcd_suck\ui\dcd_suck_upg40.paa";
+  picture="\dcd\dcd_suck\ui\dcd_suck_six12.paa";
   descriptionShort="SIX12 underbarrel shotgun";
       class ItemInfo: CBA_MiscItem_ItemInfo {
           mass = 40;

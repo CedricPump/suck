@@ -3,7 +3,7 @@ class CfgVehicles
 	class Item_Base_F;
 	class dcd_suck_M203: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="M203";
@@ -19,7 +19,7 @@ class CfgVehicles
 	};
 	class dcd_suck_M203S: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="M203S";
@@ -35,7 +35,7 @@ class CfgVehicles
 	};
 	class dcd_suck_M320: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="M320";
@@ -51,7 +51,7 @@ class CfgVehicles
 	};
 	class dcd_suck_AG36: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="AG36";
@@ -67,7 +67,7 @@ class CfgVehicles
 	};
 	class dcd_suck_GP25: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="GP25";
@@ -83,7 +83,7 @@ class CfgVehicles
 	};
 	class dcd_suck_EGLM: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="EGLM";
@@ -99,7 +99,7 @@ class CfgVehicles
 	};
 	class dcd_suck_QLG10A: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="QLG10A";
@@ -115,7 +115,7 @@ class CfgVehicles
 	};
 	class dcd_suck_SL40: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="SL40";
@@ -131,7 +131,7 @@ class CfgVehicles
 	};
 	class dcd_suck_UPG40: Item_Base_F
 	{
-		author="CedricPump";
+		author="DCD";
 		scope=2;
 		scopeCurator=2;
 		displayName="UPG40";
@@ -141,6 +141,22 @@ class CfgVehicles
 			class _xx_SUCK_UPG40
 			{
 				name="dcd_suck_UPG40";
+				count=1;
+			};
+		};
+	};
+	class dcd_suck_SIX12: Item_Base_F
+	{
+		author="DCD";
+		scope=2;
+		scopeCurator=2;
+		displayName="SIX12";
+		vehicleClass="Items";
+		class TransportItems
+		{
+			class _xx_SUCK_SIX12
+			{
+				name="dcd_suck_SIX12";
 				count=1;
 			};
 		};
@@ -194,6 +210,11 @@ class CfgVehicles
 			class _xx_SUCK_UPG40
 			{
 				name="dcd_suck_UPG40";
+				count=10;
+			};
+			class _xx_SUCK_SIX12
+			{
+				name="dcd_suck_SIX12";
 				count=10;
 			};
 		};
