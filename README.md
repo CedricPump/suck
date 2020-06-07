@@ -1,4 +1,4 @@
-<p align="center"><img width="64" height="64" src="images/icon_64p_blk.png">
+<p align="center"><img width="64" height="64" src="source/images/icon_64p_blk.png">
 
 <p align="left">
 
@@ -63,7 +63,7 @@ Several UGL Models schuld be available seperately:
 
 ## Usage (Preview)
 
-<p align="center"><img width="800" height="334" src="images/action.gif">
+<p align="center"><img width="800" height="334" src="source/images/action.gif">
 
 <p align="left">
 
