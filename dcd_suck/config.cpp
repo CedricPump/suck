@@ -1,3 +1,5 @@
+#include "CfgMods.cpp"
+
 class CfgPatches
 {
 	class dcd_suck
@@ -5,7 +7,7 @@ class CfgPatches
 		author="CedricPump";
 		name="dcd_suck";
 		units[] = {};
-		weapons[] = 
+		weapons[] =
 		{
 			"dcd_suck_M203",
 			"dcd_suck_M203S",
@@ -18,12 +20,15 @@ class CfgPatches
 			"dcd_suck_UPG40",
 			"arifle_MX_GL_F",
 			"arifle_MX_F",
+						"arifle_SPAR_01_blk_F",
 			"arifle_SPAR_01_GL_blk_F",
+
 		};
 		requiredVersion = 0.1;
-		requiredAddons[] = 
+		requiredAddons[] =
 		{
-			"ACE_common"
+			"ACE_common",
+			"A3_Data_F_Exp"
 		};
 		filename = "dcd_suck.pbo";
         versionDesc = "SUCK";
@@ -34,12 +39,9 @@ class CfgPatches
 	};
 };
 
-class CfgFunctions {	
+class CfgFunctions {
 	#include "functions\CfgFunctions.cpp"
 };
 
 #include "CfgVehicles.cpp"
 #include "CfgWeapons.cpp"
-
-
-
