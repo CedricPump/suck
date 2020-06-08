@@ -10,6 +10,7 @@
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: initSupportedWeapons";};
 
 DCD_SUCK_SUPPORTED_WEAPONS = [];
+DCD_SUCK_WEAPON_MAPPING = [];
 publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";
 
 // yes I know that redundant and can be done by forEach ...
