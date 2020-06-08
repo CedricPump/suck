@@ -13,9 +13,8 @@
 	INT - Exitcode (0 = OK)
 */
 params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];
-if(!((currentWeapon _unit) in DCD_SUCK_SUPPORTED_WEAPONS)) exitWith{0};
-
 if(DCD_SUCK_DEBUG) then {hint ("DCD SUCK: " + (str _unit) + "\n\n"  + (str _newUnitLoadout) + "\n\n"  + (str _oldUnitLoadout));};
+if(!((primaryWeapon _unit) in DCD_SUCK_SUPPORTED_WEAPONS)) exitWith{0};
 
 // TODO: do magic
 
