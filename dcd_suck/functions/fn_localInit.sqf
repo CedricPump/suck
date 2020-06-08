@@ -10,6 +10,10 @@
 waitUntil {!isNull player};
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: Init Client";};
 
+player setVariable ["DCD_SUCK_CURRENT_WEAPON",""];
+player setVariable ["DCD_SUCK_BASE_WEAPON",""];
+player setVariable ["DCD_SUCK_SWITCH_WEAPON",""];
+
 // add CBA Loadout Event-handler
 _0 = ["loadout", {
 	_0 = _this call dcd_suck_fnc_onLoadoutChanged;
@@ -17,7 +21,7 @@ _0 = ["loadout", {
 
 _0 = [] spawn {
 	while {true} do {
-		sleep DCD_SUCK_CHECK_INTERFAL;
+		sleep DCD_SUCK_CHECK_INTERVAL;
 	};
 };
 

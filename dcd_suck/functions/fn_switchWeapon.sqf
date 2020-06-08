@@ -4,17 +4,15 @@
 	Description:
 	Switches given PrimaryWeapon while keeping all attachments and ammo
 
-	Parameter(s): (from CBA Loadout Event)
+	Parameter(s):
 		0: OBJECT - Unit
+        1: STRING - old weapon
+        2: STRING - new weapon
 
 	Returns:
 	INT - Exitcode (0 = OK)
 */
-params ["_unit"];
-
-_weapon = currentWeapon _unit;
-
-// find matching Weapon
+params ["_unit","_weapon","_newWeapon"];
 
 _acc = _unit weaponAccessories _weapon;
 // check UBGL Mags
