@@ -12,9 +12,13 @@
 	Returns:
 	INT - Exitcode (0 = OK)
 */
-params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];
 if(DCD_SUCK_DEBUG) then {hint ("DCD SUCK: " + (str _unit) + "\n\n"  + (str _newUnitLoadout) + "\n\n"  + (str _oldUnitLoadout));};
 if(!((primaryWeapon _unit) in DCD_SUCK_SUPPORTED_WEAPONS)) exitWith{0};
+
+if(count _oldUnitLoadout == 0) then 
+{
+	_0 = [_unit] call dcd_suck_fnc_validate;
+};
 
 // TODO: do magic
 

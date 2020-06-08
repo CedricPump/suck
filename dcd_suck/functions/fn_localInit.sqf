@@ -12,7 +12,7 @@ if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: Init Client";};
 
 // add CBA Loadout Event-handler
 _0 = ["loadout", {
-	_0 = this call dcd_suck_fnc_onLoadoutChanged;
+	_0 = _this call dcd_suck_fnc_onLoadoutChanged;
 }, true] call CBA_fnc_addPlayerEventHandler;
 
 _0 = [] spawn {

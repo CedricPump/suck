@@ -37,6 +37,8 @@ class dcd_suck
 		fnc(addSupportedWeaponPair);
 		fnc(initSupportedWeapons);
 		fnc(onLoadoutChanged);
+		fnc(validate);
+		fnc(switchWeapon);
 	};
 };
 

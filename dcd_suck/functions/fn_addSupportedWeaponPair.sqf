@@ -20,6 +20,7 @@ if(DCD_SUCK_DEBUG) then {diag_log ("DCD SUCK: addSupportedWeaponPair - " + str _
 
 // add to supported Weapons
 DCD_SUCK_SUPPORTED_WEAPONS append [_baseWeapon,_ubglWeapon];
+DCS_SUCK_UBGL_WEAPONS append [[_ubglWeapon,_ubgl]];
 
 // add to Weapon Mapping
 _index = (DCD_SUCK_WEAPON_MAPPING findIf {(_x select 0) == _ubgl});

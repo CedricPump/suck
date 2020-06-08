@@ -9,9 +9,13 @@
 */
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: initSupportedWeapons";};
 
-DCD_SUCK_SUPPORTED_WEAPONS = [];
-DCD_SUCK_WEAPON_MAPPING = [];
+DCD_SUCK_SUPPORTED_WEAPONS = []; 	// all Weapons affected by SUCK
 publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";
+DCD_SUCK_WEAPON_MAPPING = [];		// mapping of UBGL with supported weapon pairs
+publicVariable "DCD_SUCK_WEAPON_MAPPING";
+DCS_SUCK_UBGL_WEAPONS = [];			// mapping of weapons that should contain an UBGL item
+publicVariable "DCS_SUCK_UBGL_WEAPONS";
+
 
 // yes I know that redundant and can be done by forEach ...
 
