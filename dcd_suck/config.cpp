@@ -34,7 +34,8 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
-			"A3_Data_F_Exp"
+			"A3_Data_F_Exp",
+			"cba_main"
 		};
 		filename = "dcd_suck.pbo";
         versionDesc = "SUCK";
