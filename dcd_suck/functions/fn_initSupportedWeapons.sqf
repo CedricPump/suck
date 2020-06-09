@@ -5,7 +5,7 @@
 	initializes supported Weapon pairs
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: initSupportedWeapons";};
 

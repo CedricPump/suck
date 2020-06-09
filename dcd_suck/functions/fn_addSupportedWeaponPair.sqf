@@ -11,7 +11,7 @@
 		2: STRING - weapon with EBGL Classname
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 
 params["_ubgl","_baseWeapon","_ubglWeapon"];

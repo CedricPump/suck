@@ -12,7 +12,7 @@
 		0: OBJECT - Unit
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 params ["_unit"];
 

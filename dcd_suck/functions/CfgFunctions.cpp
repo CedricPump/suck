@@ -56,7 +56,9 @@ class dcd_suck
 		fnc(isBaseWeapon);				// ✓
 		fnc(hasGlEquipped);				// ✓
 		fnc(findParent);
-		fnc(debugOut);
+		fnc(debugOut);					// ✓
+		fnc(resetVariables);			// ✓
+		fnc(checkBipod);
 
 		// TODO:
 		// killiSucksDicks

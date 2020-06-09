@@ -5,7 +5,7 @@
 	suck mod init
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 ["DCD SUCK: Init Global"] call dcd_suck_fnc_debugOut;
 

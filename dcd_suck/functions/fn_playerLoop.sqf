@@ -5,7 +5,7 @@
 	not sure yet
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 
 if (isDedicated || Suck_playerLoop) exitWith {0};

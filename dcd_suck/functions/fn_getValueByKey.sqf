@@ -23,7 +23,7 @@
 		2: STRING - key
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 params ["_array","_key",["_keyColumn",0]];
 

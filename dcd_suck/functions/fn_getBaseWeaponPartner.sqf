@@ -14,5 +14,6 @@ params ["_weapon"];
 
 _baseWeapon = [DCS_SUCK_BASE_FOR_UBGLWEAPON,_weapon] call dcd_suck_fnc_getValueByKey;
 
+[_baseWeapon,"isBaseWeapon"] call dcd_suck_fnc_debugOut;
 // return:
 _baseWeapon

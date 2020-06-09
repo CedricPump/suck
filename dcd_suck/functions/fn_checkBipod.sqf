@@ -12,7 +12,7 @@
 		0: OBJECT - Unit
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 params ["_unit"];
 
@@ -27,9 +27,16 @@ if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
 {
 	if(!([_unit] call dcd_suck_fnc_hasGlEquipped)) then
 	{
-		["need to switch","validate"] call dcd_suck_fnc_debugOut;
-		// switch Weapon
+		["need to switch","checkBipod"] call dcd_suck_fnc_debugOut;
+		_switchWeapon = _unit getVariable DCD_SUCK_SWITCHBACK_WEAPON;
+		if(_switchWeapon == "") then {
+			_baseWeapon = _unit getVariable DCD_SUCK_SWITCHBACK_WEAPON;
+			_switchWeapon = [_baseWeapon] call getBaseWeaponPartner;
+		};
+		[_unit,_switchWeapon] call dcd_suck_fnc_switchWeapon;
 	};
+	["exit","checkBipod"] call dcd_suck_fnc_debugOut;
+	0
 };
 
 // is not UBGL Weapon
@@ -37,9 +44,18 @@ if([_weapon] call dcd_suck_fnc_isBaseWeapon) then
 {
 	if([_unit] call dcd_suck_fnc_hasGlEquipped) then
 	{
-		["need to switch","validate"] call dcd_suck_fnc_debugOut;
-		// switch Weapon
+		_bipod = ((primaryWeaponItems _unit) select 3);
+		["need to switch","checkBipod"] call dcd_suck_fnc_debugOut;
+		_switchWeapon = _unit getVariable DCD_SUCK_SWITCHBACK_WEAPON;
+		if(_switchWeapon == "") then {
+			_baseWeapon = _unit getVariable DCD_SUCK_SWITCHBACK_WEAPON;
+			_switchWeapon = [_ubgl,_baseWeapon] call getUBGLWeaponPartner;
+		};
+		[_unit,_switchWeapon] call dcd_suck_fnc_switchWeapon;
 	};
+	["exit","checkBipod"] call dcd_suck_fnc_debugOut;
+	0
 };
 
+["somethig went wrong - exit","checkBipod"] call dcd_suck_fnc_debugOut;
 if(true) exitWith{0};

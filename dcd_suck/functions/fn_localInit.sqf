@@ -5,7 +5,7 @@
 	client side init
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 waitUntil {!isNull player};
 ["Init Client"] call dcd_suck_fnc_debugOut;

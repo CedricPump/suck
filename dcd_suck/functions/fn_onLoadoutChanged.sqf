@@ -10,10 +10,10 @@
 		2: ARRAY - old Loadout
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 params["_unit","_newUnitLoadout","_oldUnitLoadout"];
-[str("DCD SUCK: " + (str _unit) + "\n\n"  + (str _newUnitLoadout) + "\n\n"  + (str _oldUnitLoadout)),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+
 if(!([primaryWeapon _unit] call dcd_suck_fnc_isSupported)) exitWith{0};
 
 if(count _oldUnitLoadout == 0) then
@@ -26,12 +26,13 @@ else
 	if((primaryWeapon _unit) != (_unit getVariable "DCD_SUCK_CURRENT_WEAPON")) then
 	{
 		["Weapon has changed ...","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+		[_unit] call dcd_suck_fnc_resetVariables;
 		[_unit] call dcd_suck_fnc_validate;
 	}
 	else
 	{
 		["Weapon has not changed ...","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
-		[] call dcd_suck_fnc_checkBipod;
+		[_unit] call dcd_suck_fnc_checkBipod;
 	};
 
 };

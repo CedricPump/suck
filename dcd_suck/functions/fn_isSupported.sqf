@@ -11,7 +11,7 @@
 		0: STRING - WEAPON
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 params ["_weapon"];
 
@@ -19,7 +19,7 @@ params ["_weapon"];
 [("checking " + str _weapon),"isSupported"] call dcd_suck_fnc_debugOut;
 if(player getVariable "DCD_SUCK_CURRENT_WEAPON" == _weapon) then
 {
-	true;
+	true
 }
 else
 {

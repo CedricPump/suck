@@ -9,10 +9,12 @@
         2: STRING - new weapon
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 params ["_unit","_newWeapon"];
 
+[("switching to " + _newWeapon),"switchWeapon"] call dcd_suck_fnc_debugOut;
+_weapon = primaryWeapon _unit;
 _acc = primaryWeaponItems _unit;
 // check UBGL Mags
 _mags = primaryWeaponMagazine _unit;
@@ -29,6 +31,9 @@ _unit setAmmo [_newWeapon, _ammo];
 } forEach _acc;
 _unit selectWeapon _newWeapon;
 
-// adapt Player Obj Variables (switchBack Weapon)
+_unit setVariable [DCD_SUCK_CURRENT_WEAPON,_newWeapon];
+//_unit setVariable [DCD_SUCK_BASE_WEAPON,_weapon];
+_unit setVariable [DCD_SUCK_SWITCHBACK_WEAPON,_weapon];
 
+["exit","switchWeapon"] call dcd_suck_fnc_debugOut;
 if(true) exitWith{0};
