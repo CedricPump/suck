@@ -18,7 +18,7 @@ params ["_weapon"];
 // if current weapon is set we already checked
 if(player getVariable "DCD_SUCK_CURRENT_WEAPON" == _weapon) then
 {
-		true;
+	true;
 }
 else
 {
@@ -40,6 +40,7 @@ else
 	if(_supportedDirectly) then
 	{
 		player setVariable ["DCD_SUCK_CURRENT_WEAPON", _weapon];
+		player setVariable ["DCD_SUCK_BASE_WEAPON", _weapon];
 		true
 	}
 	else if(count _parents == 0) then
@@ -55,7 +56,6 @@ else
 	}
 	else
 	{
-		// OH God ...
-		// Find right Parent
+		_parentWeapon = [_weapon] call dcd_suck_fnc_findParent;
 	};
 };

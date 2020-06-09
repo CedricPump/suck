@@ -35,7 +35,7 @@ class dcd_suck
 		// init							// tested:
 		fnc_pre(init);					// ✓
 		fnc(localInit);					// ✓
-		fnc(playerLoop);
+		//fnc(playerLoop);
 		fnc(addSupportedWeaponPair);	// ✓
 		fnc(initSupportedWeapons);		// ✓
 
@@ -55,6 +55,7 @@ class dcd_suck
 		fnc(isUBGLWeapon);				// ✓
 		fnc(isBaseWeapon);				// ✓
 		fnc(hasGlEquipped);				// ✓
+		fnc(findParent);
 
 		// TODO:
 		// killiSucksDicks
