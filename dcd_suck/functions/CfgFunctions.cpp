@@ -32,12 +32,12 @@ class dcd_suck
 		};
 		file = "\dcd\dcd_suck\functions";
 
-		// init
-		fnc_pre(init);
-		fnc(localInit);
+		// init							// tested:
+		fnc_pre(init);					// ✓
+		fnc(localInit);					// ✓
 		fnc(playerLoop);
-		fnc(addSupportedWeaponPair);
-		fnc(initSupportedWeapons);
+		fnc(addSupportedWeaponPair);	// ✓
+		fnc(initSupportedWeapons);		// ✓
 
 		// Handlers
 		fnc(onLoadoutChanged);
@@ -47,14 +47,14 @@ class dcd_suck
 		fnc(switchWeapon);
 
 		// Helpers
-		fnc(getValueByKey);
-		fnc(getUBGLWeaponPartner);
-		fnc(getUBGLWeaponItem);
-		fnc(getBaseWeaponPartner);
-		fnc(isSupported);
-		fnc(isUBGLWeapon);
-		fnc(isBaseWeapon);
-		fnc(hasGlEquipped);
+		fnc(getValueByKey);				// ✓
+		fnc(getUBGLWeaponPartner);		// ✓
+		fnc(getUBGLWeaponItem);			// ✓
+		fnc(getBaseWeaponPartner);		// ✓
+		fnc(isSupported);				// ✓
+		fnc(isUBGLWeapon);				// ✓
+		fnc(isBaseWeapon);				// ✓
+		fnc(hasGlEquipped);				// ✓
 
 		// TODO:
 		// killiSucksDicks

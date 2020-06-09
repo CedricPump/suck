@@ -31,7 +31,7 @@ else
 			_supportedDirectly = true;
 			breakOut "loop"
 		};
-		if(_weapon isKindOf _x) then
+		if(_weapon isKindOf [_x, configFile >> "CfgWeapons"]) then
 		{
 			_parents append [_x];
 		};

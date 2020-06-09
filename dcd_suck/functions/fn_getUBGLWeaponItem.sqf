@@ -5,7 +5,7 @@
 	Get UBGL Item for given Weapon and UBGL Weapon
 
 	Parameter(s):
-		0: STRING - UBGL Classname
+		0: STRING - UBGL Classname (not child)
 
 	Returns:
 	STRING - Classname

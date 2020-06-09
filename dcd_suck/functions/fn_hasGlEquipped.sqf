@@ -5,12 +5,12 @@
 	checks if primary Weapon has UBGL equipped
 
 	Parameter(s):
-		0: STRING - WEAPON
+		0: STRING - unit
 
 	Returns:
 	BOOLEAN - is UBGL-Weapon
 */
-params ["_weapon"];
+params ["_unit"];
 
 _bipod = ((primaryWeaponItems _unit) select 3);
 

@@ -5,7 +5,7 @@
 	Get base Weapon Partner for given UBGL-Weapon
 
 	Parameter(s):
-		0: STRING - UBGL-Weapon Classname
+		0: STRING - UBGL-Weapon Classname  (not child)
 
 	Returns:
 	STRING - Classname
