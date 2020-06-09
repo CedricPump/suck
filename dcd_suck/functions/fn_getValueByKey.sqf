@@ -35,7 +35,7 @@ if(_keyColumn == 1) then
 
 _index = _array findIf {(_x select _keyColumn) == _key};
 
-_ret = null;
+_ret = objNull;
 if(_index > -1) then
 {
 	_ret = (_array select _index) select _valueColumn;

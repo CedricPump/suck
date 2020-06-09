@@ -16,7 +16,7 @@
 
 params["_ubgl","_baseWeapon","_ubglWeapon"];
 
-if(DCD_SUCK_DEBUG) then {diag_log ("DCD SUCK: addSupportedWeaponPair - " + str _baseWeapon);};
+["DCD SUCK: addSupportedWeaponPair - " + str _baseWeapon] call dcd_suck_fnc_debugOut;
 
 // add to supported Weapons
 DCD_SUCK_SUPPORTED_WEAPONS append [_baseWeapon,_ubglWeapon];

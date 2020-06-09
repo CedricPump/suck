@@ -27,10 +27,10 @@ _result = false;
 	}
 	else
 	{
-		systemChat "DCD_SUCK isBaseWeapon: checking for parents ...";
+		if(DCD_SUCK_DEBUG) then {systemChat "DCD_SUCK isBaseWeapon: checking for parents ...";};
 		if(_mapping findIf {_weapon isKindOf [(_x select 0), (configFile >> "CfgWeapons")]} > -1) then // switch?
 		{
-			systemChat "DCD_SUCK isBaseWeapon: has Parent ...";
+			["has Parent ...","isBaseWeapon"] call dcd_suck_fnc_debugOut;
 			// ancestor could be an ancestor of UBGL Type
 			if(!([_weapon] call dcd_suck_fnc_isUBGLWeapon)) then
 			{

@@ -9,20 +9,19 @@
 		0: STRING - Classname
 
 	Returns:
-	STRING - Classname or null
+	STRING - Classname or ""
 */
 params ["_weapon"];
 
-_parents = [(configFile / "CfgWeapons" / _weapon), true] call BIS_fnc_returnParents;
-systemChat str _parents;
+[_parents,"findParent"] call dcd_suck_fnc_debugOut;
 
 _i = 0;
-_match = null;
+_match = "";
 
-while {(isNull _match) || (_i > (count _parents - 1))} do
+while {(_match == "") || (_i > (count _parents - 1))} do
 {
     _class = (_parents select _i);
-    systemChat _class;
+    [_class,"findParent"] call dcd_suck_fnc_debugOut;
     if(_class in DCD_SUCK_SUPPORTED_WEAPONS) then {
         _match = _class;
     }

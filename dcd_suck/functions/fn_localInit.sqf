@@ -8,7 +8,7 @@
 	INT - Exitcode (0 = OK)
 */
 waitUntil {!isNull player};
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: Init Client";};
+["Init Client"] call dcd_suck_fnc_debugOut;
 
 player setVariable ["DCD_SUCK_CURRENT_WEAPON",""];
 player setVariable ["DCD_SUCK_SWITCHBACK_WEAPON",""];
@@ -25,5 +25,5 @@ _0 = [] spawn {
 	};
 };
 
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: Init Client success";};
+["Init Client success"] call dcd_suck_fnc_debugOut;
 if(true) exitWith{0};

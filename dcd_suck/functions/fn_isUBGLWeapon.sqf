@@ -25,7 +25,7 @@ _result = false;
 	}
 	else
 	{
-		systemChat ("DCD_SUCK isUBGLWeapon: checking for parents ..." + _weapon + " ?= " + str (_x select 1));
+		["checking for parents ..." + _weapon + " ?= " + str (_x select 1),"isUBGLWeapon"] call dcd_suck_fnc_debugOut;
 		if(_mapping findIf {_weapon isKindOf [(_x select 1), (configFile >> "CfgWeapons")]} > -1) then
 		{
 			_result = true;
