@@ -52,11 +52,11 @@ class dcd_suck
 		fnc(getUBGLWeaponItem);
 		fnc(getBaseWeaponPartner);
 		fnc(isSupported);
+		fnc(isUBGLWeapon);
+		fnc(isBaseWeapon);
+		fnc(hasGlEquipped);
 
 		// TODO:
-		// isUBGLWeapon
-		// isBaseWeapon
-		// hasGLEquipped
 		// killiSucksDicks
 		// findParen(weapon,parents[])
 		// onPickup
