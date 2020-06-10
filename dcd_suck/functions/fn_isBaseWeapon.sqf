@@ -25,7 +25,7 @@ _result = false;
 	}
 	else
 	{
-		["checking for parents ...","isBaseWeapon"] call dcd_suck_fnc_debugOut;
+		//["checking for parents ...","isBaseWeapon"] call dcd_suck_fnc_debugOut;
 		if(_mapping findIf {_weapon isKindOf [(_x select 0), (configFile >> "CfgWeapons")]} > -1) then
 		{
 			[("has Parent: " + (_x select 0)),"isBaseWeapon"] call dcd_suck_fnc_debugOut;

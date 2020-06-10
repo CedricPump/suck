@@ -12,8 +12,9 @@
 */
 params ["_weapon"];
 
+[("finding partner for: " + str _weapon),"getBaseWeaponPartner"] call dcd_suck_fnc_debugOut;
 _baseWeapon = [DCS_SUCK_BASE_FOR_UBGLWEAPON,_weapon] call dcd_suck_fnc_getValueByKey;
 
-[_baseWeapon,"isBaseWeapon"] call dcd_suck_fnc_debugOut;
+[str _baseWeapon,"getBaseWeaponPartner"] call dcd_suck_fnc_debugOut;
 // return:
 _baseWeapon

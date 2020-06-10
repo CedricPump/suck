@@ -13,7 +13,15 @@
 */
 params ["_unit","_newWeapon"];
 
-[("switching to " + _newWeapon),"switchWeapon"] call dcd_suck_fnc_debugOut;
+[("switching to " + str _newWeapon),"switchWeapon"] call dcd_suck_fnc_debugOut;
+
+if(DCD_SUCK_DEBUG) then {
+    _wait = [] spawn {
+        sleep DCD_SUCK_DEBUG_SWITCH_DELAY;
+    };
+    waitUntil { scriptDone _wait };
+};
+
 _weapon = primaryWeapon _unit;
 _acc = primaryWeaponItems _unit;
 // check UBGL Mags

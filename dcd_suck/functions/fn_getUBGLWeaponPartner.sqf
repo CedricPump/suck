@@ -13,9 +13,10 @@
 */
 params ["_ubgl","_weapon"];
 
+[("finding partner for: " + str _weapon + "(" + str _ubgl + ")"),"getUBGLWeaponPartner"] call dcd_suck_fnc_debugOut;
 _mapping = [DCD_SUCK_WEAPON_MAPPING,_ubgl] call dcd_suck_fnc_getValueByKey;
-if(isNull _mapping) exitWith {null};
 _ubglWeapon = [_mapping,_weapon] call dcd_suck_fnc_getValueByKey;
 
+[str _ubglWeapon,"getUBGLWeaponPartner"] call dcd_suck_fnc_debugOut;
 // return:
 _ubglWeapon

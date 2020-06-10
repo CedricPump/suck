@@ -9,15 +9,19 @@
 */
 ["DCD SUCK: Init Global"] call dcd_suck_fnc_debugOut;
 
+// Constants
 DCD_SUCK_BASE_WEAPON = "DCD_SUCK_BASE_WEAPON";
-DCD_SUCK_CURRENT_WEAPON = "DCD_SUCK_BASE_WEAPON";
-DCD_SUCK_SWITCHBACK_WEAPON = "DCD_SUCK_BASE_WEAPON";
-DCD_SUCK_DEBUG = true;
+DCD_SUCK_CURRENT_WEAPON = "DCD_SUCK_CURRENT_WEAPON";
+DCD_SUCK_SWITCHBACK_WEAPON = "DCD_SUCK_SWITCHBACK_WEAPON";
+DCD_SUCK_DEBUG = false;
+DCD_SUCK_DEBUG_SWITCH_DELAY = 3;
 DCD_SUCK_ACE = if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {true} else {false};
 DCD_SUCK_CHECK_INTERVAL = 1; // interval in sec
 
+// init supported weapon mapping
 _0 = [] call dcd_suck_fnc_initSupportedWeapons;
 
+// init Client
 if (hasInterface) then
 {
 	_0 = [] spawn dcd_suck_fnc_localInit;

@@ -9,6 +9,7 @@
 */
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: initSupportedWeapons";};
 
+// Constants
 DCD_SUCK_SUPPORTED_WEAPONS = []; 	// all Weapons affected by SUCK
 publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";
 DCD_SUCK_WEAPON_MAPPING = [];		// mapping of UBGL with supported weapon pairs

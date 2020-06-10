@@ -17,12 +17,15 @@ params ["_weapon"];
 
 // if current weapon is set we already checked
 [("checking " + str _weapon),"isSupported"] call dcd_suck_fnc_debugOut;
-if(player getVariable "DCD_SUCK_CURRENT_WEAPON" == _weapon) then
+_currentWeapon = player getVariable DCD_SUCK_CURRENT_WEAPON;
+[("cached current Weapon: " + str _currentWeapon),"isSupported"] call dcd_suck_fnc_debugOut;
+if(_currentWeapon == _weapon) then
 {
 	true
 }
 else
 {
+	[player] call dcd_suck_fnc_resetVariables;
 	_supportedDirectly = false;
 	_parents = [];
 	{
@@ -42,8 +45,8 @@ else
 
 	if(_supportedDirectly) then
 	{
-		player setVariable ["DCD_SUCK_CURRENT_WEAPON", _weapon];
-		player setVariable ["DCD_SUCK_BASE_WEAPON", _weapon];
+		player setVariable [DCD_SUCK_CURRENT_WEAPON, _weapon];
+		player setVariable [DCD_SUCK_BASE_WEAPON, _weapon];
 		true
 	}
 	else
@@ -51,26 +54,26 @@ else
 		if(count _parents == 0) then
 		{
 			["not supported","isSupported"] call dcd_suck_fnc_debugOut;
-			player setVariable ["DCD_SUCK_CURRENT_WEAPON", ""];
-			player setVariable ["DCD_SUCK_BASE_WEAPON", ""];
+			player setVariable [DCD_SUCK_CURRENT_WEAPON, ""];
+			player setVariable [DCD_SUCK_BASE_WEAPON, ""];
 			false
 		}
 		else
 		{
 			if(count _parents < 2) then
 			{
-				["one parent: selected","isSupported"] call dcd_suck_fnc_debugOut;
-				player setVariable ["DCD_SUCK_CURRENT_WEAPON", _weapon];
-				player setVariable ["DCD_SUCK_BASE_WEAPON",(_parents select 0)];
+				[("one parent: "+ str (_parents select 0)+" selected"),"isSupported"] call dcd_suck_fnc_debugOut;
+				player setVariable [DCD_SUCK_CURRENT_WEAPON, _weapon];
+				player setVariable [DCD_SUCK_BASE_WEAPON,(_parents select 0)];
 				// save switch waepon by getUBGLWeaponPartner[UBGL,Weapon];
 				true
 			}
 			else
 			{
-				["more parents ...","isSupported"] call dcd_suck_fnc_debugOut;
 				_parentWeapon = [_weapon] call dcd_suck_fnc_findParent;
-				player setVariable ["DCD_SUCK_CURRENT_WEAPON", _weapon];
-				player setVariable ["DCD_SUCK_BASE_WEAPON",_parentWeapon];
+				[("more parents " +  str _parentWeapon + " selected"),"isSupported"] call dcd_suck_fnc_debugOut;
+				player setVariable [DCD_SUCK_CURRENT_WEAPON, _weapon];
+				player setVariable [DCD_SUCK_BASE_WEAPON,_parentWeapon];
 				true
 			};
 		};

@@ -14,6 +14,7 @@
 */
 params["_unit","_newUnitLoadout","_oldUnitLoadout"];
 
+["Loadout change detected","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
 if(!([primaryWeapon _unit] call dcd_suck_fnc_isSupported)) exitWith{0};
 
 if(count _oldUnitLoadout == 0) then
@@ -23,7 +24,9 @@ if(count _oldUnitLoadout == 0) then
 else
 {
 	// prim. Weapon has changed
-	if((primaryWeapon _unit) != (_unit getVariable "DCD_SUCK_CURRENT_WEAPON")) then
+    _currentWeapon = _unit getVariable DCD_SUCK_CURRENT_WEAPON;
+    [("cahched current Weapon: " + str _currentWeapon),"isSupported"] call dcd_suck_fnc_debugOut;
+	if((primaryWeapon _unit) != _currentWeapon) then
 	{
 		["Weapon has changed ...","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
 		[_unit] call dcd_suck_fnc_resetVariables;

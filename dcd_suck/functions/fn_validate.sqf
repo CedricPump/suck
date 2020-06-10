@@ -32,15 +32,13 @@ if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
 		_unit addPrimaryWeaponItem _ubgl;
 		[("added " + _ubgl),"validate"] call dcd_suck_fnc_debugOut;
 	};
-};
-
-// is not UBGL Weapon
-if([_weapon] call dcd_suck_fnc_isBaseWeapon) then
+}
+else
 {
-	if([_unit] call dcd_suck_fnc_hasGlEquipped) then
+	// is not UBGL Weapon
+	if([_weapon] call dcd_suck_fnc_isBaseWeapon) then
 	{
-		["need to switch","validate"] call dcd_suck_fnc_debugOut;
-		// switch Weapon
+		[_unit] call dcd_suck_fnc_checkBipod;
 	};
 };
 
