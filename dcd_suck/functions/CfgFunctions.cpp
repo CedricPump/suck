@@ -5,7 +5,7 @@
 		headerType = -1; \
 		description = ""; \
 	}
-	
+
 #define fnc_post(NAME) \
 	class NAME { \
 		postInit = 1; \
@@ -20,7 +20,7 @@
 		headerType = -1; \
 		description = ""; \
 	}
-	
+
 
 class dcd_suck
 {
@@ -31,12 +31,41 @@ class dcd_suck
 			"cba_main"
 		};
 		file = "\dcd\dcd_suck\functions";
-		fnc_pre(init);
-		fnc(localInit);
-		fnc(playerLoop);
-		fnc(addSupportedWeaponPair);
-		fnc(initSupportedWeapons);
+
+		// init							// tested:
+		fnc_pre(init);					// ✓
+		fnc(localInit);					// ✓
+		//fnc(playerLoop);
+		fnc(addSupportedWeaponPair);	// ✓
+		fnc(initSupportedWeapons);		// ✓
+
+		// Handlers
 		fnc(onLoadoutChanged);
+		fnc(validate);
+
+		// actions
+		fnc(switchWeapon);
+
+		// Helpers
+		fnc(getValueByKey);				// ✓
+		fnc(getUBGLWeaponPartner);		// ✓
+		fnc(getUBGLWeaponItem);			// ✓
+		fnc(getBaseWeaponPartner);		// ✓
+		fnc(isSupported);				// ✓
+		fnc(isUBGLWeapon);				// ✓
+		fnc(isBaseWeapon);				// ✓
+		fnc(hasGlEquipped);				// ✓
+		fnc(findParent);
+		fnc(debugOut);					// ✓
+		fnc(resetVariables);			// ✓
+		fnc(checkBipod);
+		fnc(checkWeapon);
+
+		// TODO:
+		// killiSucksDicks
+		// findParen(weapon,parents[])
+		// onPickup
+		// onDrop
+		// onInit
 	};
 };
-
