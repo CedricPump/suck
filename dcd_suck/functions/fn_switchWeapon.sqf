@@ -15,12 +15,18 @@ params ["_unit","_newWeapon"];
 
 [("switching to " + str _newWeapon),"switchWeapon"] call dcd_suck_fnc_debugOut;
 
-if(DCD_SUCK_DEBUG) then {
-    _wait = [] spawn {
+
+//_wait = [] spawn {
+    if(DCD_SUCK_DEBUG) then {
         sleep DCD_SUCK_DEBUG_SWITCH_DELAY;
+    }
+    else
+    {
+        sleep DCD_SUCK_DEFAULT_SWITCH_DELAY;
     };
-    waitUntil { scriptDone _wait };
-};
+//};
+//waitUntil { scriptDone _wait };
+
 
 _weapon = primaryWeapon _unit;
 _acc = primaryWeaponItems _unit;

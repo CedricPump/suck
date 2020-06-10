@@ -59,6 +59,7 @@ class dcd_suck
 		fnc(debugOut);					// ✓
 		fnc(resetVariables);			// ✓
 		fnc(checkBipod);
+		fnc(checkWeapon);
 
 		// TODO:
 		// killiSucksDicks

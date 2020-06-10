@@ -43,15 +43,18 @@ else
 		};
 	} forEach DCD_SUCK_SUPPORTED_WEAPONS;
 
-	if(_supportedDirectly) then
+	if(_supportedDirectly || count _parents > 0) then
 	{
-		player setVariable [DCD_SUCK_CURRENT_WEAPON, _weapon];
-		player setVariable [DCD_SUCK_BASE_WEAPON, _weapon];
+		//player setVariable [DCD_SUCK_CURRENT_WEAPON, _weapon];
+		//player setVariable [DCD_SUCK_BASE_WEAPON, _weapon];
 		true
 	}
 	else
 	{
-		if(count _parents == 0) then
+		false
+	};
+};
+		/* if(count _parents == 0) then
 		{
 			["not supported","isSupported"] call dcd_suck_fnc_debugOut;
 			player setVariable [DCD_SUCK_CURRENT_WEAPON, ""];
@@ -78,4 +81,4 @@ else
 			};
 		};
 	};
-};
+}; */

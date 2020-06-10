@@ -13,6 +13,7 @@
 */
 params ["_weapon"];
 
+_parents = [(configFile / "CfgWeapons" / _weapon), true] call BIS_fnc_returnParents;
 [_parents,"findParent"] call dcd_suck_fnc_debugOut;
 
 _i = 0;

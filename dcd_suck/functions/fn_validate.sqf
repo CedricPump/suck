@@ -18,9 +18,11 @@ params ["_unit"];
 
 _weapon = primaryWeapon _unit;
 
-if(!([_weapon] call dcd_suck_fnc_isSupported)) exitWith{0};
+//if(!([_weapon] call dcd_suck_fnc_isSupported)) exitWith{0};
 
 ["validateing ...","validate"] call dcd_suck_fnc_debugOut;
+
+[_weapon] call dcd_suck_fnc_checkWeapon;
 
 // is UBGL Weapon
 if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
