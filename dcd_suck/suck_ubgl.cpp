@@ -110,9 +110,18 @@ class dcd_suck_SIX12: dcd_suck_ubgl_base {
   scope=2;
   displayName="SIX12";
   author="DCD";
-  // Todo: REPLACE ME
   picture="\dcd\dcd_suck\ui\dcd_suck_six12.paa";
   descriptionShort="SIX12 underbarrel shotgun";
+      class ItemInfo: CBA_MiscItem_ItemInfo {
+          mass = 40;
+      };
+};
+class dcd_suck_3GL: dcd_suck_ubgl_base {
+  scope=2;
+  displayName="3GL";
+  author="DCD";
+  picture="\dcd\dcd_suck\ui\dcd_suck_3gl.paa";
+  descriptionShort="3GL multiple granade launcher";
       class ItemInfo: CBA_MiscItem_ItemInfo {
           mass = 40;
       };

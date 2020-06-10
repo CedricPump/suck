@@ -148,11 +148,11 @@ class CfgWeapons
   ///
   class arifle_MX_F : arifle_MX_Base_F {
     // maybe also another one
-		dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+		dcd_suck_fnc_register_ubgl(dcd_suck_3GL);
 	};
   class arifle_MX_GL_F : arifle_MX_Base_F {
     // maybe also another one
-    dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    dcd_suck_fnc_register_ubgl(dcd_suck_3GL);
   };
   ///
   class arifle_CTAR_blk_F : arifle_CTAR_base_F {

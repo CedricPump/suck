@@ -23,9 +23,9 @@ publicVariable "DCS_SUCK_BASE_FOR_UBGLWEAPON";
 // yes I know that redundant and can be done by forEach ...
 
 // MX
-_0 = ["dcd_suck_M320","arifle_MX_F","arifle_MX_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_M320","arifle_MX_khk_F","arifle_MX_GL_khk_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_M320","arifle_MX_Black_F","arifle_MX_GL_Black_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_3GL","arifle_MX_F","arifle_MX_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_3GL","arifle_MX_khk_F","arifle_MX_GL_khk_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_3GL","arifle_MX_Black_F","arifle_MX_GL_Black_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 // AK-12
 _0 = ["dcd_suck_GP25","arifle_AK12_F","arifle_AK12_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 _0 = ["dcd_suck_GP25","arifle_AK12_arid_F","arifle_AK12_arid_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;

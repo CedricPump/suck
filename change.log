@@ -2,8 +2,18 @@
 
 # Changelog
 
+## []
+
+### Added
+- added "dcd_suck_3GL"
+
+### Changed
+- MX now using 3GL
+
+
 ## [v0.1.00]
 
+### Added
 - added gitignore
 - added overview picture
 - added ubgl item icons
