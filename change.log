@@ -1,5 +1,21 @@
 # Changelog
 
+# Changelog
+
+## [v0.1.00]
+
+- added gitignore
+- added overview picture
+- added ubgl item icons
+- added base script structure
+- added license
+- added script logic for base functionality
+- added global init
+- added client init
+- added onLoadoutChanged Eventhandler
+- added logic to find parent weapon
+- added switchback weapon for weapon+items classes
+
 ## [v0.0.01] 
 
 ### Added
