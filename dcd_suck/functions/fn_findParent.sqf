@@ -19,7 +19,7 @@ _parents = [(configFile / "CfgWeapons" / _weapon), true] call BIS_fnc_returnPare
 _i = 0;
 _match = "";
 
-while {(_match == "") || (_i > (count _parents - 1))} do
+while {(_match == "") && (_i < (count _parents))} do
 {
     _class = (_parents select _i);
     [_class,"findParent"] call dcd_suck_fnc_debugOut;

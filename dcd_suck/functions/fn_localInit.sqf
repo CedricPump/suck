@@ -10,9 +10,10 @@
 waitUntil {!isNull player};
 ["Init Client"] call dcd_suck_fnc_debugOut;
 
-player setVariable ["DCD_SUCK_CURRENT_WEAPON",""];
-player setVariable ["DCD_SUCK_SWITCHBACK_WEAPON",""];
-player setVariable ["DCD_SUCK_BASE_WEAPON",""];
+player setVariable [DCD_SUCK_CURRENT_WEAPON,""];
+player setVariable [DCD_SUCK_SWITCHBACK_WEAPON,""];
+player setVariable [DCD_SUCK_BASE_WEAPON,""];
+player setVariable [DCD_SUCK_SWICHWEAOPN_MUTEX,false];
 
 // add CBA Loadout Event-handler
 _0 = ["loadout", {

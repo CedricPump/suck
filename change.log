@@ -1,14 +1,16 @@
 # Changelog
 
-# Changelog
-
-## []
+## pending [v0.1.01]
 
 ### Added
 - added "dcd_suck_3GL"
+- added DCD_SUCK_SWICHWEAOPN_MUTEX
 
 ### Changed
 - MX now using 3GL
+
+### Fixed
+- fixed AK12 Bug
 
 
 ## [v0.1.00]
@@ -26,7 +28,7 @@
 - added logic to find parent weapon
 - added switchback weapon for weapon+items classes
 
-## [v0.0.01] 
+## [v0.0.01]
 
 ### Added
 - added base mod structure

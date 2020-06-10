@@ -14,6 +14,12 @@
 */
 params["_unit","_newUnitLoadout","_oldUnitLoadout"];
 
+if(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX) exitWith{0};
+
+player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,true];
+try
+{
+
 ["Loadout change detected","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
 if(!([primaryWeapon _unit] call dcd_suck_fnc_isSupported)) exitWith{0};
 
@@ -39,5 +45,12 @@ else
 	};
 
 };
+}
+catch
+{
+	[("Exception: " + str _exception),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+	player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
+};
+player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
 
 if(true) exitWith{0};

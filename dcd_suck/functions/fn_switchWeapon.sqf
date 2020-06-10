@@ -27,7 +27,6 @@ params ["_unit","_newWeapon"];
 //};
 //waitUntil { scriptDone _wait };
 
-
 _weapon = primaryWeapon _unit;
 _acc = primaryWeaponItems _unit;
 // check UBGL Mags
@@ -39,11 +38,15 @@ _unit removeWeapon currentWeapon _unit;
     _unit addMagazine _x;
 } forEach _mags;
 _unit addWeapon _newWeapon;
+removeAllPrimaryWeaponItems _unit;
 _unit setAmmo [_newWeapon, _ammo];
 {
     _unit addWeaponItem [_newWeapon,_x,true];
 } forEach _acc;
-_unit selectWeapon _newWeapon;
+if(currentWeapon _unit != _newWeapon) then
+{
+    _unit selectWeapon _newWeapon;
+};
 
 _unit setVariable [DCD_SUCK_CURRENT_WEAPON,_newWeapon];
 //_unit setVariable [DCD_SUCK_BASE_WEAPON,_weapon];

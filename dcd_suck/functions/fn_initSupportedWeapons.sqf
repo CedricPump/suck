@@ -28,8 +28,8 @@ _0 = ["dcd_suck_3GL","arifle_MX_khk_F","arifle_MX_GL_khk_F"] call dcd_suck_fnc_a
 _0 = ["dcd_suck_3GL","arifle_MX_Black_F","arifle_MX_GL_Black_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 // AK-12
 _0 = ["dcd_suck_GP25","arifle_AK12_F","arifle_AK12_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_GP25","arifle_AK12_arid_F","arifle_AK12_arid_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_GP25","arifle_AK12_lush_F","arifle_AK12_lush_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_GP25","arifle_AK12_arid_F","arifle_AK12_GL_arid_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_GP25","arifle_AK12_lush_F","arifle_AK12_GL_lush_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 // CTAR
 _0 = ["dcd_suck_QLG10A","arifle_CTAR_blk_F","arifle_CTAR_GL_blk_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 _0 = ["dcd_suck_QLG10A","arifle_CTAR_hex_F","arifle_CTAR_GL_hex_F"] call dcd_suck_fnc_addSupportedWeaponPair;
