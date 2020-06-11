@@ -30,7 +30,7 @@ else
 	_parents = [];
 	{
 		scopeName "loop";
-		[("compare: "+str _weapon+" with "+str _x),"isSupported"] call dcd_suck_fnc_debugOut;
+		//[("compare: "+str _weapon+" with "+str _x),"isSupported"] call dcd_suck_fnc_debugOut;
 	    if(_weapon == _x) then
 		{
 			["weapon supported directly","isSupported"] call dcd_suck_fnc_debugOut;

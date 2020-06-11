@@ -30,44 +30,66 @@ The UGL itself is represented by a dummy item, that is created on detach and nee
 
 For this concept following components are required:
 
-- items for different UGL Models (ToDo)
-- scripts to change Weapons (ToDo)
+- items for different UBGL Models (WIP)
+- scripts to change Weapons (WIP)
+- config to support UBGL in bipod slot (WIP)
 - mapping for supported mapping (ToDo)
-- mod icon (WIP)
-- 2d model icon for item
-- (otional) 3d model for item on ground (ToDo)
+- mod icon (done)
+- (optional) 3d model for item on ground (ToDo)
 
 ### Models
 
-Several UGL Models schuld be available seperately:
+Several UGL Models should be available separately:
 - M203
 - M203S
 - M320
 - HK AG36 (G36)
 - GP25 (AK)
 - FM EGLM (SCAR)
-- (optional) various vanilla launchers
+- 3GL
+- QLG-10A
+- SL40
+- UPG40
+- SIX-12
+
 
 ## Features
 
-- swap Weapons using scrollwheel menu (planned)
-- swap Weapons using ace menu (planned)
-- (otional) swap Weapons by dragging on attachment slot (planned)
-- (otional) swap Weapons by right click item (planned)
-- (otional) universal UGL item that works for all models (planned)
+- ~~swap Weapons using scrollwheel menu~~
+- ~~swap Weapons using ace menu~~ (ACE Attachment Switching instead)
+- swap Weapons by dragging on attachment slot (WIP)
+- ~~swap Weapons by right click item~~ (ACRE conflicts)
 
 ## Compatablity
 
-- Vanilla UGLs (planned)
-- ace3 menue
+- Vanilla UGLs (WIP)
+- ~~ace3 menu~~
+- [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) support
+- [Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) support
 - RHS UGLs (planned)
 - CUP UGLs (planned)
 - BWMod UGLs (planned)
 - Niarms UGLs (planned)
 
-## Usage (Preview)
 
-<p align="center"><img width="800" height="334" src="source/images/action.gif">
+## Usage
+
+SUCK allows you to place an underbarrel grande launcher by dragging the UBGL Item to the underbarrel item slot in the inventory.
+
+<p align="center"><img width="955" height="400" src="source/images/dcd_suck_usage_400p_hq.gif">
+
+<p align="left">
+
+SUCK is compatible with [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) and
+[Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) for more emersion.
+
+<p align="center"><img width="955" height="400" src="source/images/dcd_suck_usage_ace_ams_400p_hq.gif">
+
+<p align="left">
+
+Demo for usage in field carrying bipod and UBGL items.
+
+<p align="center"><img width="955" height="400" src="source/images/dcd_suck_demo_cas_400p.gif">
 
 <p align="left">
 
