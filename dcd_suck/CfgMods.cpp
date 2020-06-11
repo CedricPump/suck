@@ -11,7 +11,7 @@ class CfgMods
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
 
-		description = "Simple UBGL Conversion Kit Development Version v0.1.00";
+		description = "Simple UBGL Conversion Kit Development Version v0.1.01";
 
 		logo = "\dcd\dcd_suck\ui\dcd_suck_icon.paa";
 		logoSmall = "\dcd\dcd_suck\ui\dcd_suck_icon.paa";
