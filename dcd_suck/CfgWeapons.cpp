@@ -1,6 +1,8 @@
 #define dcd_suck_fnc_register_ubgl(CLASS) \
   class WeaponSlotsInfo: WeaponSlotsInfo {\
     class GlWeaponSlot: UnderBarrelSlot {\
+      iconPosition[] = {0.2, 0.7};\
+      iconScale = 0.2;\
       class compatibleItems {\
         CLASS = 1;\
       };\
@@ -10,9 +12,11 @@
 #define dcd_suck_fnc_register2_ubgl(CLASS1, CLASS2) \
     class WeaponSlotsInfo: WeaponSlotsInfo {\
       class GlWeaponSlot: UnderBarrelSlot {\
+        iconPosition[] = {0.2, 0.7};\
+				iconScale = 0.2;\
         class compatibleItems {\
           CLASS1 = 1;\
-          CLASS2 = 2;\
+          CLASS2 = 1;\
         };\
       };\
     };\
@@ -109,8 +113,10 @@ class CfgWeapons
   };
   ///
   class arifle_MSBS65_F : arifle_MSBS65_base_F {
+      //dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
       dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
+  /*
   class arifle_MSBS65_black_F : arifle_MSBS65_base_black_F {
       dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
@@ -120,9 +126,11 @@ class CfgWeapons
   class arifle_MSBS65_sand_F : arifle_MSBS65_base_sand_F {
       dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
+  */
   class arifle_MSBS65_GL_F : arifle_MSBS65_GL_base_F {
       dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
   };
+  /*
   class arifle_MSBS65_GL_black_F : arifle_MSBS65_GL_base_black_F {
       dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
   };
@@ -132,10 +140,12 @@ class CfgWeapons
   class arifle_MSBS65_GL_sand_F : arifle_MSBS65_GL_base_sand_F {
       dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
   };
+  */
   // and the shotgun:
   class arifle_MSBS65_UBS_F : arifle_MSBS65_UBS_base_F {
        dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
   };
+  /*
   class arifle_MSBS65_UBS_black_F : arifle_MSBS65_UBS_base_black_F {
        dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
   };
@@ -145,6 +155,7 @@ class CfgWeapons
   class arifle_MSBS65_UBS_sand_F : arifle_MSBS65_UBS_base_sand_F {
        dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
   };
+  */
   ///
   class arifle_MX_F : arifle_MX_Base_F {
     // maybe also another one
