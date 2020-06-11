@@ -83,13 +83,7 @@ SUCK allows you to place an underbarrel grande launcher by dragging the UBGL Ite
 SUCK is compatible with [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) and
 [Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) for more emersion.
 
-<p align="center"><img width="955" height="400" src="source/images/dcd_suck_usage_ace_ams_400p_hq.gif">
-
-<p align="left">
-
-Demo for usage in field carrying bipod and UBGL items.
-
-<p align="center"><img width="955" height="400" src="source/images/dcd_suck_demo_cas_400p.gif">
+<p align="center"><img width="955" height="400" src="source/images/dcd_suck_usage_ace_ams_400p.gif">
 
 <p align="left">
 
