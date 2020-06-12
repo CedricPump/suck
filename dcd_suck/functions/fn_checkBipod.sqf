@@ -54,7 +54,7 @@ else
 			["need to switch","checkBipod"] call dcd_suck_fnc_debugOut;
 			_switchWeapon = _unit getVariable DCD_SUCK_SWITCHBACK_WEAPON;
 			[("cached: " + str _switchWeapon),"checkBipod"] call dcd_suck_fnc_debugOut;
-			if(_switchWeapon == "") then {
+			if(_switchWeapon == "" || (([_switchWeapon] call dcd_suck_fnc_getUBGLWeaponItem) != _bipod)) then {
 				_baseWeapon = _unit getVariable DCD_SUCK_BASE_WEAPON;
 				_switchWeapon = [_bipod,_baseWeapon] call dcd_suck_fnc_getUBGLWeaponPartner;
 			};

@@ -12,7 +12,7 @@
       class GlWeaponSlot: UnderBarrelSlot {\
         class compatibleItems {\
           CLASS1 = 1;\
-          CLASS2 = 2;\
+          CLASS2 = 1;\
         };\
       };\
     };\
@@ -121,29 +121,29 @@ class CfgWeapons
       dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_GL_F : arifle_MSBS65_GL_base_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_GL_black_F : arifle_MSBS65_GL_base_black_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_GL_camo_F : arifle_MSBS65_GL_base_camo_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_GL_sand_F : arifle_MSBS65_GL_base_sand_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   // and the shotgun:
   class arifle_MSBS65_UBS_F : arifle_MSBS65_UBS_base_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_UBS_black_F : arifle_MSBS65_UBS_base_black_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_UBS_camo_F : arifle_MSBS65_UBS_base_camo_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_UBS_sand_F : arifle_MSBS65_UBS_base_sand_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   ///
   class arifle_MX_F : arifle_MX_Base_F {
