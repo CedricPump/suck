@@ -22,10 +22,19 @@ if(typeName _ubglItem == "OBJECT") then
 {
     if(isNull _ubglItem) then
     {
-        //_ubglItem = "";
+        // is a special attachment class
         _parent = [_weapon] call dcd_suck_fnc_findParent;
         ["item not found - serching for parents item " + str _parent,"getIBGLWeaponItem"] call dcd_suck_fnc_debugOut;
         _ubglItem = [DCS_SUCK_UBGL_WEAPONS,_parent] call dcd_suck_fnc_getValueByKey;
+
+        if(typeName _ubglItem == "OBJECT") then
+        {
+            if(isNull _ubglItem) then
+            {
+                // is ubgl class for cross switch
+                _ubglItem = "";
+            };
+        };
     };
 };
 

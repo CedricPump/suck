@@ -32,7 +32,7 @@ _acc = primaryWeaponItems _unit;
 // check UBGL Mags
 _mags = primaryWeaponMagazine _unit;
 _ammo = _unit ammo _weapon;
-_unit removeWeapon currentWeapon _unit;
+//_unit removeWeapon currentWeapon _unit;
 // add UBGL Mags
 {
     _unit addMagazine _x;

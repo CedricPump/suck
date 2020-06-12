@@ -1,5 +1,11 @@
 # Changelog
 
+## pending [v0.1.02]
+
+### Fixed
+- fixed Weapon supporting more than one UBGL not switching correctly #2
+
+
 ## [v0.1.01]
 
 ### Added
