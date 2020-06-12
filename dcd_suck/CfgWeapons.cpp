@@ -120,6 +120,7 @@ class CfgWeapons
   class arifle_MSBS65_sand_F : arifle_MSBS65_base_sand_F {
       dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
+  /// with GL:
   class arifle_MSBS65_GL_F : arifle_MSBS65_GL_base_F {
       dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };

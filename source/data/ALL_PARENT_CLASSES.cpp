@@ -115,5 +115,5 @@ arifle_SPAR_01_khk_F: 	["arifle_SPAR_01_khk_F","arifle_SPAR_01_base_F","Rifle_Ba
 arifle_SPAR_01_GL_khk_F: ["arifle_SPAR_01_GL_khk_F","arifle_SPAR_01_GL_base_F","arifle_SPAR_01_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
 arifle_SPAR_01_snd_F: 	["arifle_SPAR_01_snd_F","arifle_SPAR_01_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
 arifle_SPAR_01_GL_snd_F: ["arifle_SPAR_01_GL_snd_F","arifle_SPAR_01_GL_base_F","arifle_SPAR_01_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
-arifle_TRG21_F: 		"arifle_TRG21_F","Tavor_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+arifle_TRG21_F: 		["arifle_TRG21_F","Tavor_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
 arifle_TRG21_GL_F: 		["arifle_TRG21_GL_F","Tavor_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
