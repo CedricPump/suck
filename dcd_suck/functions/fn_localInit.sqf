@@ -5,24 +5,26 @@
 	client side init
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 waitUntil {!isNull player};
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: Init Client";};
+["Init Client"] call dcd_suck_fnc_debugOut;
+
+player setVariable [DCD_SUCK_CURRENT_WEAPON,""];
+player setVariable [DCD_SUCK_SWITCHBACK_WEAPON,""];
+player setVariable [DCD_SUCK_BASE_WEAPON,""];
+player setVariable [DCD_SUCK_SWICHWEAOPN_MUTEX,false];
 
 // add CBA Loadout Event-handler
-["loadout", {
-	_0 = this call dcd_suck_fnc_onLoadoutChanged;
+_0 = ["loadout", {
+	_0 = _this spawn dcd_suck_fnc_onLoadoutChanged;
 }, true] call CBA_fnc_addPlayerEventHandler;
 
 _0 = [] spawn {
-	_i = 0; 
 	while {true} do {
-		if(DCD_SUCK_DEBUG) then {hint ("Test_" + str _i);};
-		_i = _i + 1;
-		sleep 1;
+		sleep DCD_SUCK_CHECK_INTERVAL;
 	};
 };
 
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: Init Client success";};
+["Init Client success"] call dcd_suck_fnc_debugOut;
 if(true) exitWith{0};

@@ -5,23 +5,31 @@
 	initializes supported Weapon pairs
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK: initSupportedWeapons";};
 
-DCD_SUCK_SUPPORTED_WEAPONS = [];
+// Constants
+DCD_SUCK_SUPPORTED_WEAPONS = []; 	// all Weapons affected by SUCK
 publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";
+DCD_SUCK_WEAPON_MAPPING = [];		// mapping of UBGL with supported weapon pairs
+publicVariable "DCD_SUCK_WEAPON_MAPPING";
+DCS_SUCK_UBGL_WEAPONS = [];			// mapping of weapons that should contain an UBGL item
+publicVariable "DCS_SUCK_UBGL_WEAPONS";
+DCS_SUCK_BASE_FOR_UBGLWEAPON = [];  // mapping of UBGL-Weapon to its base
+publicVariable "DCS_SUCK_BASE_FOR_UBGLWEAPON";
+
 
 // yes I know that redundant and can be done by forEach ...
 
 // MX
-_0 = ["dcd_suck_M320","arifle_MX_F","arifle_MX_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_M320","arifle_MX_khk_F","arifle_MX_GL_khk_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_M320","arifle_MX_Black_F","arifle_MX_GL_Black_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_3GL","arifle_MX_F","arifle_MX_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_3GL","arifle_MX_khk_F","arifle_MX_GL_khk_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_3GL","arifle_MX_Black_F","arifle_MX_GL_Black_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 // AK-12
 _0 = ["dcd_suck_GP25","arifle_AK12_F","arifle_AK12_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_GP25","arifle_AK12_arid_F","arifle_AK12_arid_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-_0 = ["dcd_suck_GP25","arifle_AK12_lush_F","arifle_AK12_lush_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_GP25","arifle_AK12_arid_F","arifle_AK12_GL_arid_F"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_GP25","arifle_AK12_lush_F","arifle_AK12_GL_lush_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 // CTAR
 _0 = ["dcd_suck_QLG10A","arifle_CTAR_blk_F","arifle_CTAR_GL_blk_F"] call dcd_suck_fnc_addSupportedWeaponPair;
 _0 = ["dcd_suck_QLG10A","arifle_CTAR_hex_F","arifle_CTAR_GL_hex_F"] call dcd_suck_fnc_addSupportedWeaponPair;

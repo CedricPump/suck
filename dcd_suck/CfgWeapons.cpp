@@ -12,7 +12,7 @@
       class GlWeaponSlot: UnderBarrelSlot {\
         class compatibleItems {\
           CLASS1 = 1;\
-          CLASS2 = 2;\
+          CLASS2 = 1;\
         };\
       };\
     };\
@@ -62,7 +62,7 @@ class arifle_CTAR_base_F;
 
 class CfgWeapons
 {
-	#include "suck_ubgl.cpp"
+    #include "suck_ubgl.cpp"
 
   class arifle_AK12_F : arifle_AK12_base_F {
     dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
@@ -120,39 +120,40 @@ class CfgWeapons
   class arifle_MSBS65_sand_F : arifle_MSBS65_base_sand_F {
       dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
+  /// with GL:
   class arifle_MSBS65_GL_F : arifle_MSBS65_GL_base_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_GL_black_F : arifle_MSBS65_GL_base_black_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_GL_camo_F : arifle_MSBS65_GL_base_camo_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_GL_sand_F : arifle_MSBS65_GL_base_sand_F {
-      dcd_suck_fnc_register_ubgl(dcd_suck_UPG40);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   // and the shotgun:
   class arifle_MSBS65_UBS_F : arifle_MSBS65_UBS_base_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_UBS_black_F : arifle_MSBS65_UBS_base_black_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_UBS_camo_F : arifle_MSBS65_UBS_base_camo_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   class arifle_MSBS65_UBS_sand_F : arifle_MSBS65_UBS_base_sand_F {
-       dcd_suck_fnc_register_ubgl(dcd_suck_SIX12);
+      dcd_suck_fnc_register2_ubgl(dcd_suck_UPG40, dcd_suck_SIX12);
   };
   ///
   class arifle_MX_F : arifle_MX_Base_F {
     // maybe also another one
-		dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+		dcd_suck_fnc_register_ubgl(dcd_suck_3GL);
 	};
   class arifle_MX_GL_F : arifle_MX_Base_F {
     // maybe also another one
-    dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    dcd_suck_fnc_register_ubgl(dcd_suck_3GL);
   };
   ///
   class arifle_CTAR_blk_F : arifle_CTAR_base_F {

@@ -9,13 +9,17 @@ class CfgPatches
 		units[] = {};
 		weapons[] =
 		{
-
+			"rhs_weap_m4",
+			"rhs_weap_m4_m203S",
+			"rhs_weap_m4_m203",
+			"rhs_weap_m4_m320"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
 			"dcd_suck",
-			"rhsusf_main"
+			"rhsusf_main",
+			"rhsusf_c_weapons",
 		};
 		filename = "dcd_suck_compat_rhs_usaf.pbo";
     versionDesc = "SUCK";

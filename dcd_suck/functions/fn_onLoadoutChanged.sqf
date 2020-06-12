@@ -10,13 +10,47 @@
 		2: ARRAY - old Loadout
 
 	Returns:
-	INT - Exitcode (0 = OK)
+	NUMBER - Exitcode (0 = OK)
 */
-params ["_unit", "_newUnitLoadout", "_oldUnitLoadout"];
-if(!((currentWeapon _unit) in DCD_SUCK_SUPPORTED_WEAPONS)) exitWith{0};
+params["_unit","_newUnitLoadout","_oldUnitLoadout"];
 
-if(DCD_SUCK_DEBUG) then {hint ("DCD SUCK: " + (str _unit) + "\n\n"  + (str _newUnitLoadout) + "\n\n"  + (str _oldUnitLoadout));};
+if(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX) exitWith{0};
 
-// TODO: do magic
+player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,true];
+try
+{
+
+["Loadout change detected","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+if(!([primaryWeapon _unit] call dcd_suck_fnc_isSupported)) exitWith{0};
+
+if(count _oldUnitLoadout == 0) then
+{
+	[_unit] call dcd_suck_fnc_validate;
+}
+else
+{
+	// prim. Weapon has changed
+    _currentWeapon = _unit getVariable DCD_SUCK_CURRENT_WEAPON;
+    [("cahched current Weapon: " + str _currentWeapon),"isSupported"] call dcd_suck_fnc_debugOut;
+	if((primaryWeapon _unit) != _currentWeapon) then
+	{
+		["Weapon has changed ...","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+		[_unit] call dcd_suck_fnc_resetVariables;
+		[_unit] call dcd_suck_fnc_validate;
+	}
+	else
+	{
+		["Weapon has not changed ...","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+		[_unit] call dcd_suck_fnc_checkBipod;
+	};
+
+};
+}
+catch
+{
+	[("Exception: " + str _exception),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+	player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
+};
+player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
 
 if(true) exitWith{0};

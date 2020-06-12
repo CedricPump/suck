@@ -9,9 +9,10 @@
 */
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK RHS USAF COMPAT: initSupportedWeapons";};
 
-// MX
-_0 = ["dcd_suck_M320","arifle_MX_F","arifle_MX_GL_F"] call dcd_suck_fnc_addSupportedWeaponPair;
-
+// M4
+_0 = ["dcd_suck_M320","rhs_weap_m4","rhs_weap_m4_m320"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_M203","rhs_weap_m4","rhs_weap_m4_m203"] call dcd_suck_fnc_addSupportedWeaponPair;
+_0 = ["dcd_suck_M203S","rhs_weap_m4","rhs_weap_m4_m203S"] call dcd_suck_fnc_addSupportedWeaponPair;
 
 if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK RHS USAF COMPAT: initSupportedWeapons";};
 

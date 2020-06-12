@@ -1,6 +1,43 @@
 # Changelog
 
-## [v0.0.01] 
+## pending [v0.1.02]
+
+### Fixed
+- fixed Weapon supporting more than one UBGL not switching correctly #2
+- fixed broken Promet Class #3
+
+## [v0.1.01]
+
+### Added
+- added "dcd_suck_3GL"
+- added DCD_SUCK_SWICHWEAOPN_MUTEX
+
+### Changed
+- MX now using 3GL
+- reworked readme
+  - reworked Features
+  - new usage gifs
+
+### Fixed
+- fixed AK12 Bug
+
+
+## [v0.1.00]
+
+### Added
+- added gitignore
+- added overview picture
+- added ubgl item icons
+- added base script structure
+- added license
+- added script logic for base functionality
+- added global init
+- added client init
+- added onLoadoutChanged Eventhandler
+- added logic to find parent weapon
+- added switchback weapon for weapon+items classes
+
+## [v0.0.01]
 
 ### Added
 - added base mod structure
