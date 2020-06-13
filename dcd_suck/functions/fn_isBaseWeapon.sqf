@@ -28,7 +28,7 @@ _result = false;
 		//["checking for parents ...","isBaseWeapon"] call dcd_suck_fnc_debugOut;
 		if(_mapping findIf {_weapon isKindOf [(_x select 0), (configFile >> "CfgWeapons")]} > -1) then
 		{
-			[("has Parent: " + (_x select 0)),"isBaseWeapon"] call dcd_suck_fnc_debugOut;
+			[("has UBGL: " + (_x select 0)),"isBaseWeapon"] call dcd_suck_fnc_debugOut;
 			// ancestor could be an ancestor of UBGL Type
 			if(!([_weapon] call dcd_suck_fnc_isUBGLWeapon)) then
 			{
