@@ -2,6 +2,9 @@
 
 ## pending [v0.1.02]
 
+### added
+- implemented Weapon Mapping for RHS Weapons #4
+
 ### Fixed
 - fixed Weapon supporting more than one UBGL not switching correctly #2
 - fixed broken Promet Class #3
