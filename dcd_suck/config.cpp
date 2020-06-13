@@ -36,10 +36,17 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
-			"A3_Data_F_Exp",
+			"A3_Weapons_F",
 			"A3_Weapons_F_Exp",
+			"A3_Weapons_F_Enoch",
+			"A3_Weapons_F_Exp_Rifles_SPAR_01",
+			"A3_Weapons_F_Exp_Rifles_SPAR_02",
+			"A3_Weapons_F_Mark_Acc",
+			"A3_Weapons_F",
+			"A3_Weapons_F_Items",
+			"A3_Data_F_Exp",
 			"A3_Data_F_Enoch",
-			"A3_Weapons_F_Enoch"
+			//"cba_main"
 		};
 		filename = "dcd_suck.pbo";
         versionDesc = "SUCK";

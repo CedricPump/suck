@@ -62,7 +62,7 @@ class arifle_CTAR_base_F;
 
 class CfgWeapons
 {
-	#include "suck_ubgl.cpp"
+    #include "suck_ubgl.cpp"
 
   class arifle_AK12_F : arifle_AK12_base_F {
     dcd_suck_fnc_register_ubgl(dcd_suck_GP25);

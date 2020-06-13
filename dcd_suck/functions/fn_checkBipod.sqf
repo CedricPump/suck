@@ -48,12 +48,15 @@ if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
 		{
 			["bipod not matching UMGLWeapon - switch to Base","checkBipod"] call dcd_suck_fnc_debugOut;
 			_switchWeapon = _unit getVariable DCD_SUCK_SWITCHBACK_WEAPON;
-			[("cached: " + str _switchWeapon),"checkBipod"] call dcd_suck_fnc_debugOut;
+			[("cached switch: " + str _switchWeapon),"checkBipod"] call dcd_suck_fnc_debugOut;
 			if(_switchWeapon == "") then {
 				_baseWeapon = _unit getVariable DCD_SUCK_BASE_WEAPON;
+				[("cached base: " + str _baseWeapon),"checkBipod"] call dcd_suck_fnc_debugOut;
 				_switchWeapon = [_baseWeapon] call dcd_suck_fnc_getBaseWeaponPartner;
 			};
 			[_unit,_switchWeapon] call dcd_suck_fnc_switchWeapon;
+			_unit setVariable [DCD_SUCK_BASE_WEAPON,_switchWeapon];
+			//[_unit] call dcd_suck_fnc_resetVariables;
 			["checkBipod from base (switch)","checkBipod"] call dcd_suck_fnc_debugOut;
 			[_unit] call dcd_suck_fnc_checkBipod;
 		};
@@ -72,18 +75,15 @@ else
 			_bipod = ((primaryWeaponItems _unit) select 3);
 			["need to switch","checkBipod"] call dcd_suck_fnc_debugOut;
 			_switchWeapon = _unit getVariable DCD_SUCK_SWITCHBACK_WEAPON;
-			[("cached: " + str _switchWeapon),"checkBipod"] call dcd_suck_fnc_debugOut;
+			[("cached switch: " + str _switchWeapon),"checkBipod"] call dcd_suck_fnc_debugOut;
 			if(_switchWeapon == "" || (([_switchWeapon] call dcd_suck_fnc_getUBGLWeaponItem) != _bipod)) then {
 				_baseWeapon = _unit getVariable DCD_SUCK_BASE_WEAPON;
-				if([_baseWeapon] call dcd_suck_fnc_isBaseWeapon) then
-				{
-					_switchWeapon = [_bipod,_baseWeapon] call dcd_suck_fnc_getUBGLWeaponPartner;
-				}
-				else
-				{
+				[("cached base: " + str _baseWeapon),"checkBipod"] call dcd_suck_fnc_debugOut;
+				// Fallbak to Parent until is baseWeapon
+				if(!([_baseWeapon] call dcd_suck_fnc_isBaseWeapon)) then {
 					_baseWeapon = [_baseWeapon] call dcd_suck_fnc_getBaseWeaponPartner;
-					_switchWeapon = [_bipod,_baseWeapon] call dcd_suck_fnc_getUBGLWeaponPartner;
 				};
+				_switchWeapon = [_bipod,_baseWeapon] call dcd_suck_fnc_getUBGLWeaponPartner;
 			};
 			[_unit,_switchWeapon] call dcd_suck_fnc_switchWeapon;
 		}
