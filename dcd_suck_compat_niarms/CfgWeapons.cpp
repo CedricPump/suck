@@ -1,6 +1,6 @@
 #define dcd_suck_fnc_register_ubgl(CLASS) \
     class WeaponSlotsInfo: WeaponSlotsInfo {\
-        class GlWeaponSlot: UnderBarrelSlot {\
+        class UnderBarrelSlot: UnderBarrelSlot {\
             class compatibleItems {\
                 CLASS = 1;\
             };\
@@ -9,7 +9,7 @@
 
 #define dcd_suck_fnc_register2_ubgl(CLASS1, CLASS2) \
     class WeaponSlotsInfo: WeaponSlotsInfo {\
-        class GlWeaponSlot: UnderBarrelSlot {\
+        class UnderBarrelSlot: UnderBarrelSlot {\
             class compatibleItems {\
                 CLASS1 = 1;\
                 CLASS2 = 1;\
@@ -19,7 +19,7 @@
 
 #define dcd_suck_fnc_register3_ubgl(CLASS1, CLASS2, CLASS3) \
     class WeaponSlotsInfo: WeaponSlotsInfo {\
-        class GlWeaponSlot: UnderBarrelSlot {\
+        class UnderBarrelSlot: UnderBarrelSlot {\
             class compatibleItems {\
                 CLASS1 = 1;\
                 CLASS2 = 1;\
@@ -30,7 +30,7 @@
 
 #define dcd_suck_fnc_unregister_ubgl(CLASS) \
     class WeaponSlotsInfo: WeaponSlotsInfo {\
-        class GlWeaponSlot: UnderBarrelSlot {\
+        class UnderBarrelSlot: UnderBarrelSlot {\
             class compatibleItems {\
                 CLASS = 0;\
             };\
@@ -39,7 +39,7 @@
 
 #define dcd_suck_fnc_unregister2_ubgl(CLASS1, CLASS2) \
     class WeaponSlotsInfo: WeaponSlotsInfo {\
-        class GlWeaponSlot: UnderBarrelSlot {\
+        class UnderBarrelSlot: UnderBarrelSlot {\
             class compatibleItems {\
                 CLASS1 = 0;\
                 CLASS2 = 0;\
@@ -49,7 +49,7 @@
 
   #define dcd_suck_fnc_unregister3_ubgl(CLASS1, CLASS2, CLASS3) \
       class WeaponSlotsInfo: WeaponSlotsInfo {\
-          class GlWeaponSlot: UnderBarrelSlot {\
+          class UnderBarrelSlot: UnderBarrelSlot {\
               class compatibleItems {\
                   CLASS1 = 0;\
                   CLASS2 = 0;\
@@ -79,6 +79,7 @@ class hlc_ar15_base;
 class hlc_fal_base;
 class hlc_G36_base;
 class hlc_rifle_G36A1AG36;
+class hlc_rifle_G36KV;
 class hlc_rifle_G36A1;
 class hlc_rifle_g3a3;
 class hlc_rifle_hk33a2;
@@ -89,12 +90,20 @@ class hlc_rifle_SG550;
 class hlc_rifle_SG551SB;
 class hlc_rifle_SG551LB;
 class hlc_rifle_aug;
+class hlc_rifle_416D145;
+class hlc_rifle_416D165;
+class hlc_HK416_base;
+class hlc_rifle_416N;
 
 class CfgWeapons
 {
 
     // Colt M4A1 Carbine (GL): ["hlc_rifle_m4m203","hlc_rifle_M4","hlc_ar15_base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class hlc_rifle_M4 : hlc_ar15_base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    // Colt M4A1 Carbine (GL): ["hlc_rifle_m4m203","hlc_rifle_M4","hlc_ar15_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_m4m203 : hlc_rifle_M4 {
         dcd_suck_fnc_register_ubgl(dcd_suck_M203);
     };
     // WEAPON <<<< REMOVE UBGL <<<<
@@ -121,9 +130,15 @@ class CfgWeapons
     class hlc_rifle_G36MLIC : hlc_G36_base {
         dcd_suck_fnc_register_ubgl(dcd_suck_AG36);
     };
+    class hlc_rifle_G36MLIAG36 : hlc_rifle_G36MLIC {
+        dcd_suck_fnc_register_ubgl(dcd_suck_AG36);
+    };
 
     // H&K G36A1 (GL): ["hlc_rifle_G36A1AG36","hlc_rifle_G36A1","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class hlc_rifle_G36A1 : hlc_G36_base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_AG36);
+    };
+    class hlc_rifle_G36A1AG36 : hlc_rifle_G36A1 {
         dcd_suck_fnc_register_ubgl(dcd_suck_AG36);
     };
 
@@ -140,6 +155,9 @@ class CfgWeapons
     class hlc_rifle_G36V : hlc_G36_base {
         dcd_suck_fnc_register_ubgl(dcd_suck_AG36);
     };
+    class hlc_rifle_G36VAG36 : hlc_rifle_G36V {
+        dcd_suck_fnc_register_ubgl(dcd_suck_AG36);
+    };
 
     // G36 <<<< REMOVE UBGL <<<<
 
@@ -148,13 +166,37 @@ class CfgWeapons
         dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
     };
     // H&K G36CV: ["hlc_rifle_G36CV","hlc_rifle_G36V","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_G36CV : hlc_rifle_G36V {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
+    // H&K G36KA1: ["hlc_rifle_G36KA1","hlc_rifle_G36A1","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_G36KA1 : hlc_rifle_G36A1 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
     // H&K G36CV (TAC): ["hlc_rifle_G36CTac","hlc_rifle_G36CV","hlc_rifle_G36V","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_G36CTac : hlc_rifle_G36CV {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
     // H&K G36K-MLI(C): ["hlc_rifle_G36KMLIC","hlc_rifle_G36MLIC","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_G36KMLIC : hlc_rifle_G36MLIC {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
     // H&K G36K-KSK: ["hlc_rifle_G36KA1KSK","hlc_rifle_G36KV","hlc_rifle_G36V","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_G36KA1KSK : hlc_rifle_G36KV {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
     // H&K G36KV: ["hlc_rifle_G36KV","hlc_rifle_G36V","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_G36KV : hlc_rifle_G36V {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
     // H&K G36KV (TAC): ["hlc_rifle_g36KTac","hlc_rifle_G36KV","hlc_rifle_G36V","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_g36KTac : hlc_rifle_G36KV {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
     // H&K G36V (TAC): ["hlc_rifle_G36TAC","hlc_rifle_G36V","hlc_G36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
-
+    class hlc_rifle_G36TAC : hlc_rifle_G36V {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_AG36);
+    };
 
     // ----------------------------------------------
 
@@ -175,10 +217,75 @@ class CfgWeapons
     };
 
     // ----------------------------------------------
-
-    class hlc_HK416_base : Rifle_Base_F {
+    // H&K HK416 D10: ["hlc_rifle_416D10","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // H&K HK416 D10 (GL): ["hlc_rifle_416D10_gl","hlc_rifle_416D10","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D10 : hlc_rifle_416D145 {
         dcd_suck_fnc_register_ubgl(dcd_suck_M320);
     };
+    class hlc_rifle_416D10_gl : hlc_rifle_416D10 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D14.5 (GL): ["hlc_rifle_416D145_gl","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D145_gl : hlc_rifle_416D145 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+    class hlc_rifle_416D145 : hlc_HK416_base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D16.5 (GL): ["hlc_rifle_416D165_gl","hlc_rifle_416D165","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D165_gl : hlc_rifle_416D165 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+    class hlc_rifle_416D165 : hlc_rifle_416D145 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416N: ["hlc_rifle_416N","hlc_rifle_416D165","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // H&K HK416N (GL): ["hlc_rifle_416N_gl","hlc_rifle_416N","hlc_rifle_416D165","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416N_gl : hlc_rifle_416N {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+    class hlc_rifle_416N : hlc_rifle_416D165 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+
+    // HK416 <<<< REMOVE UBGL <<<<
+    // H&K HK416 D10 (Tan): ["hlc_rifle_416D10_tan","hlc_rifle_416D10","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D10_tan : hlc_rifle_416D10 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D10 (Woodland): ["hlc_rifle_416D10_wdl","hlc_rifle_416D10","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D10_wdl : hlc_rifle_416D10 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D10C: ["hlc_rifle_416D10C","hlc_rifle_416D10","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D10C : hlc_rifle_416D10 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D14.5 (Tan): ["hlc_rifle_416D145_tan","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D145_tan : hlc_rifle_416D145 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D14.5 (Woodland): ["hlc_rifle_416D145_wdl","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D145_wdl : hlc_rifle_416D145 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D16.5 (Tan): ["hlc_rifle_416D165_tan","hlc_rifle_416D165","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D165_tan : hlc_rifle_416D165 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416 D16.5 (Woodland): ["hlc_rifle_416D165_wdl","hlc_rifle_416D165","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416D165_wdl : hlc_rifle_416D165 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416C: ["hlc_rifle_416C","hlc_rifle_416D10","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_416C : hlc_rifle_416D10 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    // H&K HK416C (Team Bab): ["hlc_rifle_BAB","hlc_rifle_416C","hlc_rifle_416D10","hlc_rifle_416D145","hlc_HK416_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_BAB : hlc_rifle_416C {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+
 
     // ---------------------------------------------------
 
@@ -258,7 +365,22 @@ class CfgWeapons
     class hlc_rifle_auga3_GL : hlc_rifle_auga3 {
         dcd_suck_fnc_register_ubgl(dcd_suck_M203);
     };
-
+    // Steyr AUGA3 (Blue): ["hlc_rifle_auga3_bl","hlc_rifle_auga3","hlc_rifle_aug","hlc_aug_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Steyr AUGA3 (GL\Blue): ["hlc_rifle_auga3_GL_BL","hlc_rifle_auga3_GL","hlc_rifle_auga3","hlc_rifle_aug","hlc_aug_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_auga3_bl : hlc_rifle_auga3 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_auga3_GL_BL : hlc_rifle_auga3_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    // Steyr AUGA3 (Black): ["hlc_rifle_auga3_b","hlc_rifle_auga3","hlc_rifle_aug","hlc_aug_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Steyr AUGA3 (GL\Black): ["hlc_rifle_auga3_GL_B","hlc_rifle_auga3_GL","hlc_rifle_auga3","hlc_rifle_aug","hlc_aug_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_auga3_b : hlc_rifle_auga3 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_auga3_GL_B : hlc_rifle_auga3_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
 
 
 
