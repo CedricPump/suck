@@ -4,15 +4,18 @@
 
 # SUCK - Simple UBGL Conversion Kit
 
-SUCK is an Arma 3 mod that allows Players to attach and detach their underbarrel granade launcher (UGL).
+SUCK is an Arma 3 mod that allows Players to attach and detach their underbarrel grenade launcher (UGL).
 It uses placeholder items for different UGL models and is compatible with ACE3 and RHS.
 
 ## Acronyms
 
-Simple Underbarrel-Grenade-Launcher Conversion Kit
-Switch UGL Conversion Kit
-Steffies UGL Conversion Kit
-SUGLUK - Switch Underbarrel Granade Launcher Upgrade Kit
+Simple Underbarrel-Grenade-Launcher Conversion Kit  
+
+Switch UGL Conversion Kit  
+
+Steffies UGL Conversion Kit  
+
+SUGLUK - Switch Underbarrel Grenade Launcher Upgrade Kit  
 
 ## Concept
 
@@ -22,7 +25,7 @@ SUGLUK - Switch Underbarrel Granade Launcher Upgrade Kit
 
 This Mod should support to attach and detach an UGL.
 Because UGL is no attachment like a scope or a Bipod the whole Weapon has to be switched.
-Therefore only a limited range of weapons can be suported which have a UGL counterpart.
+Therefore only a limited range of weapons can be supported which have a UGL counterpart.
 A mapping of UGL model, base weapon and UGL Weapon is saved an action to attach/detach is shown when current Weapon is supported.
 The UGL itself is represented by a dummy item, that is created on detach and needs to be present for attaching.
 
@@ -60,13 +63,13 @@ Several UGL Models should be available separately:
 - swap Weapons by dragging on attachment slot (WIP)
 - ~~swap Weapons by right click item~~ (ACRE conflicts)
 
-## Compatablity
+## Compatibility
 
 - Vanilla UGLs (WIP)
 - ~~ace3 menu~~
 - [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) support
 - [Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) support
-- RHS UGLs (planned)
+- RHS UGLs (WIP)
 - CUP UGLs (planned)
 - BWMod UGLs (planned)
 - Niarms UGLs (planned)
@@ -94,6 +97,29 @@ Use Mikeros pboProject, Full Build, Output = `P:\dcd\dcd_suck_export`, Source = 
 - **Only** touch `\dcd_suck_export\Mod.cpp`, let the rest be generated
 - **Only** put actual build content into `\dcd_suck`
 - WIP & Raw content belongs to `\source`
+
+
+## Weapon Pack Compatibility
+
+To support SUCK with your own Weapon Pack two "simple" steps are needed.
+1. add all supported UBGL-Items to the Weapons UnderBarrelSlot in its Config:  
+e.g.:
+```cpp
+class tag_myWeapon : tag_myParent {
+  class WeaponSlotsInfo: WeaponSlotsInfo {
+    class GlWeaponSlot: UnderBarrelSlot {
+      class compatibleItems {
+        dcd_suck_M320 = 1;
+      };
+    };
+  };
+};
+```
+2. add a weapon mapping of the UBGL, the BaseWeapon and thi UGBLWeapon to the mods mapping tables using:
+```sqf
+["dcd_suck_M320","tag_myWeapon","tag_myWeapon_GL"] call dcd_suck_fnc_addSupportedWeaponPair;
+```
+
 
 ## Disclaimer / License
 
