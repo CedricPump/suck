@@ -80,6 +80,7 @@ class rhs_weap_m4a1;
 class rhs_weap_m4a1_carryhandle;
 class rhs_weap_m16a4;
 class rhs_weap_m4a1_m203s;
+class rhs_weap_hk416d145;
 //class rhs_weap_mk18;
 
 class CfgWeapons
@@ -138,18 +139,106 @@ class CfgWeapons
     // somehow does not equip bipod anyway !!!!
     class rhs_weap_hk416d10 : rhs_weap_m4a1 {
         class WeaponSlotsInfo: WeaponSlotsInfo {
-            class GlWeaponSlot: UnderBarrelSlot {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_M320 = 1;
+                };
+            };
+            class GlWeaponSlot: UnderBarrelSlot{
                 class compatibleItems {
                     dcd_suck_M203 = 0;
                     dcd_suck_M203S = 0;
+                    dcd_suck_M320 = 0;
+                };
+            };
+        };
+    };
+    // HK416 D10 (M320): ["rhs_weap_hk416d10_m320","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_hk416d10_m320 : rhs_weap_hk416d10 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
                     dcd_suck_M320 = 1;
                 };
             };
         };
     };
     // HK416 <<<< REMOVE UBGL <<<<
+    // HK416 D10 (SOPMOD Stock): ["rhs_weap_hk416d10_LMT","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // HK416 D10 (SOPMOD Stock/Desert): ["rhs_weap_hk416d10_LMT_d","rhs_weap_hk416d10_LMT","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // HK416 D10 (SOPMOD Stock/Woodland): ["rhs_weap_hk416d10_LMT_wd","rhs_weap_hk416d10_LMT","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_hk416d10_LMT : rhs_weap_hk416d10 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_M320 = 0;
+                };
+            };
+        };
+    };
     // HK416 END
 
+
+    // HK416 D14.5: ["rhs_weap_hk416d145","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // HK416 D14.5 (M320): ["rhs_weap_hk416d145_m320","rhs_weap_hk416d145","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_hk416d145_m320 : rhs_weap_hk416d145 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_M320 = 1;
+                };
+            };
+            class GlWeaponSlot: UnderBarrelSlot{
+                class compatibleItems {
+                    dcd_suck_M203 = 0;
+                    dcd_suck_M203S = 0;
+                    dcd_suck_M320 = 0;
+                };
+            };
+        };
+    };
+    // HK416 D14.5 <<<< REMOVE UBGL <<<<
+    // HK416 D14.5 (Desert Grass): ["rhs_weap_hk416d145_d","rhs_weap_hk416d145","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_hk416d145_d : rhs_weap_hk416d145 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_M320 = 0;
+                };
+            };
+        };
+    };
+    // HK416 D14.5 (Desert Net): ["rhs_weap_hk416d145_d_2","rhs_weap_hk416d145","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_hk416d145_d_2 : rhs_weap_hk416d145 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_M320 = 0;
+                };
+            };
+        };
+    };
+    // HK416 D14.5 (Woodland Grass): ["rhs_weap_hk416d145_wd","rhs_weap_hk416d145","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_hk416d145_wd : rhs_weap_hk416d145 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_M320 = 0;
+                };
+            };
+        };
+    };
+    // HK416 D14.5 (Woodland Net): ["rhs_weap_hk416d145_wd_2","rhs_weap_hk416d145","rhs_weap_hk416d10","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_hk416d145_wd_2 : rhs_weap_hk416d145 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_M320 = 0;
+                };
+            };
+        };
+    };
+    // HK416 D14.5 END
 
     // M4A1 Carryhandle <<<< REMOVE UBGL <<<<
     class rhs_weap_m4a1_carryhandle_mstock : rhs_weap_m4a1_carryhandle {

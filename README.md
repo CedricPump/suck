@@ -4,18 +4,16 @@
 
 # SUCK - Simple UBGL Conversion Kit
 
-SUCK is an Arma 3 mod that allows Players to attach and detach their underbarrel grenade launcher (UGL).
+SUCK is an Arma 3 mod that allows Players to attach and detach their underbarrel grenade launcher (UBGL).
 It uses placeholder items for different UGL models and is compatible with ACE3 and RHS.
 
 ## Acronyms
 
 Simple Underbarrel-Grenade-Launcher Conversion Kit  
 
-Switch UGL Conversion Kit  
+Switch UBGL Conversion Kit  
 
-Steffies UGL Conversion Kit  
-
-SUGLUK - Switch Underbarrel Grenade Launcher Upgrade Kit  
+Steffies UBGL Conversion Kit  
 
 ## Concept
 
@@ -33,11 +31,11 @@ The UGL itself is represented by a dummy item, that is created on detach and nee
 
 For this concept following components are required:
 
-- items for different UBGL Models (WIP)
-- scripts to change Weapons (WIP)
+- items for different UBGL Models ✓
+- scripts to change Weapons ✓
 - config to support UBGL in bipod slot (WIP)
-- mapping for supported mapping (ToDo)
-- mod icon (done)
+- mapping for supported weapons (WIP)
+- mod icon ✓
 - (optional) 3d model for item on ground (ToDo)
 
 ### Models
@@ -54,22 +52,23 @@ Several UGL Models should be available separately:
 - SL40
 - UPG40
 - SIX-12
+- VHS-BG
 
 
 ## Features
 
 - ~~swap Weapons using scrollwheel menu~~
-- ~~swap Weapons using ace menu~~ (ACE Attachment Switching instead)
-- swap Weapons by dragging on attachment slot (WIP)
+- ~~swap Weapons using ace menu~~ (ACE Attachment Switching instead) ✓
+- swap Weapons by dragging on attachment slot ✓
 - ~~swap Weapons by right click item~~ (ACRE conflicts)
 
 ## Compatibility
 
-- Vanilla UGLs (WIP)
+- Vanilla UGLs ✓
 - ~~ace3 menu~~
-- [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) support
-- [Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) support
-- RHS UGLs (WIP)
+- [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) support ✓
+- [Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) support ✓
+- RHS UGLs ✓
 - CUP UGLs (planned)
 - BWMod UGLs (planned)
 - Niarms UGLs (planned)
