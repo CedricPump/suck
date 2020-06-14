@@ -20,6 +20,7 @@ class CfgPatches
 			"dcd_suck_UPG40",
 			"dcd_suck_SIX12",
 			"dcd_suck_3GL",
+			"dcd_suck_VHSBG",
 
 			"arifle_AK12_F", "arifle_AK12_arid_F", "arifle_AK12_lush_F",
 			"arifle_AK12_GL_F", "arifle_AK12_GL_arid_F", "arifle_AK12_GL_lush_F",
