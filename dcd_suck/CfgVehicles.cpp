@@ -177,6 +177,23 @@ class CfgVehicles
 			};
 		};
 	};
+	class dcd_suck_VHSBG: Item_Base_F
+	{
+		author="DCD";
+		scope=2;
+		scopeCurator=2;
+		displayName="VHS-BG";
+		vehicleClass="Items";
+		class TransportItems
+		{
+			class _xx_SUCK_VHSBG
+			{
+				name="dcd_suck_VHSBG";
+				count=1;
+			};
+		};
+	};
+
 	class Box_NATO_Support_F;
 	class SUCK_Box_UGL: Box_NATO_Support_F
 	{
@@ -236,6 +253,11 @@ class CfgVehicles
 			class _xx_SUCK_3GL
 			{
 				name="dcd_suck_3GL";
+				count=10;
+			};
+			class _xx_SUCK_VHSBG
+			{
+				name="dcd_suck_VHSBG";
 				count=10;
 			};
 		};

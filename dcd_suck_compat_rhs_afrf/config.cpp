@@ -2,10 +2,10 @@
 
 class CfgPatches
 {
-	class dcd_suck_compat_rhs_usaf
+	class dcd_suck_compat_rhs_afrf
 	{
 		author="DCD";
-		name="dcd_suck_compat_rhs_usaf";
+		name="dcd_suck_compat_rhs_afrf";
 		units[] = {};
 		weapons[] =
 		{
@@ -18,13 +18,10 @@ class CfgPatches
 		requiredAddons[] =
 		{
 			"dcd_suck",
-			"rhsusf_main",
-			"rhsusf_c_weapons",
-			"rhsusf_weapons",
-			"rhsusf_weapons2",
-			"rhsusf_weapons3",
+			"rhs_main",
+			"rhs_c_weapons",
 		};
-		filename = "dcd_suck_compat_rhs_usaf.pbo";
+		filename = "dcd_suck_compat_rhs_afrf.pbo";
     versionDesc = "SUCK";
     versionAct = "";
     version = "0.0.01";

@@ -126,3 +126,13 @@ class dcd_suck_3GL: dcd_suck_ubgl_base {
           mass = 40;
       };
 };
+class dcd_suck_VHSBG: dcd_suck_ubgl_base {
+  scope=2;
+  displayName="VHS-BG";
+  author="DCD";
+  picture="\dcd\dcd_suck\ui\dcd_suck_vhsbg.paa";
+  descriptionShort="VHS-BG granade launcher";
+      class ItemInfo: CBA_MiscItem_ItemInfo {
+          mass = 35;
+      };
+};
