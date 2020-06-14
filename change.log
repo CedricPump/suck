@@ -1,13 +1,19 @@
 # Changelog
 
-## pending [v0.1.02]
+## [v0.1.02]
 
 ### added
-- implemented Weapon Mapping for RHS Weapons #4
+- implemented Weapon Mapping and Config for RHS USAF Weapons #4
+- implemented Weapon Mapping and Config for RHS AFRF Weapons #4
+- implemented Weapon Mapping and Config for RHS GREF Weapons #4
+- implemented Weapon Mapping and Config for RHS SAF Weapons #4
+- added mod template
 
 ### Fixed
 - fixed Weapon supporting more than one UBGL not switching correctly #2
 - fixed broken Promet Class #3
+- fixed HK416 does not equip M320 correctly #10
+
 
 ## [v0.1.01]
 
