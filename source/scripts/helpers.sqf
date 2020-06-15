@@ -3,7 +3,7 @@
 // get weapon mapping for 2 last weapons
 LAST = "";
 CURRENT = "";
-_0 = ["dcd_suck_GP25"] spawn {
+_0 = ["dcd_suck_G1"] spawn {
 	_ubgl = _this select 0;
 	while {true} do {
 		_weapon1 = (primaryWeapon Player);
