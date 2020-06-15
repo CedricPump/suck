@@ -2,10 +2,10 @@
 
 class CfgPatches
 {
-	class dcd_suck_compat_mod
+	class dcd_suck_compat_niarms
 	{
 		author="DCD";
-		name="dcd_suck_compat_mod";
+		name="dcd_suck_compat_niarms";
 		units[] = {};
 		weapons[] =
 		{
@@ -18,9 +18,19 @@ class CfgPatches
 		requiredAddons[] =
 		{
 			"dcd_suck",
-			"rhs_main",
+			"A3_Characters_F",
+			"hlcweapons_ar15",
+			"hlcweapons_core",
+			"hlcweapons_falpocalypse",
+			"hlcweapons_G36",
+			"hlcweapons_g3",
+			"niarms_416",
+			"hlcweapons_aks",
+			"hlcweapons_acr",
+			"hlcweapons_SG550",
+			"hlcweapons_AUG"
 		};
-		filename = "dcd_suck_compat_mod.pbo";
+		filename = "dcd_suck_compat_niarms.pbo";
     versionDesc = "SUCK";
     versionAct = "";
     version = "0.0.01";
