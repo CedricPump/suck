@@ -13,8 +13,7 @@ class dcd_suck_compat_niarms
 		requiredAddons[] = {
 			"A3_Data_F",
 			"cba_main",
-			"dcd_suck",
-			"rhs_main"
+			"dcd_suck"
 		};
 		file = "\dcd\dcd_suck_compat_niarms\functions";
 		fnc_pre(init);
