@@ -94,6 +94,12 @@ class hlc_rifle_416D145;
 class hlc_rifle_416D165;
 class hlc_HK416_base;
 class hlc_rifle_416N;
+class hlc_rifle_ACR_SBR_tan;
+class hlc_rifle_ACR_GL_SBR_black;
+class hlc_rifle_ACR_Carb_green;
+class hlc_acr556_base;
+class hlc_rifle_ACR68_SBR_tan;
+class hlc_acr_base;
 
 class CfgWeapons
 {
@@ -322,8 +328,190 @@ class CfgWeapons
 
     // ------------------------------------------------------
 
-    class hlc_acr_base : Rifle_Base_F {
+    // Remington ACR-E ('Cliffhanger'): ["hlc_rifleACR_SBR_cliffhanger","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/'Cliffhanger'): ["hlc_rifle_ACR_GL_SBR_cliffhanger","hlc_rifle_ACR_GL_SBR_black","hlc_rifle_ACR_SBR_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifleACR_SBR_cliffhanger : hlc_rifle_ACR_SBR_tan {
         dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_SBR_cliffhanger : hlc_rifle_ACR_GL_SBR_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Carbine/Black): ["hlc_rifle_ACR_Carb_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Carbine/Black): ["hlc_rifle_ACR_GL_Carb_black","hlc_rifle_ACR_Carb_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_Carb_black : hlc_rifle_ACR_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_Carb_black : hlc_rifle_ACR_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Carbine/Green): ["hlc_rifle_ACR_Carb_green","hlc_rifle_ACR_Carb_green","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Carbine/Green): ["hlc_rifle_ACR_GL_Carb_green","hlc_rifle_ACR_GL_Carb_black","hlc_rifle_ACR_Carb_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_Carb_green : hlc_rifle_ACR_Carb_green {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_Carb_green : hlc_rifle_ACR_GL_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Carbine/Tan): ["hlc_rifle_ACR_Carb_tan","hlc_rifle_ACR_Carb_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Carbine/Tan): ["hlc_rifle_ACR_GL_Carb_tan","hlc_rifle_ACR_GL_Carb_black","hlc_rifle_ACR_Carb_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_Carb_tan : hlc_rifle_ACR_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_Carb_tan : hlc_rifle_ACR_GL_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Compact/Black): ["hlc_rifle_ACR_SBR_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Compact/Black): ["hlc_rifle_ACR_GL_SBR_black","hlc_rifle_ACR_SBR_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_SBR_black : hlc_rifle_ACR_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_SBR_black : hlc_rifle_ACR_SBR_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Compact/Green: ["hlc_rifle_ACR_SBR_green","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Compact/Green): ["hlc_rifle_ACR_GL_SBR_green","hlc_rifle_ACR_GL_SBR_black","hlc_rifle_ACR_SBR_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_SBR_green : hlc_rifle_ACR_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_SBR_green : hlc_rifle_ACR_GL_SBR_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Compact/Tan): ["hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Compact/Tan): ["hlc_rifle_ACR_GL_SBR_tan","hlc_rifle_ACR_GL_SBR_black","hlc_rifle_ACR_SBR_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_SBR_tan : hlc_acr556_base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_SBR_tan : hlc_rifle_ACR_GL_SBR_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Mid/Black): ["hlc_rifle_ACR_MID_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Mid/Black): ["hlc_rifle_ACR_GL_mid_black","hlc_rifle_ACR_MID_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_MID_black : hlc_rifle_ACR_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_mid_black : hlc_rifle_ACR_MID_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Mid/Green): ["hlc_rifle_ACR_MID_green","hlc_rifle_ACR_MID_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Mid/Green): ["hlc_rifle_ACR_GL_mid_green","hlc_rifle_ACR_GL_mid_black","hlc_rifle_ACR_MID_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_MID_green : hlc_rifle_ACR_MID_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_mid_green : hlc_rifle_ACR_GL_mid_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Mid/Tan): ["hlc_rifle_ACR_MID_tan","hlc_rifle_ACR_MID_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (GL/Mid/Tan): ["hlc_rifle_ACR_GL_mid_tan","hlc_rifle_ACR_GL_mid_black","hlc_rifle_ACR_MID_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_MID_tan : hlc_rifle_ACR_MID_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR_GL_mid_tan : hlc_rifle_ACR_GL_mid_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Carbine/Black): ["hlc_rifle_ACR68_Carb_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Carbine/Black): ["hlc_rifle_ACR68_GL_Carb_black","hlc_rifle_ACR68_Carb_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_Carb_black : hlc_rifle_ACR68_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_Carb_black : hlc_rifle_ACR68_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Carbine/Green): ["hlc_rifle_ACR68_Carb_green","hlc_rifle_ACR68_Carb_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Carbine/Green): ["hlc_rifle_ACR68_GL_Carb_green","hlc_rifle_ACR68_GL_Carb_black","hlc_rifle_ACR68_Carb_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_Carb_green : hlc_rifle_ACR68_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_Carb_green : hlc_rifle_ACR68_GL_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Carbine/Tan): ["hlc_rifle_ACR68_Carb_tan","hlc_rifle_ACR68_Carb_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Carbine/Tan): ["hlc_rifle_ACR68_GL_Carb_tan","hlc_rifle_ACR68_GL_Carb_tan","hlc_rifle_ACR68_Carb_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_Carb_tan : hlc_rifle_ACR68_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_Carb_tan : hlc_rifle_ACR68_Carb_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Compact/Black): ["hlc_rifle_ACR68_SBR_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Compact/Black): ["hlc_rifle_ACR68_GL_SBR_black","hlc_rifle_ACR68_SBR_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_SBR_black : hlc_rifle_ACR68_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_SBR_black : hlc_rifle_ACR68_SBR_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Compact/Green: ["hlc_rifle_ACR68_SBR_green","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Compact/Green): ["hlc_rifle_ACR68_GL_SBR_green","hlc_rifle_ACR68_GL_SBR_black","hlc_rifle_ACR68_SBR_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_SBR_green : hlc_rifle_ACR68_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_SBR_green : hlc_rifle_ACR68_GL_SBR_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Compact/Tan): ["hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Compact/Tan): ["hlc_rifle_ACR68_GL_SBR_tan","hlc_rifle_ACR68_GL_SBR_black","hlc_rifle_ACR68_SBR_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_SBR_tan : hlc_acr_base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_SBR_tan : hlc_rifle_ACR68_GL_SBR_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Mid/Black): ["hlc_rifle_ACR68_MID_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Midlength/Black): ["hlc_rifle_ACR68_GL_mid_black","hlc_rifle_ACR68_MID_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_MID_black : hlc_rifle_ACR68_SBR_tan {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_mid_black : hlc_rifle_ACR68_MID_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Mid/Green): ["hlc_rifle_ACR68_MID_green","hlc_rifle_ACR68_MID_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Midlength/Green): ["hlc_rifle_ACR68_GL_mid_green","hlc_rifle_ACR68_GL_mid_black","hlc_rifle_ACR68_MID_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_MID_green : hlc_rifle_ACR68_MID_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_mid_green : hlc_rifle_ACR68_GL_mid_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E 6.8mm (Mid/Tan): ["hlc_rifle_ACR68_MID_tan","hlc_rifle_ACR68_MID_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (GL/Midlength/Tan): ["hlc_rifle_ACR68_GL_mid_tan","hlc_rifle_ACR68_GL_mid_black","hlc_rifle_ACR68_MID_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_MID_tan : hlc_rifle_ACR68_MID_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    class hlc_rifle_ACR68_GL_mid_tan : hlc_rifle_ACR68_GL_mid_black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+    // acr <<<< REMOVE UBGL <<<<
+    // Remington ACR-E 6.8mm (Long/Black): ["hlc_rifle_ACR68_full_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (Long/Green): ["hlc_rifle_ACR68_full_green","hlc_rifle_ACR68_full_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E 6.8mm (Long/Tan): ["hlc_rifle_ACR68_full_tan","hlc_rifle_ACR68_full_black","hlc_rifle_ACR68_SBR_tan","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR68_full_black : hlc_rifle_ACR68_SBR_tan {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M203);
+    };
+
+    // Remington ACR-E (Long/Black): ["hlc_rifle_ACR_full_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (Long/Green): ["hlc_rifle_ACR_full_green","hlc_rifle_ACR_full_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // Remington ACR-E (Long/Tan): ["hlc_rifle_ACR_full_tan","hlc_rifle_ACR_full_black","hlc_rifle_ACR_SBR_tan","hlc_acr556_base","hlc_acr_base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class hlc_rifle_ACR_full_black : hlc_rifle_ACR_SBR_tan {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M203);
     };
 
     // ------------------------------------------------------
@@ -354,6 +542,8 @@ class CfgWeapons
     class hlc_rifle_SG551SB_TAC_GL : hlc_rifle_SG551SB {
         dcd_suck_fnc_register_ubgl(dcd_suck_M203);
     };
+
+
 
     // ---------------------------------------------------------
 
