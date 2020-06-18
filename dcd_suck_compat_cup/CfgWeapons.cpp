@@ -93,6 +93,18 @@ class CUP_arifle_AK109;
 class CUP_arifle_AK109_GL;
 class CUP_arifle_AK74M;
 class CUP_arifle_AKS;
+class CUP_arifle_AK74M_GL;
+class CUP_arifle_AK74M_desert;
+class CUP_arifle_AK74M_GL_desert;
+class CUP_arifle_AK74M_camo;
+class CUP_arifle_AK74M_GL_camo;
+class CUP_arifle_AK74;
+class CUP_arifle_AKM;
+class CUP_arifle_AKM_GL;
+class CUP_arifle_AKMS;
+class CUP_arifle_AKMS_GL;
+class CUP_arifle_AKS74;
+class CUP_arifle_AKS74_GL;
 
 class CUP_arifle_G36K_RIS;
 
@@ -102,6 +114,7 @@ class CUP_arifle_M16A4_Base;
 class CUP_CZ_BREN2_762_Base;
 class CUP_arifle_Sa58RIS1;
 class CUP_arifle_OTS14_GROZA_762_base;
+class CUP_arifle_OTS14_GROZA_Base;
 
 class CUP_arifle_Mk17_Base;
 class CUP_arifle_SCAR_L_Base;
@@ -175,6 +188,7 @@ class CfgWeapons
 
 
 
+
     // RIS Mounts not ataching UBGL !!!
     class CUP_arifle_AK101_top_rail : CUP_arifle_AK101 {
         dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
@@ -241,7 +255,7 @@ class CfgWeapons
     class CUP_arifle_AK74M_top_rail : CUP_arifle_AK74M {
         dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
     };
-    class CUP_arifle_AK74M_GL : CUP_arifle_AK_Base {
+    class CUP_arifle_AK74M_GL_top_rail : CUP_arifle_AK74M_GL {
         dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
     };
     // AK-74M (Zenitco/RIS): ["CUP_arifle_AK74M_railed","CUP_arifle_AK74M","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
@@ -249,26 +263,148 @@ class CfgWeapons
     class CUP_arifle_AK74M_railed : CUP_arifle_AK74M {
         dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
     };
+    class CUP_arifle_AK74M_GL_railed : CUP_arifle_AK74M_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
 
+    // AK-74M (RIS mount/Desert): ["CUP_arifle_AK74M_top_rail_desert","CUP_arifle_AK74M_desert","CUP_arifle_AK74M","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AK-74M GP-25 (RIS mount/Desert): ["CUP_arifle_AK74M_GL_top_rail_desert","CUP_arifle_AK74M_GL_desert","CUP_arifle_AK74M_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AK74M_top_rail_desert : CUP_arifle_AK74M_desert {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AK74M_GL_top_rail_desert : CUP_arifle_AK74M_GL_desert {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    // AK-74M (Zenitco/RIS/Desert): ["CUP_arifle_AK74M_railed_desert","CUP_arifle_AK74M_desert","CUP_arifle_AK74M","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AK-74M GP-25 (Zenitco/RIS/Desert): ["CUP_arifle_AK74M_GL_railed_desert","CUP_arifle_AK74M_GL_desert","CUP_arifle_AK74M_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AK74M_railed_desert : CUP_arifle_AK74M_desert {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AK74M_GL_railed_desert : CUP_arifle_AK74M_GL_desert {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
 
+    // AK-74M (RIS mount/Woodland): ["CUP_arifle_AK74M_top_rail_camo","CUP_arifle_AK74M_camo","CUP_arifle_AK74M","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AK-74M GP-25 (RIS mount/Woodland): ["CUP_arifle_AK74M_GL_top_rail_camo","CUP_arifle_AK74M_GL_camo","CUP_arifle_AK74M_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AK74M_top_rail_camo : CUP_arifle_AK74M_camo {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AK74M_GL_top_rail_camo : CUP_arifle_AK74M_GL_camo {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    // AK-74M (Zenitco/RIS/Woodland): ["CUP_arifle_AK74M_railed_camo","CUP_arifle_AK74M_camo","CUP_arifle_AK74M","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AK-74M GP-25 (Zenitco/RIS/Woodland): ["CUP_arifle_AK74M_GL_railed_camo","CUP_arifle_AK74M_GL_camo","CUP_arifle_AK74M_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AK74M_railed_camo : CUP_arifle_AK74M_camo {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AK74M_GL_railed_camo : CUP_arifle_AK74M_GL_camo {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+
+    // AK-74N (RIS mount): ["CUP_arifle_AK74_top_rail","CUP_arifle_AK74","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AK-74N GP-25 (RIS mount): ["CUP_arifle_AK74_GL_top_rail","CUP_arifle_AK74_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AK74_top_rail : CUP_arifle_AK74 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AK74_GL_top_rail : CUP_arifle_AK74_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+
+    // AKMN (RIS mount): ["CUP_arifle_AKM_top_rail","CUP_arifle_AKM","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AKMN GP-25 (RIS mount): ["CUP_arifle_AKM_GL_top_rail","CUP_arifle_AKM_GL","CUP_arifle_AKM","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AKM_top_rail : CUP_arifle_AKM {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AKM_GL_top_rail : CUP_arifle_AKM_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+
+    // AKMSN (RIS mount): ["CUP_arifle_AKMS_top_rail","CUP_arifle_AKMS","CUP_arifle_AKM","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AKMSN GP-25 (RIS mount): ["CUP_arifle_AKMS_GL_top_rail","CUP_arifle_AKMS_GL","CUP_arifle_AKM_GL","CUP_arifle_AKM","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AKMS_top_rail : CUP_arifle_AKMS {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AKMS_GL_top_rail : CUP_arifle_AKMS_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+
+    // AKN (RIS mount): ["CUP_arifle_AK47_top_rail","CUP_arifle_AK47","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AKN GP-25 (RIS mount): ["CUP_arifle_AK47_GL_top_rail","CUP_arifle_AK47_GL","CUP_arifle_AK47","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AK47_top_rail : CUP_arifle_AK47 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AK47_GL_top_rail : CUP_arifle_AK47_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+
+    // AKS-74: ["CUP_arifle_AKS74_Early","CUP_arifle_AKS74","CUP_arifle_AKS_Base","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AKS-74 GP-25: ["CUP_arifle_AKS74_GL_Early","CUP_arifle_AKS74_GL","CUP_arifle_AK74_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AKS74_Early : CUP_arifle_AKS74 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AKS74_GL_Early : CUP_arifle_AKS74_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+
+    // AKS-74N: ["CUP_arifle_AKS74","CUP_arifle_AKS_Base","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AKS-74N GP-25: ["CUP_arifle_AKS74_GL","CUP_arifle_AK74_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AKS74 : CUP_arifle_AKS_Base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AKS74_GL : CUP_arifle_AK74_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+
+    // AKS-74N (RIS mount): ["CUP_arifle_AKS74_top_rail","CUP_arifle_AKS74","CUP_arifle_AKS_Base","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // AKS-74N GP-25 (RIS mount): ["CUP_arifle_AKS74_GL_top_rail","CUP_arifle_AKS74_GL","CUP_arifle_AK74_GL","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_AKS74_top_rail : CUP_arifle_AKS74 {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    class CUP_arifle_AKS74_GL_top_rail : CUP_arifle_AKS74_GL {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
 
 
     // <<<<<<<<<<<<<<<<<<<< Unregister <<<<<<<<<<<<<<<<<<<<<
     // RPK: ["CUP_arifle_RPK74","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_RPK74 : CUP_arifle_AK_Base {
-        dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_GP25 = 0;
+                };
+            };
+        };
     };
     // AK-105: ["CUP_arifle_AK105","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_AK105 : CUP_arifle_AK_Base {
-        dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_GP25 = 0;
+                };
+            };
+        };
     };
     // AK-102: ["CUP_arifle_AK102","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_AK102 : CUP_arifle_AK_Base {
-        dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_GP25 = 0;
+                };
+            };
+        };
     };
     // AK-103: ["CUP_arifle_AK104","CUP_arifle_AK74M","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_AK104 : CUP_arifle_AK74M {
-        dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_GP25 = 0;
+                };
+            };
+        };
     };
     // AKS (Gold): ["CUP_arifle_AKS_Gold","CUP_arifle_AKS","CUP_arifle_AKM","CUP_arifle_AK_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_AKS_Gold : CUP_arifle_AKS {
@@ -399,7 +535,11 @@ class CfgWeapons
 
 
     // OTs-14-4A-02 Groza: ["CUP_arifle_OTS14_GROZA","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
-    class CUP_arifle_OTS14_GROZA_Base : Rifle_Base_F {
+    class CUP_arifle_OTS14_GROZA : CUP_arifle_OTS14_GROZA_Base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    // OTs-14-4A-02 Groza: ["CUP_arifle_OTS14_GROZA","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_OTS14_GROZA_762 : CUP_arifle_OTS14_GROZA_762_base {
         dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
     };
     // <<<<<<<<<<<<<<<<<<<< Unregister <<<<<<<<<<<<<<<<<<<<<
