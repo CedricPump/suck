@@ -9,10 +9,6 @@ class CfgPatches
 		units[] = {};
 		weapons[] =
 		{
-			"rhs_weap_m4",
-			"rhs_weap_m4_m203S",
-			"rhs_weap_m4_m203",
-			"rhs_weap_m4_m320"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
