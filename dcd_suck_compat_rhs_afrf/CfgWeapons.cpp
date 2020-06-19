@@ -72,8 +72,6 @@ class dcd_suck_SL40;
 class dcd_suck_UPG40;
 class dcd_suck_SIX12;
 class dcd_suck_3GL;
-class dcd_suck_VHSBG;
-class dcd_suck_G1;
 
 // Weapons
 class Rifle_Base_F;

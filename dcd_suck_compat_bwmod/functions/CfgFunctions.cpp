@@ -13,7 +13,8 @@ class dcd_suck_compat_bwmod
 		requiredAddons[] = {
 			"A3_Data_F",
 			"cba_main",
-			"dcd_suck"
+			"dcd_suck",
+			"rhs_main"
 		};
 		file = "\dcd\dcd_suck_compat_bwmod\functions";
 		fnc_pre(init);
