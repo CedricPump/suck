@@ -44,6 +44,7 @@ class arifle_AK12_GL_base_F;
 class mk20_base_F;
 class Tavor_base_F;
 class arifle_SPAR_01_base_F;
+class arifle_SPAR_01_GL_base_F;
 class arifle_Katiba_Base_F;
 class arifle_MSBS65_base_F;
 class arifle_MSBS65_base_black_F;
@@ -100,6 +101,37 @@ class CfgWeapons
   class arifle_SPAR_01_base_F : arifle_SPAR_01_base_F {
       dcd_suck_fnc_register_ubgl(dcd_suck_M320);
   };
+  class arifle_SPAR_01_GL_blk_F : arifle_SPAR_01_GL_base_F {
+      class WeaponSlotsInfo: WeaponSlotsInfo {
+          class GlWeaponSlot: UnderBarrelSlot {
+              linkProxy = null;
+              class compatibleItems {
+                  dcd_suck_M320 = 1;
+              };
+          };
+      };
+  };
+  class arifle_SPAR_01_GL_khk_F : arifle_SPAR_01_GL_base_F {
+      class WeaponSlotsInfo: WeaponSlotsInfo {
+          class GlWeaponSlot: UnderBarrelSlot {
+              linkProxy = null;
+              class compatibleItems {
+                  dcd_suck_M320 = 1;
+              };
+          };
+      };
+  };
+  class arifle_SPAR_01_GL_snd_F : arifle_SPAR_01_GL_base_F {
+      class WeaponSlotsInfo: WeaponSlotsInfo {
+          class GlWeaponSlot: UnderBarrelSlot {
+              linkProxy = null;
+              class compatibleItems {
+                  dcd_suck_M320 = 1;
+              };
+          };
+      };
+  };
+
   ///
   class arifle_Katiba_F : arifle_Katiba_Base_F {
       dcd_suck_fnc_register_ubgl(dcd_suck_SL40);
