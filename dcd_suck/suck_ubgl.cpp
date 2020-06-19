@@ -136,3 +136,13 @@ class dcd_suck_VHSBG: dcd_suck_ubgl_base {
           mass = 35;
       };
 };
+class dcd_suck_G1: dcd_suck_ubgl_base {
+  scope=2;
+  displayName="G1";
+  author="DCD";
+  picture="\dcd\dcd_suck\ui\dcd_suck_g1.paa";
+  descriptionShort="G1 granade launcher";
+      class ItemInfo: CBA_MiscItem_ItemInfo {
+          mass = 35;
+      };
+};

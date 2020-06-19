@@ -2,10 +2,10 @@
 
 class CfgPatches
 {
-	class dcd_suck_compat_niarms
+	class dcd_suck_compat_cup
 	{
 		author="DCD";
-		name="dcd_suck_compat_niarms";
+		name="dcd_suck_compat_cup";
 		units[] = {};
 		weapons[] =
 		{
@@ -15,19 +15,20 @@ class CfgPatches
 		requiredAddons[] =
 		{
 			"dcd_suck",
-			"A3_Characters_F",
-			"hlcweapons_ar15",
-			"hlcweapons_core",
-			"hlcweapons_falpocalypse",
-			"hlcweapons_G36",
-			"hlcweapons_g3",
-			"niarms_416",
-			"hlcweapons_aks",
-			"hlcweapons_acr",
-			"hlcweapons_SG550",
-			"hlcweapons_AUG"
+			"A3_Weapons_F",
+			"CUP_Weapons_ACR",
+			"CUP_Weapons_AK",
+			"CUP_Weapons_Bren2",
+			"CUP_Weapons_G36",
+			"CUP_Weapons_HK416",
+			"CUP_Weapons_L85",
+			"CUP_Weapons_M16",
+			"CUP_Weapons_SCAR",
+			"CUP_Weapons_Sa58",
+			"CUP_Weapons_FNFAL",
+			"CUP_Weapons_XM8"
 		};
-		filename = "dcd_suck_compat_niarms.pbo";
+		filename = "dcd_suck_compat_cup.pbo";
     versionDesc = "SUCK";
     versionAct = "";
     version = "0.0.01";
