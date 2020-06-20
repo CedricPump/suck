@@ -113,14 +113,17 @@ class CUP_arifle_M16A4_Base;
 
 class CUP_CZ_BREN2_762_Base;
 class CUP_arifle_Sa58RIS1;
-class CUP_arifle_OTS14_GROZA_762_base;
 class CUP_arifle_OTS14_GROZA_Base;
+class CUP_arifle_OTS14_GROZA_762_base;
 
 class CUP_arifle_Mk17_Base;
 class CUP_arifle_SCAR_L_Base;
 class CUP_arifle_HK417_20;
 
+class CUP_arifle_DSA_SA58;
 
+class CUP_CZ_BREN2_762_GL_Base;
+class CUP_CZ_BREN2_GL_Base;
 
 class CfgWeapons
 {
@@ -429,7 +432,14 @@ class CfgWeapons
         dcd_suck_fnc_unregister_ubgl(dcd_suck_G1);
     };
 
-
+    // SA58 OSW: ["CUP_arifle_DSA_SA58_OSW","CUP_arifle_DSA_SA58","CUP_arifle_FNFAL","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // SA58 OSW M203: ["CUP_arifle_DSA_SA58_OSW_M203","CUP_arifle_DSA_SA58_OSW","CUP_arifle_DSA_SA58","CUP_arifle_FNFAL","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_DSA_SA58_OSW : CUP_arifle_DSA_SA58 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M203);
+    };
+    class CUP_arifle_DSA_SA58_OSW_M203 : CUP_arifle_DSA_SA58_OSW {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M203);
+    };
 
 
 
@@ -453,9 +463,40 @@ class CfgWeapons
     class CUP_CZ_BREN2_556_8 : CUP_CZ_BREN2_Base {
         dcd_suck_fnc_unregister_ubgl(dcd_suck_G1);
     };
-
-
-
+    // <<<<<<<<<<<<<<<<<<< item <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    // CZ 807 (14") GL: ["CUP_CZ_BREN2_762_14_GL","CUP_CZ_BREN2_762_GL_Base","CUP_CZ_BREN2_762_Base","CUP_CZ_BREN2_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_CZ_BREN2_762_14_GL : CUP_CZ_BREN2_762_GL_Base {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class GLSlot: UnderBarrelSlot {
+                linkProxy = null;
+                class compatibleItems {
+                    dcd_suck_G1 = 1;
+                };
+            };
+        };
+    };
+    // CZ BREN 2 (11") GL: ["CUP_CZ_BREN2_556_11_GL","CUP_CZ_BREN2_GL_Base","CUP_CZ_BREN2_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_CZ_BREN2_556_11_GL : CUP_CZ_BREN2_GL_Base {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class GLSlot: UnderBarrelSlot {
+                linkProxy = null;
+                class compatibleItems {
+                    dcd_suck_G1 = 1;
+                };
+            };
+        };
+    };
+    // CZ BREN 2 (14") GL: ["CUP_CZ_BREN2_556_14_GL","CUP_CZ_BREN2_GL_Base","CUP_CZ_BREN2_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_CZ_BREN2_556_14_GL : CUP_CZ_BREN2_GL_Base {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class GLSlot: UnderBarrelSlot {
+                linkProxy = null;
+                class compatibleItems {
+                    dcd_suck_G1 = 1;
+                };
+            };
+        };
+    };
 
     // G36: ["CUP_arifle_G36A","CUP_arifle_G36_Base_CarryhandleOptics","CUP_arifle_G36_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_G36_Base : Rifle_Base_F {
@@ -514,9 +555,15 @@ class CfgWeapons
     };
     // Mk 18 Mod 1 M203: ["CUP_arifle_mk18_m203_black","CUP_arifle_mk18_black","CUP_arifle_M4A1_BUIS_Base","CUP_arifle_M4_Base","CUP_arifle_M16_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_mk18_black : CUP_arifle_M4A1_BUIS_Base {
-        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class GLSlot: UnderBarrelSlot {
+                linkProxy = null;
+                class compatibleItems {
+                    dcd_suck_M203 = 1;
+                };
+            };
+        };
     };
-
 
 
     // Mk 16 CQC: ["CUP_arifle_Mk16_CQC","CUP_arifle_SCAR_L_Base","CUP_arifle_SCAR_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
@@ -538,8 +585,16 @@ class CfgWeapons
     class CUP_arifle_OTS14_GROZA : CUP_arifle_OTS14_GROZA_Base {
         dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
     };
-    // OTs-14-4A-02 Groza: ["CUP_arifle_OTS14_GROZA","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // OTs-14-1A-02 Groza: ["CUP_arifle_OTS14_GROZA_762","CUP_arifle_OTS14_GROZA_762_base","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_OTS14_GROZA_762 : CUP_arifle_OTS14_GROZA_762_base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    // OTs-14-4A Groza: ["CUP_arifle_OTS14_GROZA_GL","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_OTS14_GROZA_GL : CUP_arifle_OTS14_GROZA_Base {
+        dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
+    };
+    // OTs-14-1A Groza: ["CUP_arifle_OTS14_GROZA_762_GL","CUP_arifle_OTS14_GROZA_762_base","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_OTS14_GROZA_762_GL : CUP_arifle_OTS14_GROZA_762_base {
         dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
     };
     // <<<<<<<<<<<<<<<<<<<< Unregister <<<<<<<<<<<<<<<<<<<<<
@@ -551,6 +606,5 @@ class CfgWeapons
     class CUP_arifle_OTS14_GROZA_Grip : CUP_arifle_OTS14_GROZA_Base {
         dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
     };
-
 
 };

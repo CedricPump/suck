@@ -77,6 +77,7 @@ class dcd_suck_3GL;
 class Rifle_Long_Base_F;
 class Rifle_Base_F;
 class BWA3_G28;
+class BWA3_G38K;
 
 class CfgWeapons
 {
@@ -105,6 +106,23 @@ class CfgWeapons
         dcd_suck_fnc_register_ubgl(dcd_suck_M320);
     };
     // G38 <<<< REMOVE UBGL <<<<
+    class BWA3_G38C : BWA3_G38 {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
+    class BWA3_G38_AG40 : BWA3_G38 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class GlWeaponSlot: UnderBarrelSlot {
+                linkProxy = null;
+            };
+        };
+    };
+    class BWA3_G38K_AG40 : BWA3_G38K {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class GlWeaponSlot: UnderBarrelSlot {
+                linkProxy = null;
+            };
+        };
+    };
     // G38 END
 
 };
