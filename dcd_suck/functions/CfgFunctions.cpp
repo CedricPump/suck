@@ -41,6 +41,7 @@ class dcd_suck
 
 		// Handlers
 		fnc(onLoadoutChanged);
+		fnc(onTake);
 		fnc(validate);
 
 		// actions

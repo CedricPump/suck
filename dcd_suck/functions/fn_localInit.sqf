@@ -15,6 +15,12 @@ player setVariable [DCD_SUCK_SWITCHBACK_WEAPON,""];
 player setVariable [DCD_SUCK_BASE_WEAPON,""];
 player setVariable [DCD_SUCK_SWICHWEAOPN_MUTEX,false];
 
+// add BIS Take Event-handler
+player addEventHandler ["Take", {
+	_0 = _this spawn dcd_suck_fnc_onTake;
+}];
+
+
 // add CBA Loadout Event-handler
 _0 = ["loadout", {
 	_0 = _this spawn dcd_suck_fnc_onLoadoutChanged;
