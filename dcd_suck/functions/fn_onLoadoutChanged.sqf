@@ -13,6 +13,7 @@
 	NUMBER - Exitcode (0 = OK)
 */
 params["_unit","_newUnitLoadout","_oldUnitLoadout"];
+sleep DCD_SUCK_LOADOUT_TAKE_DELAY; // sleep to give onTake addEventHandler a chance to execute first
 
 if(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX) exitWith{0};
 
