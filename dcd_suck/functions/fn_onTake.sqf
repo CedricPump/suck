@@ -13,17 +13,35 @@
 	NUMBER - Exitcode (0 = OK)
 */
 params ["_unit", "_container", "_item"];
+sleep DCD_SUCK_LOADOUT_TAKE_DELAY; // sleep to give onLOadoutChanged addEventHandler a chance to execute first
 
-if(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX) exitWith{0};
+waitUntil {!(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX)};
 
 player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,true];
 try
 {
 	["New Weapon taken","onTake"] call dcd_suck_fnc_debugOut;
-	if(!([_item] call dcd_suck_fnc_isSupported)) exitWith{0};
+	if(!([_item] call dcd_suck_fnc_isSupported)) exitWith
+	{
+		["weapon not supported","onTake"] call dcd_suck_fnc_debugOut;
+		0
+	};
 
-	[_unit] call dcd_suck_fnc_resetVariables;
-	[_unit] call dcd_suck_fnc_validate;
+	if((primaryWeapon _unit) != _item) then {
+		if((_unit getVariable DCD_SUCK_SWITCHBACK_WEAPON) == _item) then {
+			_unit addWeapon _item;
+			[_unit] call dcd_suck_fnc_resetVariables;
+			[_unit] call dcd_suck_fnc_validate;
+			["Weapon had been switched","onTake"] call dcd_suck_fnc_debugOut;
+		};
+		["weapon is ok","onTake"] call dcd_suck_fnc_debugOut;
+	}
+	else
+	{
+		["weapon is ok","onTake"] call dcd_suck_fnc_debugOut;
+	};
+
+
 }
 catch
 {
