@@ -43,6 +43,7 @@ if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
 		if((([_weapon] call dcd_suck_fnc_getUBGLWeaponItem) == _bipod)) then
 		{
 			["bipod is ok","checkBipod"] call dcd_suck_fnc_debugOut;
+			_unit setVariable [DCD_SUCK_CURRENT_WEAPON,_weapon];
 		}
 		else
 		{
@@ -90,6 +91,7 @@ else
 		else
 		{
 			["no bipod is ok","checkBipod"] call dcd_suck_fnc_debugOut;
+			_unit setVariable [DCD_SUCK_CURRENT_WEAPON,_weapon];
 		};
 		["exit","checkBipod"] call dcd_suck_fnc_debugOut;
 		0
