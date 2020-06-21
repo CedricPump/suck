@@ -7,9 +7,7 @@ class CfgPatches
 		author="DCD";
 		name="dcd_suck_compat_rhs_gref";
 		units[] = {};
-		weapons[] =
-		{
-		};
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{

@@ -1,14 +1,10 @@
 name = "SUCK - BWMod Compatibility";
-
-picture 	= "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_picture.paa";
-
 actionName = "GitHub";
 action = "https://github.com/CedricPump/suck";
-
-description = "SUCK - BWMod COMPAT Development Version v0.0.01";
-
+description = "SUCK - BWMod Compatibility";
+picture = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_picture.paa";
 logo = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
 logoSmall = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
 logoOver = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
-overview = "SUCK is an Arma 3 mod which allows Players to attach and detach their underbarrel granade launcher (UBGL). It uses placeholder items for different UGL models and is compatible with ACE3 and RHS.";
+overview = "Compatibility Mod to make BWMod Weapons compatible with SUCK granade launcher system";
 author = "DCD";

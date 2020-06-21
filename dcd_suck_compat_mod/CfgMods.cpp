@@ -11,7 +11,7 @@ class CfgMods
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
 
-		description = "SUCK - RHS AFRF COMPAT Development Version v0.0.01";
+		description = "SUCK - RHS AFRF COMPAT";
 
 		logo = "\dcd\dcd_suck_compat_mod\ui\dcd_suck_icon_mod.paa";
 		logoSmall = "\dcd\dcd_suck_compat_mod\ui\dcd_suck_icon_mod.paa";
