@@ -7,7 +7,7 @@
 	Returns:
 	NUMBER - Exitcode (0 = OK)
 */
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK MOD COMPAT: initSupportedWeapons";};
+if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK RHS GREF COMPAT: initSupportedWeapons";};
 
 // VHS-D2: ["rhs_weap_vhsd2","rhs_weap_vhs2_base","Rifle_Base_F","Rifle","RifleCore","Default"]
 // VHS-D2 (VHS-BG): ["rhs_weap_vhsd2_bg","rhs_weap_vhs2_base","Rifle_Base_F","Rifle","RifleCore","Default"]
@@ -19,6 +19,6 @@ _0 = ["dcd_suck_VHSBG","rhs_weap_vhsd2_ct15x","rhs_weap_vhsd2_bg_ct15x"] call dc
 
 
 
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK MOD COMPAT: initSupportedWeapons";};
+if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK RHS GREF COMPAT: initSupportedWeapons";};
 
 if(true) exitWith{0};

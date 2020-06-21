@@ -7,7 +7,7 @@
 	Returns:
 	NUMBER - Exitcode (0 = OK)
 */
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK MOD COMPAT: initSupportedWeapons";};
+if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK RHS SAF COMPAT: initSupportedWeapons";};
 
 // HK G36KV: ["rhs_weap_g36kv","rhs_weap_g36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
 // HK G36KV (AG36): ["rhs_weap_g36kv_ag36","rhs_weap_g36kv","rhs_weap_g36_base","Rifle_Base_F","Rifle","RifleCore","Default"]
@@ -27,6 +27,6 @@ _0 = ["dcd_suck_GP25","rhs_weap_m21a_pr","rhs_weap_m21a_pr_pbg40"] call dcd_suck
 
 
 
-if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK MOD COMPAT: initSupportedWeapons";};
+if(DCD_SUCK_DEBUG) then {diag_log "DCD SUCK RHS SAF COMPAT: initSupportedWeapons";};
 
 if(true) exitWith{0};

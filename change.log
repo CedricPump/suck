@@ -1,5 +1,26 @@
 # Changelog
 
+## [v0.1.03]
+
+### Added
+
+- implemented Weapon Mapping and Config for CUP Weapons #4
+- implemented Weapon Mapping and Config for BWMod Weapons #4
+- implemented Weapon Mapping and Config for NIArms Weapons #4
+- added GranadeLauncher G1
+
+### Changed
+
+- changed UBGL weight to 1 #18
+- removed paa files from sources
+- cleaned configs
+
+### Fixed
+
+- fixed pouch item visible SPAR bug #12
+- fixed pouch item visible on Mod weapons bug #12
+
+
 ## [v0.1.02]
 
 ### added

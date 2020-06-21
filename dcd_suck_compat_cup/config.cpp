@@ -2,29 +2,33 @@
 
 class CfgPatches
 {
-	class dcd_suck_compat_rhs_usaf
+	class dcd_suck_compat_cup
 	{
 		author="DCD";
-		name="dcd_suck_compat_rhs_usaf";
+		name="dcd_suck_compat_cup";
 		units[] = {};
 		weapons[] =
 		{
-			"rhs_weap_m4",
-			"rhs_weap_m4_m203S",
-			"rhs_weap_m4_m203",
-			"rhs_weap_m4_m320"
+
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
 			"dcd_suck",
-			"rhsusf_main",
-			"rhsusf_c_weapons",
-			"rhsusf_weapons",
-			"rhsusf_weapons2",
-			"rhsusf_weapons3",
+			"A3_Weapons_F",
+			"CUP_Weapons_ACR",
+			"CUP_Weapons_AK",
+			"CUP_Weapons_Bren2",
+			"CUP_Weapons_G36",
+			"CUP_Weapons_HK416",
+			"CUP_Weapons_L85",
+			"CUP_Weapons_M16",
+			"CUP_Weapons_SCAR",
+			"CUP_Weapons_Sa58",
+			"CUP_Weapons_FNFAL",
+			"CUP_Weapons_XM8"
 		};
-		filename = "dcd_suck_compat_rhs_usaf.pbo";
+		filename = "dcd_suck_compat_cup.pbo";
     versionDesc = "SUCK";
     versionAct = "";
     version = "0.1.03";
