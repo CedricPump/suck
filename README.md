@@ -33,8 +33,8 @@ For this concept following components are required:
 
 - items for different UBGL Models ✓
 - scripts to change Weapons ✓
-- config to support UBGL in bipod slot (WIP)
-- mapping for supported weapons (WIP)
+- config to support UBGL in bipod slot ✓
+- mapping for supported weapons ✓
 - mod icon ✓
 - (optional) 3d model for item on ground (ToDo)
 
@@ -53,6 +53,7 @@ Several UGL Models should be available separately:
 - UPG40
 - SIX-12
 - VHS-BG
+- G1
 
 
 ## Features
@@ -69,9 +70,9 @@ Several UGL Models should be available separately:
 - [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) support ✓
 - [Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) support ✓
 - RHS UGLs ✓
-- CUP UGLs (planned)
-- BWMod UGLs (planned)
-- Niarms UGLs (planned)
+- CUP UGLs ✓
+- BWMod UGLs ✓
+- Niarms UGLs ✓
 
 
 ## Usage

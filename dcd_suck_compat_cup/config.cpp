@@ -7,10 +7,7 @@ class CfgPatches
 		author="DCD";
 		name="dcd_suck_compat_cup";
 		units[] = {};
-		weapons[] =
-		{
-
-		};
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{

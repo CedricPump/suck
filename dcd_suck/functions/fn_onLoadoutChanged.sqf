@@ -51,6 +51,9 @@ catch
 	[("Exception: " + str _exception),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
 	player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
 };
+sleep 0.1;
 player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
-
+["exit","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+[" ",""] call dcd_suck_fnc_debugOut;
+[" ",""] call dcd_suck_fnc_debugOut;
 if(true) exitWith{0};

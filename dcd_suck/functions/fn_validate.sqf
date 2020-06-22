@@ -29,10 +29,11 @@ if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
 {
 	if(!([_unit] call dcd_suck_fnc_hasGlEquipped)) then
 	{
-		_baseWeapon = _unit getVariable "DCD_SUCK_BASE_WEAPON";
+		_baseWeapon = _unit getVariable DCD_SUCK_BASE_WEAPON;
 		_ubgl = [_baseWeapon] call dcd_suck_fnc_getUBGLWeaponItem;
 		_unit addPrimaryWeaponItem _ubgl;
 		[("added " + _ubgl),"validate"] call dcd_suck_fnc_debugOut;
+		_unit setVariable [DCD_SUCK_CURRENT_WEAPON,_weapon];
 	};
 }
 else

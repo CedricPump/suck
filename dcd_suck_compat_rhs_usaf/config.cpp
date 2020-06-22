@@ -7,13 +7,7 @@ class CfgPatches
 		author="DCD";
 		name="dcd_suck_compat_rhs_usaf";
 		units[] = {};
-		weapons[] =
-		{
-			"rhs_weap_m4",
-			"rhs_weap_m4_m203S",
-			"rhs_weap_m4_m203",
-			"rhs_weap_m4_m320"
-		};
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
