@@ -1,5 +1,5 @@
 name = "SUCK - RHS USAF Compatibility";
-picture = "\dcd\dcd_suck_compat_rhs_usaf\ui\dcd_suck_picture.paa";
+picture = "\dcd\dcd_suck_compat_rhs_usaf\ui\dcd_suck_icon_rhs_usaf.paa";
 actionName = "GitHub";
 action = "https://github.com/CedricPump/suck";
 description = "SUCK - RHS USAF Compatibility";

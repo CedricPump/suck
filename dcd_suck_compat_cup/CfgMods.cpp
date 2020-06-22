@@ -4,7 +4,7 @@ class CfgMods
 	class dcd_suck_compat_cup : Mod_Base
 	{
 		name = "SUCK - CUP Weapons Compatibility";
-		picture = "\dcd\dcd_suck_compat_cup\ui\dcd_suck_picture.paa";
+		picture = "\dcd\dcd_suck_compat_cup\ui\dcd_suck_icon_cup.paa";
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
 		description = "SUCK - CUP Weapons Compatibility";

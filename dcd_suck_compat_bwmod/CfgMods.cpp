@@ -7,7 +7,7 @@ class CfgMods
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
 		description = "SUCK - BWMod Compatibility";
-		picture = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_picture.paa";
+		picture = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
 		logo = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
 		logoSmall = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
 		logoOver = "\dcd\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";

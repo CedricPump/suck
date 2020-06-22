@@ -4,7 +4,7 @@ class CfgMods
 	class dcd_suck_compat_niarms : Mod_Base
 	{
 		name = "SUCK - NIArms Compatibility";
-		picture = "\dcd\dcd_suck_compat_niarms\ui\dcd_suck_picture.paa";
+		picture = "\dcd\dcd_suck_compat_niarms\ui\dcd_suck_icon_niarms.paa";
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
 		description = "SUCK - NIArms All in One Compatibility";

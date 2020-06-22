@@ -1,5 +1,16 @@
 # Changelog
 
+## [v0.1.04]
+
+### Added
+- added onTake Event to avoid Same Weapon pickup Bug #7
+
+### Changed
+- renamed export Folders
+- changed Mods config
+- removed picture.paa from compat mods
+- updated readme
+
 ## [v0.1.03]
 
 ### Added

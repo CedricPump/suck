@@ -1,5 +1,5 @@
 name = "SUCK - RHS GREF Compatibility";
-picture = "\dcd\dcd_suck_compat_rhs_gref\ui\dcd_suck_picture.paa";
+picture = "\dcd\dcd_suck_compat_rhs_gref\ui\dcd_suck_icon_rhs_gref.paa";
 actionName = "GitHub";
 action = "https://github.com/CedricPump/suck";
 description = "SUCK - RHS GREF Compatibility";
