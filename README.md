@@ -4,8 +4,8 @@
 
 # SUCK - Simple UBGL Conversion Kit
 
-SUCK is an Arma 3 mod that allows Players to attach and detach their underbarrel grenade launcher (UBGL).
-It uses placeholder items for different UGL models and is compatible with ACE3 and RHS.
+SUCK is an Arma 3 mod that allows Players to attach and detach their under barrel grenade launcher (UBGL).
+It uses placeholder items for different UGL models and is compatible with ACE3 and supports several of the most common weapon packs.
 
 ## Acronyms
 
@@ -21,11 +21,15 @@ Steffies UBGL Conversion Kit
 
 <p align="left">
 
-This Mod should support to attach and detach an UGL.
-Because UGL is no attachment like a scope or a Bipod the whole Weapon has to be switched.
-Therefore only a limited range of weapons can be supported which have a UGL counterpart.
-A mapping of UGL model, base weapon and UGL Weapon is saved an action to attach/detach is shown when current Weapon is supported.
-The UGL itself is represented by a dummy item, that is created on detach and needs to be present for attaching.
+This Mod should support to attach and detach an UBGL as it should be.
+Because UBGL is no attachment like a scope or a Bipod the whole Weapon has to be switched.
+Therefore only a limited range of weapons can be supported which have a UBGL counterpart.
+Under barrel grenade launchers are items that can be attached to the weapons bipod slot.
+Attaching and detaching this item then switched the weapon to the corresponding counterpart.
+We tried to read combination from config using GL-Muzzle and inheritance but most Mods Config structure is too chaotic to do so.
+
+## Requirements
+this mod requires this latest version of CBA A3
 
 ### Components
 
@@ -44,9 +48,9 @@ Several UGL Models should be available separately:
 - M203
 - M203S
 - M320
-- HK AG36 (G36)
-- GP25 (AK)
-- FM EGLM (SCAR)
+- HK AG36
+- GP25
+- FM EGLM
 - 3GL
 - QLG-10A
 - SL40
@@ -74,10 +78,21 @@ Several UGL Models should be available separately:
 - BWMod UGLs ✓
 - Niarms UGLs ✓
 
+**planned Compatibility:** (if requested)
+- FFAA Weapons
+- Global Mobilization Weapons
+- SMA Weapons
+- SpR Weapons
+- HAFM Weapons
+
 
 ## Usage
 
-SUCK allows you to place an underbarrel grande launcher by dragging the UBGL Item to the underbarrel item slot in the inventory.
+This Mod adds under barrel grenade launchers as items that can be attached to the weapons bipod slot.  
+As soon as a supported weapon has a grenade launcher equipped the weapon is switched to its UBGL counterpart.  
+The Weapon is switched back by unequipping the UBGL item. Supported grenade launcher weapons are equipped with the UBGL item on pickup automatically.  
+
+Note that the mapping of special weapons (attachments variants) is created by their inheritance hierarchy and my lead to color scheme or barrel length mismatches.
 
 <p align="center"><img width="955" height="400" src="source/images/dcd_suck_usage_400p_hq.gif">
 
@@ -92,33 +107,16 @@ SUCK is compatible with [ACE Extension - Attachment Switching](https://steamcomm
 
 ## Development Usage
 
-Use Mikeros pboProject, Full Build, Output = `P:\dcd\dcd_suck_export`, Source = `P:\dcd\dcd_suck`
+Use Mikeros pboProject, Full Build, Output = `P:\dcd\export`, Source = `P:\dcd\dcd_suck`
 
-- **Only** touch `\dcd_suck_export\Mod.cpp`, let the rest be generated
+- **Only** touch `\dcd_suck_export\Mod.cpp` and `\dcd_suck_export\README.md`, let the rest be generated
 - **Only** put actual build content into `\dcd_suck`
 - WIP & Raw content belongs to `\source`
 
 
 ## Weapon Pack Compatibility
 
-To support SUCK with your own Weapon Pack two "simple" steps are needed.
-1. add all supported UBGL-Items to the Weapons UnderBarrelSlot in its Config:  
-e.g.:
-```cpp
-class tag_myWeapon : tag_myParent {
-  class WeaponSlotsInfo: WeaponSlotsInfo {
-    class GlWeaponSlot: UnderBarrelSlot {
-      class compatibleItems {
-        dcd_suck_M320 = 1;
-      };
-    };
-  };
-};
-```
-2. add a weapon mapping of the UBGL, the BaseWeapon and thi UGBLWeapon to the mods mapping tables using:
-```sqf
-["dcd_suck_M320","tag_myWeapon","tag_myWeapon_GL"] call dcd_suck_fnc_addSupportedWeaponPair;
-```
+Any weapon pack Modder is free to provide his own Compatibility Mods. For introductions on how to create these see: [developers guide](https://github.com/CedricPump/suck/blob/master/DevelopersGuide.md)
 
 
 ## Disclaimer / License

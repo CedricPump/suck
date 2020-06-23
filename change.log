@@ -1,5 +1,18 @@
 # Changelog
 
+## [v0.1.05]
+
+### Added
+- created Steam Workshop overview picture
+- added DevelopersGuide
+- added Mod Readme #31
+
+### Changed
+- updated github Readme.md #32 
+- changed WorkshopTexts.txt #34
+- moved Compat Mods to export/@SUCK/Optionals/ #30
+
+
 ## [v0.1.04]
 
 ### Added
