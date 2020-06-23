@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.06]
+
+### Fixed
+- hotfix JIP Client overrides DCD_SUCK_SUPPORTED_WEAPONS
+- reworked compat mod icons
+
 ## [v0.1.05]
 
 ### Added
@@ -8,7 +14,7 @@
 - added Mod Readme #31
 
 ### Changed
-- updated github Readme.md #32 
+- updated github Readme.md #32
 - changed WorkshopTexts.txt #34
 - moved Compat Mods to export/@SUCK/Optionals/ #30
 
