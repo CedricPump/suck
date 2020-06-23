@@ -1,0 +1,88 @@
+/// ---------------------------------------------------------------
+/// @SUCK
+/// ---------------------------------------------------------------
+
+
+[h1]SUCK - Simple UBGL Conversion Kit[/h1]
+
+SUCK is an Arma 3 mod that allows Players to attach and detach their under barrel grenade launcher (UBGL).
+It uses placeholder items for different UGL models and is compatible with ACE3 and supports several of the most common weapon packs.
+
+[h1]Requirements[/h1]
+
+this mod requires this latest version of CBA A3
+
+[h1]Usage[/h1]
+
+This Mod adds under barrel grenade launchers as items that can be attached to the weapons bipod slot.
+As soon as a supported weapon has a grenade launcher equipped the weapon is switched to its UBGL counterpart.
+The Weapon is switched back by unequipping the UBGL item. Supported grenade launcher weapons are equipped with the UBGL item on pickup automatically.
+
+## Features
+- switching between grenade launcher weapons and base weapons by attaching UBGL item.
+- Vanilla Weapons support
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments]ACE Extension - Attachment Switching[/url] support
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments]Advanced Weapon Mounting[/url] support
+- RHS Weapons support
+- CUP Weapons support
+- BW Mod Weapons support
+- NIArms Weapons support
+
+[b]planned Features:[/b] (if requested)
+- FFAA Weapons
+- Global Mobilization Weapons
+- SMA Weapons
+- SpR Weapons
+- HAFM Weapons
+
+[h2]GL Models[/h2]
+Several UGL Models should be available separately:
+
+M203: "dcd_suck_M203"
+M203s: "dcd_suck_M203S"
+M320: "dcd_suck_M320"
+HK AG36: "dcd_suck_AG36"
+GP25: "dcd_suck_GP25"
+FM EGLM: "dcd_suck_EGLM"
+3GL: "dcd_suck_3GL"
+QLG-10A: "dcd_suck_SL40"
+SL40: "dcd_suck_SL40"
+UPG40: "dcd_suck_UPG40"
+SIX-12: "dcd_suck_SIX12"
+VHS-BG: "dcd_suck_VHSBG"
+G1: "dcd_suck_G1"
+
+
+[h2]Contributions and Requests[/h2]
+
+For own contributions or requests such as weapon pack support requests please contact us using our [url=https://github.com/CedricPump/suck]git repo[/url].
+
+Any weapon pack Modder is free to provide his own Compatibility Mods. For introductions on how to create these see: [url=https://github.com/CedricPump/suck/blob/master/DevelopersGuide.md]developers guide[/url]
+
+
+[h2]Known Bugs[/h2]
+
+A list of currently known bugs can be found [url=https://github.com/CedricPump/suck/issues?q=is%3Aopen+is%3Aissue+label%3Abug]here[/url].
+Please feel free to report bugs at any time.
+
+
+[h2]License[/h2]
+
+[url=https://www.bohemia.net/community/licenses/arma-public-license-share-alike]This work is licensed under a Arma Public License Share Alike[/url]
+
+
+/// ---------------------------------------------------------------
+/// @SUCK_MOD_Compat
+/// ---------------------------------------------------------------
+
+[h1]SUCK - Mod Weapons Compat[/h1]
+
+[h1]Requirements[/h1]
+
+- CBA A3
+- SUCK - Simple UBGL Conversion Kit
+- Mod
+
+[h2]License[/h2]
+
+[url=https://www.bohemia.net/community/licenses/arma-public-license-share-alike]This work is licensed under a Arma Public License Share Alike[/url]
