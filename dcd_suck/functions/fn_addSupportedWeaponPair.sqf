@@ -35,18 +35,8 @@ else
 	(_mapping select 1) pushBack [_baseWeapon,_ubglWeapon];
 };
 
-// can use logic object as hashMap with setVariable?
-// datastructure
-//
-// Map<WeaponUBGL,ItemUBGL>
-// To quick check if item is right
-// And what item is missing to replace onPickup or valitadeCheck
-//
-// Map<ItemUBGL,[[Weapon,WeaponUBGL][Weapon,WeaponUBGL]]>
-// To find replace WeaponUBGL if item is equiped on base
-// serach in Array with select or findIf?
-//
-// Map<WeaponUBGL,Weapon>
-// do replace with defaul onUnequip
+/* publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";
+publicVariable "DCS_SUCK_UBGL_WEAPONS";
+publicVariable "DCS_SUCK_BASE_FOR_UBGLWEAPON"; */
 
 if(true) exitWith{0};
