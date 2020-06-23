@@ -8,17 +8,17 @@
 SUCK is an Arma 3 mod that allows Players to attach and detach their under barrel grenade launcher (UBGL).
 It uses placeholder items for different UGL models and is compatible with ACE3 and supports several of the most common weapon packs.
 
-[h1]Requirements[/h1]
+[h2]Requirements[/h2]
 
 this mod requires this latest version of CBA A3
 
-[h1]Usage[/h1]
+[h2]Usage[/h2]
 
 This Mod adds under barrel grenade launchers as items that can be attached to the weapons bipod slot.
 As soon as a supported weapon has a grenade launcher equipped the weapon is switched to its UBGL counterpart.
 The Weapon is switched back by unequipping the UBGL item. Supported grenade launcher weapons are equipped with the UBGL item on pickup automatically.
 
-## Features
+[h2]Features[/h2]
 - switching between grenade launcher weapons and base weapons by attaching UBGL item.
 - Vanilla Weapons support
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments]ACE Extension - Attachment Switching[/url] support
