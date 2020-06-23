@@ -1,8 +1,8 @@
-name = "SUCK - SAF Compatibility";
+name = "SUCK - RHS SAF Compatibility";
 picture = "\dcd\dcd_suck_compat_rhs_saf\ui\dcd_suck_icon_rhs_saf.paa";
 actionName = "GitHub";
 action = "https://github.com/CedricPump/suck";
-description = "SUCK - SAF Compatibility";
+description = "SUCK - RHS SAF Compatibility";
 logo = "\dcd\dcd_suck_compat_rhs_saf\ui\dcd_suck_icon_rhs_saf.paa";
 logoSmall = "\dcd\dcd_suck_compat_rhs_saf\ui\dcd_suck_icon_rhs_saf.paa";
 logoOver = "\dcd\dcd_suck_compat_rhs_saf\ui\dcd_suck_icon_rhs_saf.paa";

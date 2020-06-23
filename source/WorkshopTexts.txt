@@ -10,7 +10,7 @@ It uses placeholder items for different UGL models and is compatible with ACE3 a
 
 [h2]Requirements[/h2]
 
-this mod requires this latest version of CBA A3
+this mod requires the latest version of CBA A3
 
 [h2]Usage[/h2]
 
@@ -21,12 +21,15 @@ The Weapon is switched back by unequipping the UBGL item. Supported grenade laun
 [h2]Features[/h2]
 - switching between grenade launcher weapons and base weapons by attaching UBGL item.
 - Vanilla Weapons support
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments]ACE Extension - Attachment Switching[/url] support
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments]Advanced Weapon Mounting[/url] support
-- RHS Weapons support
-- CUP Weapons support
-- BW Mod Weapons support
-- NIArms Weapons support
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840]ACE Extension - Attachment Switching[/url] support
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829]Advanced Weapon Mounting[/url] support
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2139592196]RHS USAF Weapons support[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2139597775]RHS AFRF Weapons support[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2139603054]RHS GREF Weapons support[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2139601540]RHS SAF Weapons support[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2139607662]CUP Weapons support[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2139606152]BW Mod Weapons support[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2139604792]NIArms Weapons support[/url]
 
 [b]planned Features:[/b] (if requested)
 - FFAA Weapons
