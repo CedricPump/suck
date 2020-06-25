@@ -26,11 +26,18 @@ _0 = ["loadout", {
 	_0 = _this spawn dcd_suck_fnc_onLoadoutChanged;
 }, true] call CBA_fnc_addPlayerEventHandler;
 
-_0 = [] spawn {
-	while {true} do {
-		sleep DCD_SUCK_CHECK_INTERVAL;
-	};
-};
+
+// add BIS Respawn Event-handler
+player addMPEventHandler ["MPRespawn", {
+	_0 = _this spawn dcd_suck_fnc_onRespawn;
+}];
+
+// add BIS Killed Event-handler
+player addMPEventHandler ["MPKilled", {
+	_0 = _this spawn dcd_suck_fnc_onKilled;
+}];
+
+
 
 ["Init Client success"] call dcd_suck_fnc_debugOut;
 if(true) exitWith{0};

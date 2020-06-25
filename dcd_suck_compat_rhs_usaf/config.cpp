@@ -21,9 +21,9 @@ class CfgPatches
 		filename = "dcd_suck_compat_rhs_usaf.pbo";
     versionDesc = "SUCK";
     versionAct = "";
-    version = "0.1.06";
-    versionStr = "0.1.06";
-    versionAr[] = {0,1,6};
+    version = "0.1.07";
+    versionStr = "0.1.07";
+    versionAr[] = {0,1,7};
 	};
 };
 

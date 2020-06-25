@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.1.07]
+
+### Fixed
+- added onKilled and on Respawn Event Handlers to reset Variable on Respawn
+
 ## [v0.1.06]
 
 ### Fixed
