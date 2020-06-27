@@ -16,9 +16,9 @@ class CfgPatches
 		filename = "dcd_suck_compat_mod.pbo";
     versionDesc = "SUCK";
     versionAct = "";
-    version = "0.1.07";
-    versionStr = "0.1.07";
-    versionAr[] = {0,1,7};
+    version = "0.1.08";
+    versionStr = "0.1.08";
+    versionAr[] = {0.1.8};
 	};
 };
 

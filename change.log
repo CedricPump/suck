@@ -1,5 +1,10 @@
 # Changelog
 
+## [v0.1.08]
+
+### Fixed
+- fixed BUG m4 pip with M203 has m203S equipped #41
+
 ## [v0.1.07]
 
 ### Fixed
