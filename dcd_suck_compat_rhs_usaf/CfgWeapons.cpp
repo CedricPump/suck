@@ -80,6 +80,7 @@ class rhs_weap_m4_Base;
 class rhs_weap_m4_m203;
 class rhs_weap_m4a1;
 class rhs_weap_m4a1_carryhandle;
+class rhs_weap_m4a1_m203;
 class rhs_weap_m16a4;
 class rhs_weap_m4a1_m203s;
 class rhs_weap_hk416d145;
@@ -94,24 +95,32 @@ class CfgWeapons
     // ["rhs_weap_m4_m203S","rhs_weap_m4_m203","rhs_weap_m4_m320","rhs_weap_m4","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
     // M4 >>>> ADD UBGL >>>>
     class rhs_weap_m4 : rhs_weap_m4_Base {
-    dcd_suck_fnc_register3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
+        dcd_suck_fnc_register3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
     };
     // M4 <<<< REMOVE UBGL <<<<
     class rhs_weap_m4_mstock : rhs_weap_m4_Base {
-    dcd_suck_fnc_unregister3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
+        dcd_suck_fnc_unregister3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
     };
     // M4 END
 
 
     // M4 Carryhandle <<<< REMOVE UBGL <<<<
     class rhs_weap_m4_carryhandle : rhs_weap_m4 {
-    //dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+        //dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
         dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
     };
     class rhs_weap_m4_carryhandle_m203 : rhs_weap_m4_m203 {
-    //dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+        //dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
         dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
     };
+    class rhs_weap_m4_carryhandle_m203S : rhs_weap_m4_m203 {
+        //dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
+    };
+    // M4 (Carryhandle/M203): ["rhs_weap_m4_carryhandle_m203","rhs_weap_m4_m203","rhs_weap_m4_m320","rhs_weap_m4","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // M4 (Carryhandle/M203S): ["rhs_weap_m4_carryhandle_m203S","rhs_weap_m4_carryhandle_m203","rhs_weap_m4_m203","rhs_weap_m4_m320","rhs_weap_m4","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+
+
     // M4 Carryhandle END
 
 
@@ -242,9 +251,17 @@ class CfgWeapons
     };
     // HK416 D14.5 END
 
+
+    // M4A1: ["rhs_weap_m4a1_carryhandle","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+
     // M4A1 Carryhandle <<<< REMOVE UBGL <<<<
+
+    class rhs_weap_m4a1_carryhandle : rhs_weap_m4a1 {
+        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
+        //dcd_suck_fnc_unregister_ubgl(dcd_suck_M320);
+    };
     class rhs_weap_m4a1_carryhandle_mstock : rhs_weap_m4a1_carryhandle {
-    dcd_suck_fnc_unregister3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
+        dcd_suck_fnc_unregister2_ubgl(dcd_suck_M203,dcd_suck_M203S);
     };
     // M4A1 Carryhandle END
 
@@ -254,6 +271,16 @@ class CfgWeapons
     dcd_suck_fnc_register3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
     };
     // M4A1 <<<< REMOVE UBGL <<<<
+    // M4A1 (M203): ["rhs_weap_m4a1_carryhandle_m203","rhs_weap_m4a1_m203","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_m4a1_carryhandle_m203 : rhs_weap_m4a1_m203 {
+        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
+    };
+    // M4A1 (M203S): ["rhs_weap_m4a1_carryhandle_m203S","rhs_weap_m4a1_carryhandle_m203","rhs_weap_m4a1_m203","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_m4a1_carryhandle_m203S : rhs_weap_m4a1_carryhandle_m203 {
+        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
+    };
+
+
     class rhs_weap_m4a1_mstock : rhs_weap_m4a1 {
     dcd_suck_fnc_unregister3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
     };

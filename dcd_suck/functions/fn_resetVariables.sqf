@@ -12,6 +12,7 @@
 */
 params ["_unit"];
 
+["resetting Variables","resetVariables"] call dcd_suck_fnc_debugOut;
 _unit setVariable [DCD_SUCK_CURRENT_WEAPON,""];
 _unit setVariable [DCD_SUCK_BASE_WEAPON,""];
 _unit setVariable [DCD_SUCK_SWITCHBACK_WEAPON,""];
