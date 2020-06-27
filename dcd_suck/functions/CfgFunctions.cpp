@@ -42,6 +42,8 @@ class dcd_suck
 		// Handlers
 		fnc(onLoadoutChanged);
 		fnc(onTake);
+		fnc(onRespawn);
+		fnc(onKilled);
 		fnc(validate);
 
 		// actions
