@@ -31,6 +31,11 @@ else
 {
 	// prim. Weapon has changed
     _currentWeapon = _unit getVariable DCD_SUCK_CURRENT_WEAPON;
+	if(isNil "_currentWeapon") then
+	{
+		[_unit] call dcd_suck_fnc_resetVariables;
+		_currentWeapon = "";
+	};
     [("cahched current Weapon: " + str _currentWeapon),"isSupported"] call dcd_suck_fnc_debugOut;
 	if((primaryWeapon _unit) != _currentWeapon) then
 	{
