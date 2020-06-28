@@ -1,4 +1,4 @@
-<p align="center"><img width="64" height="64" src="source/images/icon_64p_blk.png">
+<p align="center"><img width="64" height="64" src="source/images/icons/icon_64p_blk.png">
 
 <p align="left">
 
@@ -17,7 +17,7 @@ Steffies UBGL Conversion Kit
 
 ## Concept
 
-<p align="center"><img width="800" height="400" src="source/images/suck_picture_2048x1024.png">
+<p align="center"><img width="800" height="400" src="source/images/pictures/suck_picture_2048x1024.png">
 
 <p align="left">
 
@@ -94,14 +94,14 @@ The Weapon is switched back by unequipping the UBGL item. Supported grenade laun
 
 Note that the mapping of special weapons (attachments variants) is created by their inheritance hierarchy and my lead to color scheme or barrel length mismatches.
 
-<p align="center"><img width="955" height="400" src="source/images/dcd_suck_usage_400p_hq.gif">
+<p align="center"><img width="955" height="400" src="source/images/pictures/dcd_suck_usage_400p_hq.gif">
 
 <p align="left">
 
 SUCK is compatible with [ACE Extension - Attachment Switching](https://steamcommunity.com/sharedfiles/filedetails/?id=1374639840&searchtext=attachments) and
 [Advanced Weapon Mounting](https://steamcommunity.com/sharedfiles/filedetails/?id=1378046829&searchtext=attachments) for more emersion.
 
-<p align="center"><img width="955" height="400" src="source/images/dcd_suck_usage_ace_ams_400p.gif">
+<p align="center"><img width="955" height="400" src="source/images/pictures/dcd_suck_usage_ace_ams_400p.gif">
 
 <p align="left">
 

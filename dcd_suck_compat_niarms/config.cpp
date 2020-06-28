@@ -27,9 +27,9 @@ class CfgPatches
 		filename = "dcd_suck_compat_niarms.pbo";
     versionDesc = "SUCK";
     versionAct = "";
-    version = "0.1.08";
-    versionStr = "0.1.08";
-    versionAr[] = {0.1.8};
+    version = "0.1.09";
+    versionStr = "0.1.09";
+    versionAr[] = {0,1,9};
 	};
 };
 
