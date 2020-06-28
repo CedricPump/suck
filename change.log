@@ -1,20 +1,29 @@
 # Changelog
 
+## pending [v0.1.09]
+
+### Added
+- added colored ui Pictures #13
+
+
 ## [v0.1.08]
 
 ### Fixed
 - fixed BUG m4 pip with M203 has m203S equipped #41
+
 
 ## [v0.1.07]
 
 ### Fixed
 - added onKilled and on Respawn Event Handlers to reset Variable on Respawn
 
+
 ## [v0.1.06]
 
 ### Fixed
 - hotfix JIP Client overrides DCD_SUCK_SUPPORTED_WEAPONS
 - reworked compat mod icons
+
 
 ## [v0.1.05]
 
