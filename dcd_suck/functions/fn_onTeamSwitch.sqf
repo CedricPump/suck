@@ -14,6 +14,6 @@
 params ["_oldUnit", "_unit"];
 
 ["!","onTeamSwitch"] call dcd_suck_fnc_debugOut;
-[_unit] call dcd_suck_fnc_resetVariables;
+//[_unit] call dcd_suck_fnc_resetVariables;
 
 if(true) exitWith{0};

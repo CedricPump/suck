@@ -17,11 +17,11 @@ sleep DCD_SUCK_LOADOUT_TAKE_DELAY; // sleep to give onLOadoutChanged addEventHan
 
 waitUntil {!(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX)};
 
-player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,true];
+_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,true];
 try
 {
 	["New Weapon taken","onTake"] call dcd_suck_fnc_debugOut;
-	if(!([_item] call dcd_suck_fnc_isSupported)) exitWith
+	if(!([_unit, _item] call dcd_suck_fnc_isSupported)) exitWith
 	{
 		["weapon not supported","onTake"] call dcd_suck_fnc_debugOut;
 		0
@@ -46,8 +46,8 @@ try
 catch
 {
 	[("Exception: " + str _exception),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
-	player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
+	_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
 };
-player setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
+_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
 
 if(true) exitWith{0};
