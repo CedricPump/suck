@@ -1,9 +1,15 @@
 # Changelog
 
+## [v1.0.00]
+
+- first public release
+
+
 ## [v0.1.10]
 
 ### Fixed
-- fixed Bug when switching to Zeus remote control #
+- fixed teamSwich Bug #47
+- fixed Bug when switching to Zeus remote control #47
 
 
 ## [v0.1.09]
