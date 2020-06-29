@@ -15,6 +15,16 @@ params ["_unit","_newWeapon"];
 
 [("switching to " + str _newWeapon),"switchWeapon"] call dcd_suck_fnc_debugOut;
 
+if(typeName _newWeapon == "OBJECT") then
+{
+    ["weapon is null: abort","switchWeapon"] call dcd_suck_fnc_debugOut;
+    if(true) exitWith{0};
+}
+else
+{
+    if(_newWeapon == "") exitWith{0};
+};
+
 try
 {
     //_wait = [] spawn {

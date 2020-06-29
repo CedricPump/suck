@@ -35,6 +35,8 @@ class dcd_suck
 		// init							// tested:
 		fnc_pre(init);					// ✓
 		fnc(localInit);					// ✓
+		fnc_post(localPostInit);		// ✓
+
 		//fnc(playerLoop);
 		fnc(addSupportedWeaponPair);	// ✓
 		fnc(initSupportedWeapons);		// ✓
@@ -44,6 +46,7 @@ class dcd_suck
 		fnc(onTake);
 		fnc(onRespawn);
 		fnc(onKilled);
+		fnc(onTeamSwitch);
 		fnc(validate);
 
 		// actions
