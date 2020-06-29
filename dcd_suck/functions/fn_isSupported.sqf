@@ -8,16 +8,22 @@
 	note that this differs from normal replacement check
 
 	Parameter(s):
-		0: STRING - WEAPON
+	0: OBJECT - Unit
+	1: STRING - Weapon Classname
 
 	Returns:
 	NUMBER - Exitcode (0 = OK)
 */
-params ["_weapon"];
+params ["_unit","_weapon"];
 
 // if current weapon is set we already checked
 [("checking " + str _weapon),"isSupported"] call dcd_suck_fnc_debugOut;
 _currentWeapon = player getVariable DCD_SUCK_CURRENT_WEAPON;
+if(isNil "_currentWeapon") then
+{
+	[_unit] call dcd_suck_fnc_resetVariables;
+	_currentWeapon = "";
+};
 [("cached current Weapon: " + str _currentWeapon),"isSupported"] call dcd_suck_fnc_debugOut;
 try
 {

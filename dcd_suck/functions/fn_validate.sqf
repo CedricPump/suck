@@ -18,11 +18,11 @@ params ["_unit"];
 
 _weapon = primaryWeapon _unit;
 
-//if(!([_weapon] call dcd_suck_fnc_isSupported)) exitWith{0};
+//if(!([_unit, _weapon] call dcd_suck_fnc_isSupported)) exitWith{0};
 
 ["validateing ...","validate"] call dcd_suck_fnc_debugOut;
 
-[_weapon] call dcd_suck_fnc_checkWeapon;
+[_unit, _weapon] call dcd_suck_fnc_checkWeapon;
 
 // is UBGL Weapon
 if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
@@ -30,6 +30,7 @@ if([_weapon] call dcd_suck_fnc_isUBGLWeapon) then
 	if(!([_unit] call dcd_suck_fnc_hasGlEquipped)) then
 	{
 		_baseWeapon = _unit getVariable DCD_SUCK_BASE_WEAPON;
+		["baseWeapon: " + str _baseWeapon,"validate"] call dcd_suck_fnc_debugOut;
 		_ubgl = [_baseWeapon] call dcd_suck_fnc_getUBGLWeaponItem;
 		_unit addPrimaryWeaponItem _ubgl;
 		[("added " + _ubgl),"validate"] call dcd_suck_fnc_debugOut;

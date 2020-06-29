@@ -18,7 +18,7 @@ params ["_unit"];
 
 _weapon = primaryWeapon _unit;
 
-if(!([_weapon] call dcd_suck_fnc_isSupported)) exitWith{0};
+if(!([_unit, _weapon] call dcd_suck_fnc_isSupported)) exitWith{0};
 
 ["chekcing ...","checkBipod"] call dcd_suck_fnc_debugOut;
 

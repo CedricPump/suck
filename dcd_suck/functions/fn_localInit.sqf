@@ -37,6 +37,7 @@ player addMPEventHandler ["MPKilled", {
 	_0 = _this spawn dcd_suck_fnc_onKilled;
 }];
 
+//onTeamSwitch { _0 = [_from, _to] spawn dcd_suck_fnc_onTeamSwitch; };
 
 
 ["Init Client success"] call dcd_suck_fnc_debugOut;
