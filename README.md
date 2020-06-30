@@ -119,6 +119,11 @@ Use Mikeros pboProject, Full Build, Output = `P:\dcd\export`, Source = `P:\dcd\d
 Any weapon pack Modder is free to provide his own Compatibility Mods. For introductions on how to create these see: [developers guide](https://github.com/CedricPump/suck/blob/master/DevelopersGuide.md)
 
 
+## Thanks and Support
+
+- thanks to joko for helpful advices to scheduled context, config inheritance and project structure
+
+
 ## Disclaimer / License
 
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
