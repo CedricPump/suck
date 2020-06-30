@@ -1,5 +1,11 @@
 # Changelog
 
+## pending [v1.0.01]
+
+### Changed
+- changed scripts to avoid scheduled context #50
+
+
 ## [v1.0.00]
 
 - first public release

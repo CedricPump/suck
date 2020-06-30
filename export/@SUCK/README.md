@@ -6,7 +6,7 @@ SUCK is an Arma 3 mod that allows Players to attach and detach their under barre
 It uses placeholder items for different UGL models and is compatible with ACE3 and supports several of the most common weapon packs.
 
 ## Version
-current version: v1.0.00
+current version: v1.0.1
 
 ## Requirements
 this mod requires this latest version of CBA A3
@@ -39,6 +39,10 @@ Any weapon pack Modder is free to provide his own Compatibility Mods. For introd
 
 A list of currently known bugs can be found [here](https://github.com/CedricPump/suck/issues?q=is%3Aopen+is%3Aissue+label%3Abug).
 Please feel free to report bugs at any time.
+
+## Thanks and Support
+
+- thanks to joko for helpful advices to scheduled context, config inheritance and project structure
 
 ## License
 
