@@ -39,31 +39,33 @@
 class WeaponSlotsInfo;
 class UnderBarrelSlot;
 
-class arifle_AK12_base_F;
-class arifle_AK12_GL_base_F;
-class mk20_base_F;
-class Tavor_base_F;
-class arifle_SPAR_01_base_F;
-class arifle_SPAR_01_GL_base_F;
-class arifle_Katiba_Base_F;
-class arifle_MSBS65_base_F;
-class arifle_MSBS65_base_black_F;
-class arifle_MSBS65_base_camo_F;
-class arifle_MSBS65_base_sand_F;
-class arifle_MSBS65_GL_base_F;
-class arifle_MSBS65_GL_base_black_F;
-class arifle_MSBS65_GL_base_camo_F;
-class arifle_MSBS65_GL_base_sand_F;
-class arifle_MSBS65_UBS_base_F;
-class arifle_MSBS65_UBS_base_black_F;
-class arifle_MSBS65_UBS_base_camo_F;
-class arifle_MSBS65_UBS_base_sand_F;
-class arifle_MX_Base_F;
-class arifle_CTAR_base_F;
+
 
 class CfgWeapons
 {
-    #include "suck_ubgl.cpp"
+  #include "suck_ubgl.cpp"
+
+  class arifle_AK12_base_F;
+  class arifle_AK12_GL_base_F;
+  class mk20_base_F;
+  class Tavor_base_F;
+  class arifle_SPAR_01_base_F;
+  class arifle_SPAR_01_GL_base_F;
+  class arifle_Katiba_Base_F;
+  class arifle_MSBS65_base_F;
+  class arifle_MSBS65_base_black_F;
+  class arifle_MSBS65_base_camo_F;
+  class arifle_MSBS65_base_sand_F;
+  class arifle_MSBS65_GL_base_F;
+  class arifle_MSBS65_GL_base_black_F;
+  class arifle_MSBS65_GL_base_camo_F;
+  class arifle_MSBS65_GL_base_sand_F;
+  class arifle_MSBS65_UBS_base_F;
+  class arifle_MSBS65_UBS_base_black_F;
+  class arifle_MSBS65_UBS_base_camo_F;
+  class arifle_MSBS65_UBS_base_sand_F;
+  class arifle_MX_Base_F;
+  class arifle_CTAR_base_F;
 
   class arifle_AK12_F : arifle_AK12_base_F {
     dcd_suck_fnc_register_ubgl(dcd_suck_GP25);
