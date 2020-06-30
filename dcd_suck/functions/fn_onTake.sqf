@@ -13,41 +13,54 @@
 	NUMBER - Exitcode (0 = OK)
 */
 params ["_unit", "_container", "_item"];
-sleep DCD_SUCK_LOADOUT_TAKE_DELAY; // sleep to give onLOadoutChanged addEventHandler a chance to execute first
+[{},[],DCD_SUCK_LOADOUT_TAKE_DELAY] call CBA_fnc_waitAndExecute; // sleep to give onLOadoutChanged addEventHandler a chance to execute first
 
-waitUntil {!(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX)};
+//waitUntil {!(_unit getVariable DCD_SUCK_SWIChWEAOPN_MUTEX)}
 
-_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,true];
-try
-{
-	["New Weapon taken","onTake"] call dcd_suck_fnc_debugOut;
-	if(!([_unit, _item] call dcd_suck_fnc_isSupported)) exitWith
+[
+	{!((_this select 0) getVariable DCD_SUCK_SWIChWEAOPN_MUTEX)},
 	{
-		["weapon not supported","onTake"] call dcd_suck_fnc_debugOut;
-		0
-	};
 
-	if((primaryWeapon _unit) != _item) then {
-		if((_unit getVariable DCD_SUCK_SWITCHBACK_WEAPON) == _item) then {
-			_unit addWeapon _item;
-			[_unit] call dcd_suck_fnc_resetVariables;
-			[_unit] call dcd_suck_fnc_validate;
-			["Weapon had been switched","onTake"] call dcd_suck_fnc_debugOut;
+	    params ["_unit", "_container", "_item"];
+
+		_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,true];
+		try
+		{
+			["New Weapon taken","onTake"] call dcd_suck_fnc_debugOut;
+			if(!([_unit, _item] call dcd_suck_fnc_isSupported)) exitWith
+			{
+				["weapon not supported","onTake"] call dcd_suck_fnc_debugOut;
+				0
+			};
+
+			if((primaryWeapon _unit) != _item) then {
+				if((_unit getVariable DCD_SUCK_SWITCHBACK_WEAPON) == _item) then {
+					_unit addWeapon _item;
+					[_unit] call dcd_suck_fnc_resetVariables;
+					[_unit] call dcd_suck_fnc_validate;
+					["Weapon had been switched","onTake"] call dcd_suck_fnc_debugOut;
+				};
+				["weapon is ok","onTake"] call dcd_suck_fnc_debugOut;
+			}
+			else
+			{
+				["weapon is ok","onTake"] call dcd_suck_fnc_debugOut;
+			};
+
+
+		}
+		catch
+		{
+			[("Exception: " + str _exception),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+			_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
 		};
-		["weapon is ok","onTake"] call dcd_suck_fnc_debugOut;
-	}
-	else
-	{
-		["weapon is ok","onTake"] call dcd_suck_fnc_debugOut;
-	};
+		_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
+
+	},
+	_this
+] call CBA_fnc_waitUntilAndExecute;
 
 
-}
-catch
-{
-	[("Exception: " + str _exception),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
-	_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
-};
-_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
+
 
 if(true) exitWith{0};

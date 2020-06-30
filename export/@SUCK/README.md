@@ -40,6 +40,10 @@ Any weapon pack Modder is free to provide his own Compatibility Mods. For introd
 A list of currently known bugs can be found [here](https://github.com/CedricPump/suck/issues?q=is%3Aopen+is%3Aissue+label%3Abug).
 Please feel free to report bugs at any time.
 
+## Thanks and Support
+
+- thanks to joko for helpful advices to scheduled context, config inheritance and project structure
+
 ## License
 
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >

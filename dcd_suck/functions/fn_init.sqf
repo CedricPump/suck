@@ -27,7 +27,7 @@ _0 = [] call dcd_suck_fnc_initSupportedWeapons;
 // init Client
 if (hasInterface) then
 {
-	_0 = [] spawn dcd_suck_fnc_localInit;
+	_0 = [] call dcd_suck_fnc_localInit;
 };
 
 ["DCD SUCK: Init Global success"] call dcd_suck_fnc_debugOut;

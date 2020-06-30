@@ -57,9 +57,14 @@ catch
 	[("Exception: " + str _exception),"onLoadoutChanged"] call dcd_suck_fnc_debugOut;
 	_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
 };
-sleep 0.1;
-_unit setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
-["exit","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
-[" ",""] call dcd_suck_fnc_debugOut;
-[" ",""] call dcd_suck_fnc_debugOut;
+
+[{
+	_this setVariable [DCD_SUCK_SWIChWEAOPN_MUTEX,false];
+	["exit","onLoadoutChanged"] call dcd_suck_fnc_debugOut;
+	[" ",""] call dcd_suck_fnc_debugOut;
+	[" ",""] call dcd_suck_fnc_debugOut;
+
+},_unit,0.1] call CBA_fnc_waitAndExecute;
+
+
 if(true) exitWith{0};
