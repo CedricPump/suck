@@ -1,11 +1,10 @@
 class CBA_MiscItem;
 class CBA_MiscItem_ItemInfo;
-class dcd_suck_ubgl_base: CBA_MiscItem
+class bipod_01_F_snd;
+class dcd_suck_ubgl_base: bipod_01_F_snd // CBA_MiscItem
 {
-  // if author only set here will show as Unknown Community Author,
-  // move to each inherited item instead.
-  // author="DCD";
-  scope=0;
+    model = "\A3\weapons_F\ammo\mag_univ.p3d";
+    scope=0;
 };
 class dcd_suck_M203: dcd_suck_ubgl_base
 {
