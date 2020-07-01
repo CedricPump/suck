@@ -60,27 +60,28 @@
 
 class WeaponSlotsInfo;
 class UnderBarrelSlot;
-// UBGLs
-class dcd_suck_M203;
-class dcd_suck_M203S;
-class dcd_suck_M320;
-class dcd_suck_AG36;
-class dcd_suck_GP25;
-class dcd_suck_EGLM;
-class dcd_suck_QLG10A;
-class dcd_suck_SL40;
-class dcd_suck_UPG40;
-class dcd_suck_SIX12;
-class dcd_suck_3GL;
-class dcd_suck_VHSBG;
-class dcd_suck_G1;
 
-// Weapons
-class Rifle_Base_F;
-class rhs_weap_vhs2_base;
 
 class CfgWeapons
 {
+    // UBGLs
+    class dcd_suck_M203;
+    class dcd_suck_M203S;
+    class dcd_suck_M320;
+    class dcd_suck_AG36;
+    class dcd_suck_GP25;
+    class dcd_suck_EGLM;
+    class dcd_suck_QLG10A;
+    class dcd_suck_SL40;
+    class dcd_suck_UPG40;
+    class dcd_suck_SIX12;
+    class dcd_suck_3GL;
+    class dcd_suck_VHSBG;
+    class dcd_suck_G1;
+
+    // Weapons
+    class Rifle_Base_F;
+    class rhs_weap_vhs2_base;
 
     // VHS-D2: ["rhs_weap_vhsd2","rhs_weap_vhs2_base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class rhs_weap_vhsd2 : rhs_weap_vhs2_base {

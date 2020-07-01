@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.02]
+
+### fixed
+- moved parent class definitions into CfgWeapons for Mod Weapons #51
+- moved parent class definitions into CfgWeapons for Vanilla Weapons #51
+- UBGL Items now inherit from base bipod to be shown in ACE Arsenal correctly #48
+
+
 ## [v1.0.01]
 
 ### Changed

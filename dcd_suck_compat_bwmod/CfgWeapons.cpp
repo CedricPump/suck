@@ -60,27 +60,27 @@
 
 class WeaponSlotsInfo;
 class UnderBarrelSlot;
-// UBGLs
-class dcd_suck_M203;
-class dcd_suck_M203S;
-class dcd_suck_M320;
-class dcd_suck_AG36;
-class dcd_suck_GP25;
-class dcd_suck_EGLM;
-class dcd_suck_QLG10A;
-class dcd_suck_SL40;
-class dcd_suck_UPG40;
-class dcd_suck_SIX12;
-class dcd_suck_3GL;
 
-// Weapons
-class Rifle_Long_Base_F;
-class Rifle_Base_F;
-class BWA3_G28;
-class BWA3_G38K;
 
 class CfgWeapons
 {
+    // UBGLs
+    class dcd_suck_M203;
+    class dcd_suck_M203S;
+    class dcd_suck_M320;
+    class dcd_suck_AG36;
+    class dcd_suck_GP25;
+    class dcd_suck_EGLM;
+    class dcd_suck_QLG10A;
+    class dcd_suck_SL40;
+    class dcd_suck_UPG40;
+    class dcd_suck_SIX12;
+    class dcd_suck_3GL;
+
+    // Weapons
+    class Rifle_Long_Base_F;
+    class Rifle_Base_F;
+    class BWA3_G28;
 
     // G27 AG40-2: ["BWA3_G27_AG40","BWA3_G27","BWA3_G28","Rifle_Long_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
     class BWA3_G27 : BWA3_G28 {

@@ -60,34 +60,32 @@
 
 class WeaponSlotsInfo;
 class UnderBarrelSlot;
-// UBGLs
-class dcd_suck_M203;
-class dcd_suck_M203S;
-class dcd_suck_M320;
-class dcd_suck_AG36;
-class dcd_suck_GP25;
-class dcd_suck_EGLM;
-class dcd_suck_QLG10A;
-class dcd_suck_SL40;
-class dcd_suck_UPG40;
-class dcd_suck_SIX12;
-class dcd_suck_3GL;
-class dcd_suck_VHSBG;
-class dcd_suck_G1;
 
-// Weapons
-class rhs_weap_m4_Base;
-class rhs_weap_m4_m203;
-class rhs_weap_m4a1;
-class rhs_weap_m4a1_carryhandle;
-class rhs_weap_m4a1_m203;
-class rhs_weap_m16a4;
-class rhs_weap_m4a1_m203s;
-class rhs_weap_hk416d145;
-//class rhs_weap_mk18;
 
 class CfgWeapons
 {
+    // UBGLs
+    class dcd_suck_M203;
+    class dcd_suck_M203S;
+    class dcd_suck_M320;
+    class dcd_suck_AG36;
+    class dcd_suck_GP25;
+    class dcd_suck_EGLM;
+    class dcd_suck_QLG10A;
+    class dcd_suck_SL40;
+    class dcd_suck_UPG40;
+    class dcd_suck_SIX12;
+    class dcd_suck_3GL;
+    class dcd_suck_VHSBG;
+    class dcd_suck_G1;
+
+    // Weapons
+    class rhs_weap_m4_Base;
+    class rhs_weap_m4_m203;
+    class rhs_weap_m4a1_m203;
+    class rhs_weap_m4a1_m203s;
+    class rhs_weap_hk416d145;
+
     // M4 |||| Info ||||
     // ["rhs_weap_m4","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
     // ["rhs_weap_m4_m320","rhs_weap_m4","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
@@ -145,6 +143,20 @@ class CfgWeapons
       // M16A4 <<<< REMOVE UBGL <<<<
     // M16A4 END
 
+    
+    // M4A1 >>>> ADD UBGL >>>>
+    class rhs_weap_m4a1 : rhs_weap_m4_Base {
+    dcd_suck_fnc_register3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
+    };
+    // M4A1 <<<< REMOVE UBGL <<<<
+    // M4A1 (M203): ["rhs_weap_m4a1_carryhandle_m203","rhs_weap_m4a1_m203","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_m4a1_carryhandle_m203 : rhs_weap_m4a1_m203 {
+        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
+    };
+    // M4A1 (M203S): ["rhs_weap_m4a1_carryhandle_m203S","rhs_weap_m4a1_carryhandle_m203","rhs_weap_m4a1_m203","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class rhs_weap_m4a1_carryhandle_m203S : rhs_weap_m4a1_carryhandle_m203 {
+        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
+    };
 
     // HK416 >>>> ADD UBGL >>>>
     // somehow does not equip bipod anyway !!!!
@@ -266,19 +278,7 @@ class CfgWeapons
     // M4A1 Carryhandle END
 
 
-    // M4A1 >>>> ADD UBGL >>>>
-    class rhs_weap_m4a1 : rhs_weap_m4_Base {
-    dcd_suck_fnc_register3_ubgl(dcd_suck_M203,dcd_suck_M203S,dcd_suck_M320);
-    };
-    // M4A1 <<<< REMOVE UBGL <<<<
-    // M4A1 (M203): ["rhs_weap_m4a1_carryhandle_m203","rhs_weap_m4a1_m203","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
-    class rhs_weap_m4a1_carryhandle_m203 : rhs_weap_m4a1_m203 {
-        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
-    };
-    // M4A1 (M203S): ["rhs_weap_m4a1_carryhandle_m203S","rhs_weap_m4a1_carryhandle_m203","rhs_weap_m4a1_m203","rhs_weap_m4a1","rhs_weap_m4_Base","arifle_MX_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
-    class rhs_weap_m4a1_carryhandle_m203S : rhs_weap_m4a1_carryhandle_m203 {
-        dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M203S);
-    };
+
 
 
     class rhs_weap_m4a1_mstock : rhs_weap_m4a1 {
