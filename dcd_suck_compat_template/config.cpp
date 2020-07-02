@@ -2,18 +2,19 @@
 
 class CfgPatches
 {
-	class dcd_suck_compat_mod
+	class dcd_suck_compat_<mod>
 	{
 		author="DCD";
-		name="dcd_suck_compat_mod";
+		name="dcd_suck_compat_<mod>";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
-			"dcd_suck"
+			"dcd_suck",
+			"A3_Weapons_F"
 		};
-		filename = "dcd_suck_compat_mod.pbo";
+		filename = "dcd_suck_compat_<mod>.pbo";
     versionDesc = "SUCK";
     versionAct = "";
     version = "1.0.02";
