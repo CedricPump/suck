@@ -77,11 +77,11 @@ Several UGL Models should be available separately:
 - CUP UGLs ✓
 - BWMod UGLs ✓
 - Niarms UGLs ✓
+- SMA Weapons ✓
 
 **planned Compatibility:** (if requested)
 - FFAA Weapons
 - Global Mobilization Weapons
-- SMA Weapons
 - SpR Weapons
 - HAFM Weapons
 
