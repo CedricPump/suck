@@ -6,9 +6,9 @@
 		description = ""; \
 	}
 
-class dcd_suck_compat_cup
+class dcd_suck_compat_sma
 {
-	class suck_compat_cup
+	class suck_compat_sma
 	{
 		requiredAddons[] = {
 			"A3_Data_F",

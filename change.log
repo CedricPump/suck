@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.0.04]
+
+### Fixed
+- hotfix sma compat CfgFunctions kills cup compat init #55
+
+
 ## [v1.0.03]
 
 ### Added
