@@ -2,14 +2,13 @@ name = "S.U.C.K."
 prefix = "dcd"
 author = "Steffie"
 sig_version = 3
-version = "0.0.1"
+version = "1.0.06"
 reuse_private_key = false
 files = [
     "mod.cpp",
     "*.paa",
-    "LICENSE",
-    "readme.txt",
-    "readme.md"
+    "LICENSE.md",
+    "README.md"
 ]
 include = ["./include"]
 
