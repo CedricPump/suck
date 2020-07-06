@@ -1,6 +1,8 @@
-name = "S.U.C.K."
-prefix = "dcd"
-author = "Steffie"
+name = "S.U.C.K"
+modname = "SUCK"
+mainprefix = "p"
+prefix = "dcd_suck"
+author = "DCD"
 sig_version = 3
 version = "1.0.06"
 reuse_private_key = false
@@ -16,5 +18,5 @@ key_name = "{{prefix}}_{{version}}"
 authority = "{{prefix}}_{{version}}"
 
 releasebuild = [
-    "@zip @SUCK"
+    "@zip @{{modname}}_{{version}}"
 ]

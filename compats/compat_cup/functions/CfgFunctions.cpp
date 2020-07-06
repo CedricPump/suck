@@ -15,7 +15,7 @@ class dcd_suck_compat_cup
 			"cba_main",
 			"dcd_suck"
 		};
-		file = "\p\dcd\dcs_suck\compats\dcd_suck_compat_<mod>\functions";
+		file = "\p\dcd\dcs_suck\compats\dcd_suck_compat_cup\functions";
 		fnc_pre(init);
 	};
 };
