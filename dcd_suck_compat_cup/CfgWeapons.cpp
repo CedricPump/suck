@@ -134,6 +134,7 @@ class CfgWeapons
     class CUP_arifle_Mk17_Base;
     class CUP_arifle_SCAR_L_Base;
     class CUP_arifle_HK417_20;
+    class CUP_arifle_HK416_Black;
 
     class CUP_arifle_DSA_SA58;
 
@@ -535,6 +536,15 @@ class CfgWeapons
     // HK416: ["CUP_arifle_HK416_Black","CUP_arifle_HK416_145_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_HK416_145_Base : Rifle_Base_F {
         dcd_suck_fnc_register2_ubgl(dcd_suck_M203,dcd_suck_M320);
+    };
+    // M27 IAR: ["CUP_arifle_HK_M27","CUP_arifle_HK416_Black","CUP_arifle_HK416_145_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // M27 IAR (Grip): ["CUP_arifle_HK_M27_VFG","CUP_arifle_HK_M27","CUP_arifle_HK416_Black","CUP_arifle_HK416_145_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    // M27 M320: ["CUP_arifle_HK_M27_AG36","CUP_arifle_HK416_Black","CUP_arifle_HK416_145_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_HK_M27 : CUP_arifle_HK416_Black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
+    };
+    class CUP_arifle_HK_M27_AG36 : CUP_arifle_HK416_Black {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M320);
     };
     // HK417 CQC: ["CUP_arifle_HK417_12","CUP_arifle_HK417_20","CUP_arifle_HK417_Base","CUP_arifle_HK416_145_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_HK417_12 : CUP_arifle_HK417_20 {

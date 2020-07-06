@@ -1,5 +1,24 @@
 # Changelog
 
+## [v1.0.05]
+
+### Fixed
+
+- fixed bug m27 has m203 too much #56
+
+
+## [v1.0.04]
+
+### Fixed
+- hotfix sma compat CfgFunctions kills cup compat init #55
+
+
+## [v1.0.03]
+
+### Added
+- implemented support for SMA Weapons as "@SUCK SMA Compat"
+
+
 ## [v1.0.02]
 
 ### fixed
