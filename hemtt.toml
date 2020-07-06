@@ -1,0 +1,21 @@
+name = "S.U.C.K."
+prefix = "dcd"
+author = "Steffie"
+sig_version = 3
+version = "0.0.1"
+reuse_private_key = false
+files = [
+    "mod.cpp",
+    "*.paa",
+    "LICENSE",
+    "readme.txt",
+    "readme.md"
+]
+include = ["./include"]
+
+key_name = "{{prefix}}_{{version}}"
+authority = "{{prefix}}_{{version}}"
+
+releasebuild = [
+    "@zip @SUCK"
+]
