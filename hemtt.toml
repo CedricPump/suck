@@ -20,3 +20,18 @@ authority = "{{prefix}}_{{version}}"
 releasebuild = [
     "@zip @{{modname}}_{{version}}"
 ]
+
+# see: https://synixebrett.github.io/HEMTT/#/scripts
+releasebuild = [
+  "!build"
+]
+
+[scripts.build]
+steps_linux = [
+    "make linux",
+    "cp bin/ release/{{version}}/ -r"
+]
+steps_windows = [
+    "make windows",
+    "copy bin/ release/{{version}}/"
+]
