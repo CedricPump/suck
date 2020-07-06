@@ -20,8 +20,8 @@ params["_ubgl","_baseWeapon","_ubglWeapon"];
 
 // add to supported Weapons
 DCD_SUCK_SUPPORTED_WEAPONS append [_baseWeapon,_ubglWeapon];
-DCS_SUCK_UBGL_WEAPONS append [[_ubglWeapon,_ubgl]];
-DCS_SUCK_BASE_FOR_UBGLWEAPON append [[_ubglWeapon,_baseWeapon]];
+dcd_suck_UBGL_WEAPONS append [[_ubglWeapon,_ubgl]];
+dcd_suck_BASE_FOR_UBGLWEAPON append [[_ubglWeapon,_baseWeapon]];
 
 // add to Weapon Mapping
 _index = (DCD_SUCK_WEAPON_MAPPING findIf {(_x select 0) == _ubgl});
@@ -36,7 +36,7 @@ else
 };
 
 /* publicVariable "DCD_SUCK_SUPPORTED_WEAPONS";
-publicVariable "DCS_SUCK_UBGL_WEAPONS";
-publicVariable "DCS_SUCK_BASE_FOR_UBGLWEAPON"; */
+publicVariable "dcd_suck_UBGL_WEAPONS";
+publicVariable "dcd_suck_BASE_FOR_UBGLWEAPON"; */
 
 if(true) exitWith{0};

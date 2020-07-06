@@ -16,7 +16,7 @@ class dcd_suck_compat_rhs_gref
 			"dcd_suck",
 			"rhs_main"
 		};
-		file = "\p\dcd\dcs_suck\compats\dcd_suck_compat_rhs_gref\functions";
+		file = "\p\dcd\dcd_suck\compats\dcd_suck_compat_rhs_gref\functions";
 		fnc_pre(init);
 	};
 };

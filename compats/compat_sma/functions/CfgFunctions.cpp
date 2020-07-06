@@ -15,7 +15,7 @@ class dcd_suck_compat_sma
 			"cba_main",
 			"dcd_suck"
 		};
-		file = "\p\dcd\dcs_suck\compats\dcd_suck_compat_sma\functions";
+		file = "\p\dcd\dcd_suck\compats\dcd_suck_compat_sma\functions";
 		fnc_pre(init);
 	};
 };

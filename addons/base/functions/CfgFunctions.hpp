@@ -30,7 +30,7 @@ class dcd_suck
 			"A3_Data_F",
 			"cba_main"
 		};
-		file = "\dcd\addons\suck\functions";
+		file = "p\dcd\dcd_suck\addons\base\functions";
 
 		// init							// tested:
 		fnc_pre(init);					// ✓

@@ -16,7 +16,7 @@ class dcd_suck_compat_rhs_afrf
 			"dcd_suck",
 			"rhs_main"
 		};
-		file = "\p\dcd\dcs_suck\compats\dcd_suck_compat_rhs_afrf\functions";
+		file = "\p\dcd\dcd_suck\compats\dcd_suck_compat_rhs_afrf\functions";
 		fnc_pre(init);
 	};
 };
