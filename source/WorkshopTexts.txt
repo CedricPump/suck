@@ -3,7 +3,7 @@
 /// ---------------------------------------------------------------
 
 
-[h1]SUCK - Simple UBGL Conversion Kit[/h1]
+[h1]SUCK - Simple UBGL Change Kit[/h1]
 
 SUCK is an Arma 3 mod that allows Players to attach and detach their under barrel grenade launcher (UBGL).
 It uses placeholder items for different UGL models and is compatible with ACE3 and supports several of the most common weapon packs.
@@ -83,7 +83,7 @@ Please feel free to report bugs at any time.
 [h1]Requirements[/h1]
 
 - CBA A3
-- SUCK - Simple UBGL Conversion Kit
+- SUCK - Simple UBGL Change Kit
 - Mod
 
 [h2]License[/h2]

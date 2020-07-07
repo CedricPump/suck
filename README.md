@@ -2,18 +2,18 @@
 
 <p align="left">
 
-# SUCK - Simple UBGL Conversion Kit
+# SUCK - Simple UBGL Change Kit
 
 SUCK is an Arma 3 mod that allows Players to attach and detach their under barrel grenade launcher (UBGL).
 It uses placeholder items for different UGL models and is compatible with ACE3 and supports several of the most common weapon packs.
 
 ## Acronyms
 
-Simple Underbarrel-Grenade-Launcher Conversion Kit  
+Simple Underbarrel-Grenade-Launcher Changeing Kit  
 
 Switch UBGL Conversion Kit  
 
-Steffies UBGL Conversion Kit  
+Steffies UBGL Change Kit  
 
 ## Concept
 
@@ -107,11 +107,10 @@ SUCK is compatible with [ACE Extension - Attachment Switching](https://steamcomm
 
 ## Development Usage
 
-Use Mikeros pboProject, Full Build, Output = `P:\dcd\export`, Source = `P:\dcd\dcd_suck`
+This mod project uses synixebrett's HEMTT. Check out his [github page](https://github.com/synixebrett/HEMTT) for more information.
 
-- **Only** touch `\dcd_suck_export\Mod.cpp` and `\dcd_suck_export\README.md`, let the rest be generated
-- **Only** put actual build content into `\dcd_suck`
-- WIP & Raw content belongs to `\source`
+
+to build a mod release HEMTT needs to be installed on your system. Execute `hemtt build --release --force` in the projects root directory.
 
 
 ## Weapon Pack Compatibility
