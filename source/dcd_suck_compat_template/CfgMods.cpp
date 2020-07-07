@@ -4,13 +4,13 @@ class CfgMods
 	class dcd_suck_compat_<mod> : Mod_Base
 	{
 		name = "SUCK - <mod> Compatibility";
-		picture = "\p\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
+		picture = "\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
 		description = "SUCK - <mod> Compatibility";
-		logo = "\p\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
-		logoSmall = "\p\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
-		logoOver = "\p\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
+		logo = "\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
+		logoSmall = "\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
+		logoOver = "\dcd\dcd_suck\compats\dcd_suck_compat_<mod>\ui\dcd_suck_icon_<mod>.paa";
 		overview = "Compatibility Mod to make <mod> compatible with SUCK granade launcher system";
 		author = "DCD";
 	};

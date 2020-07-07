@@ -16,7 +16,7 @@ class dcd_suck_compat_rhs_usaf
 			"dcd_suck",
 			"rhsusf_main"
 		};
-		file = "\p\dcd\dcd_suck\compats\dcd_suck_compat_rhs_usaf\functions";
+		file = "\dcd\dcd_suck\compats\dcd_suck_compat_rhs_usaf\functions";
 		fnc_pre(init);
 	};
 };

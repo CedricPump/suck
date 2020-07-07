@@ -15,7 +15,7 @@ class dcd_suck_compat_niarms
 			"cba_main",
 			"dcd_suck"
 		};
-		file = "\p\dcd\dcd_suck\compats\dcd_suck_compat_niarms\functions";
+		file = "\dcd\dcd_suck\compats\dcd_suck_compat_niarms\functions";
 		fnc_pre(init);
 	};
 };

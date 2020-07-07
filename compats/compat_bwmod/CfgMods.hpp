@@ -7,10 +7,10 @@ class CfgMods
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
 		description = "SUCK - BWMod Compatibility";
-		picture = "\p\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
-		logo = "\p\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
-		logoSmall = "\p\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
-		logoOver = "\p\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
+		picture = "\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
+		logo = "\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
+		logoSmall = "\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
+		logoOver = "\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\ui\dcd_suck_icon_bwmod.paa";
 		overview = "Compatibility Mod to make BWMod Weapons compatible with SUCK granade launcher system";
 		author = "DCD";
 	};

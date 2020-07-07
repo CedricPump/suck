@@ -15,7 +15,7 @@ class dcd_suck_compat_bwmod
 			"cba_main",
 			"dcd_suck"
 		};
-		file = "\p\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\functions";
+		file = "\dcd\dcd_suck\compats\dcd_suck_compat_bwmod\functions";
 		fnc_pre(init);
 	};
 };
