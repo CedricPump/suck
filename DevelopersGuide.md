@@ -17,7 +17,7 @@ The better the weapon packs inheritance structure the easier the adaption is.
 class MOD_WeaponName_GL : MOD_WeaponName_GL_Base {
     class WeaponSlotsInfo: WeaponSlotsInfo {
         class GLSlot: UnderBarrelSlot {
-            linkProxy = null;
+            linkProxy = "";
             class compatibleItems {
                 dcd_suck_G1 = 1;
             };

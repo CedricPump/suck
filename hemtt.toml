@@ -1,0 +1,57 @@
+name = "S.U.C.K"
+modname = "SUCK"
+mainprefix = "dcd"
+prefix = "dcd_suck"
+author = "DCD"
+sig_version = 3
+version = "1.0.06"
+reuse_private_key = false
+files = [
+    "mod.cpp",
+    "LICENSE.md"
+]
+include = [
+    "include/*"
+]
+
+key_name = "{{prefix}}_{{version}}"
+authority = "{{prefix}}_{{version}}"
+
+releasebuild = [
+    "!cpModcpps",
+    "@zip @{{modname}}_{{version}}"
+]
+
+# see: https://synixebrett.github.io/HEMTT/#/scripts
+# or use ./include to model directory an include mod.cpps
+postbuild = [
+  #"!cpModcpps"
+]
+
+[scripts.cpModcpps]
+steps_linux = [
+    "make linux",
+    "cp include/* ./releases/{{version}}/@{{modname}}/ -r"
+]
+steps_windows = [
+    # copy mod.cpp to compats
+    "powershell -Command Copy-Item -Path include/* -Destination ./releases/{{version}}/@{{modname}}/ -Recurse -Force",
+    # copy keys to compats
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_bwmod -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_sma -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_niarms -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_cup -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_usaf -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_afrf -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_gref -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/keys -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_saf -Recurse -Force",
+    # copy license to compats
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_bwmod -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_sma -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_niarms -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_cup -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_usaf -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_afrf -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_gref -Recurse -Force",
+    "powershell -Command Copy-Item -Path ./releases/{{version}}/@{{modname}}/LICENSE.md -Destination ./releases/{{version}}/@{{modname}}/compats/@SUCK_compat_rhs_saf -Recurse -Force"
+]
