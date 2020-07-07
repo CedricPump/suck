@@ -107,11 +107,10 @@ SUCK is compatible with [ACE Extension - Attachment Switching](https://steamcomm
 
 ## Development Usage
 
-Use Mikeros pboProject, Full Build, Output = `P:\dcd\export`, Source = `P:\dcd\dcd_suck`
+This mod project uses synixebrett's HEMTT. Check out his [github page](https://github.com/synixebrett/HEMTT) for more information.
 
-- **Only** touch `\dcd_suck_export\Mod.cpp` and `\dcd_suck_export\README.md`, let the rest be generated
-- **Only** put actual build content into `\dcd_suck`
-- WIP & Raw content belongs to `\source`
+
+to build a mod release HEMTT needs to be installed on your system. Execute `hemtt build --release --force` in the projects root directory.
 
 
 ## Weapon Pack Compatibility
