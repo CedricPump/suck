@@ -1,5 +1,14 @@
 # Changelog
 
+## pending [v1.1.00]
+
+### Changed
+
+- changed Mod Build Framework from pboProject / Mikero's Tools to HEMTT
+- changed mod signing process
+- changed mod paths
+
+
 ## [v1.0.05]
 
 ### Fixed
