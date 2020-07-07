@@ -1,12 +1,16 @@
 # Changelog
 
-## pending [v1.1.00]
+## [v1.1.00]
 
 ### Changed
 
 - changed Mod Build Framework from pboProject / Mikero's Tools to HEMTT
 - changed mod signing process
 - changed mod paths
+
+### Fixed
+
+- fixed Bug: Take Same Weapon bug reappeared after Respawn / Teamswitch / Zeus switch
 
 
 ## [v1.0.05]
