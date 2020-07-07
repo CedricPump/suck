@@ -3,10 +3,10 @@ class CfgMods
 	class Mod_Base; //External Class Reference
 	class dcd_suck : Mod_Base
 	{
-		name = "Simple UBGL Conversion Kit";
+		name = "Simple UBGL Change Kit";
 		actionName = "GitHub";
 		action = "https://github.com/CedricPump/suck";
-		description = "Simple UBGL Conversion Kit v1.1.00";
+		description = "Simple UBGL Change Kit v1.1.00";
 		picture = "\dcd\dcd_suck\addons\base\ui\dcd_suck_picture.paa";
 		logo = "\dcd\dcd_suck\addons\base\ui\dcd_suck_icon.paa";
 		logoSmall = "\dcd\dcd_suck\addons\base\ui\dcd_suck_icon.paa";

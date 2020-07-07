@@ -1,4 +1,4 @@
-# S.U.C.K. - Simple UBGL Conversion Kit
+# S.U.C.K. - Simple UBGL Change Kit
 
 ## Description
 
