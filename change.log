@@ -1,5 +1,17 @@
 # Changelog
 
+
+## [v1.1.01]
+
+### Added
+
+- added M249 GL to CUP
+
+### Fixed
+
+- fixed (partly) SMA MK17 support EGLM Launchers
+
+
 ## [v1.1.00]
 
 ### Changed

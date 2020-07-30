@@ -358,8 +358,36 @@ class CfgWeapons
     //==============================================================================
     // SCAR H/L
     //------------------------------------------------------------------------------
+        // SCAR H CQC: ["SMA_Mk17","SMA_762_RIFLEBASE","SMA_AssaultBase","mk20_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
     class SMA_Mk17 : SMA_762_RIFLEBASE {
-        dcd_suck_fnc_register_ubgl(dcd_suck_EGLM);
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {};
+            class GLSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_EGLM = 1;
+                };
+            };
+        };
+    };
+    class SMA_Mk17_black : SMA_Mk17 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {};
+            class GLSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_EGLM = 1;
+                };
+            };
+        };
+    };
+    class SMA_Mk17_Green : SMA_Mk17 {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {};
+            class GLSlot: UnderBarrelSlot {
+                class compatibleItems {
+                    dcd_suck_EGLM = 1;
+                };
+            };
+        };
     };
     // SCAR H CQC EGML: ["SMA_Mk17_EGLM","SMA_Mk17","SMA_762_RIFLEBASE","SMA_AssaultBase","mk20_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
     class SMA_Mk17_EGLM : SMA_Mk17 {

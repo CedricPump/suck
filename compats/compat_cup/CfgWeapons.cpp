@@ -141,6 +141,8 @@ class CfgWeapons
     class CUP_CZ_BREN2_762_GL_Base;
     class CUP_CZ_BREN2_GL_Base;
 
+    class CUP_lmg_minimipara;
+
     // ACR-C (Black, 5.56x45): ["CUP_arifle_ACRC_blk_556","CUP_arifle_ACR_Short_BASE_556","CUP_arifle_ACR_BASE_556","Rifle_Base_F","Rifle","RifleCore","Default"]
     // ACR-C (Black, 6.8x43): ["CUP_arifle_ACRC_blk_68","CUP_arifle_ACR_Short_BASE_68","CUP_arifle_ACR_BASE_68","Rifle_Base_F","Rifle","RifleCore","Default"]
     class CUP_arifle_ACR_BASE_556 : Rifle_Base_F {
@@ -630,5 +632,27 @@ class CfgWeapons
     class CUP_arifle_OTS14_GROZA_Grip : CUP_arifle_OTS14_GROZA_Base {
         dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
     };
+
+
+    // OTs-14-1A-01 Groza: ["CUP_arifle_OTS14_GROZA_762_Grip","CUP_arifle_OTS14_GROZA_762_base","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_OTS14_GROZA_762_Grip : CUP_arifle_OTS14_GROZA_762_base {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
+    };
+    // OTs-14-4A-01 Groza: ["CUP_arifle_OTS14_GROZA_Grip","CUP_arifle_OTS14_GROZA_Base","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_arifle_OTS14_GROZA_Grip : CUP_arifle_OTS14_GROZA_Base {
+        dcd_suck_fnc_unregister_ubgl(dcd_suck_GP25);
+    };
+
+    // M249E2 Para (13.7in.): ["CUP_lmg_m249_para","CUP_lmg_minimipara","CUP_saw_base","Rifle_Long_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_lmg_m249_para : CUP_lmg_minimipara {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+    // M249E2 Para M203 (13.7in.): ["CUP_lmg_m249_para_gl","CUP_lmg_minimipara","CUP_saw_base","Rifle_Long_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+    class CUP_lmg_m249_para_gl : CUP_lmg_minimipara {
+        dcd_suck_fnc_register_ubgl(dcd_suck_M203);
+    };
+
+
+
 
 };
