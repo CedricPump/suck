@@ -358,15 +358,11 @@ class CfgWeapons
     //==============================================================================
     // SCAR H/L
     //------------------------------------------------------------------------------
+        // SCAR H CQC: ["SMA_Mk17","SMA_762_RIFLEBASE","SMA_AssaultBase","mk20_base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
     class SMA_Mk17 : SMA_762_RIFLEBASE {
         class WeaponSlotsInfo: WeaponSlotsInfo {
-            // class UnderBarrelSlot: UnderBarrelSlot {
-            //     class compatibleItems {
-            //         dcd_suck_EGLM = 1;
-            //     };
-            // };
+            class UnderBarrelSlot: UnderBarrelSlot {};
             class GLSlot: UnderBarrelSlot {
-                //linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
                 class compatibleItems {
                     dcd_suck_EGLM = 1;
                 };
