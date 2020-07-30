@@ -553,8 +553,12 @@ _0 = ["dcd_suck_GP25","CUP_arifle_OTS14_GROZA_762","CUP_arifle_OTS14_GROZA_762_G
 _0 = ["dcd_suck_GP25","CUP_arifle_OTS14_GROZA","CUP_arifle_OTS14_GROZA_GL"] call dcd_suck_fnc_addSupportedWeaponPair;
 
 
+// -----------------------------------------------------------------------------
 
+// M249E2 Para (13.7in.): ["CUP_lmg_m249_para","CUP_lmg_minimipara","CUP_saw_base","Rifle_Long_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
+// M249E2 Para M203 (13.7in.): ["CUP_lmg_m249_para_gl","CUP_lmg_minimipara","CUP_saw_base","Rifle_Long_Base_F","Rifle_Base_F","Rifle","RifleCore","Default"]
 
+_0 = ["dcd_suck_M203","CUP_lmg_m249_para","CUP_lmg_m249_para_gl"] call dcd_suck_fnc_addSupportedWeaponPair;
 
 
 
