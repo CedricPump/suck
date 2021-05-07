@@ -4,7 +4,7 @@ mainprefix = "dcd"
 prefix = "dcd_suck"
 author = "DCD"
 sig_version = 3
-version = "1.1.01"
+version = "1.1.02"
 reuse_private_key = false
 files = [
     "mod.cpp",

@@ -158,3 +158,15 @@ class dcd_suck_G1: dcd_suck_ubgl_base {
           mass = 1;
       };
 };
+
+class dcd_suck_XM148: dcd_suck_ubgl_base {
+  scope=2;
+  displayName="XM148";
+  author="DCD";
+  picture="\dcd\dcd_suck\addons\base\ui\dcd_suck_xm148.paa";
+  descriptionShort="XM148 granade launcher";
+      class ItemInfo: CBA_MiscItem_ItemInfo {
+          // mass = 35;
+          mass = 1;
+      };
+};
